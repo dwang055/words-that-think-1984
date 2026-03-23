@@ -1,0 +1,3451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Words That Think · 1984</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+<meta name="description" content="Master 115 advanced vocabulary words from George Orwell's 1984, with bilingual English-Chinese definitions, original quotes from the novel, and original example sentences that explore the timeless themes of power, truth, and the resilience of the human spirit.">
+<meta name="theme-color" content="#06131a">
+<style>
+:root {
+  --bg:       #06131a;
+  --panel:    #0b1b24;
+  --panel2:   #0e2230;
+  --stroke:   #7ad0e0;
+  --text:     #e7fbff;
+  --muted:    #9fd6df;
+  --muted2:   #4a6e78;
+  --bad:      #ff5c7a;
+  --good:     #6ef7c8;
+  --gold:     #f0c040;
+  --gold2:    #ffe080;
+  --s35:      rgba(122,208,224,.35);
+  --s60:      rgba(122,208,224,.60);
+  --s20:      rgba(122,208,224,.20);
+  --o15:      rgba(0,0,0,.15);
+  --o25:      rgba(0,0,0,.25);
+  --panel-a:  rgba(11,27,36,.90);
+  --good15:   rgba(110,247,200,.15);
+  --good60:   rgba(110,247,200,.60);
+  --bad12:    rgba(255,92,122,.12);
+  --bad55:    rgba(255,92,122,.55);
+  --gold10:   rgba(240,192,64,.10);
+  --gold50:   rgba(240,192,64,.50);
+}
+*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: radial-gradient(900px 600px at 50% 0%, var(--panel2) 0%, var(--bg) 65%);
+  color: var(--text);
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+button { font-family: inherit; color: var(--text); cursor: pointer; }
+.wrapper { max-width: 680px; margin: 0 auto; padding: 0 14px; }
+.app-header {
+  text-align: center;
+  padding: 32px 10px 22px;
+  border-bottom: 1px solid var(--s20);
+}
+.app-header h1 {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', serif;
+  font-size: clamp(2rem, 7vw, 2.8rem);
+  font-weight: 700;
+  color: var(--good);
+  letter-spacing: .01em;
+  text-shadow: 0 0 30px rgba(110,247,200,.25);
+  line-height: 1.15;
+}
+.app-header .tagline {
+  margin-top: 8px;
+  font-size: clamp(0.85rem, 3vw, 1rem);
+  color: var(--muted);
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.app-header .book-credit {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: var(--muted2);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.header-star-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.header-badge {
+  background: var(--panel-a);
+  border: 1px solid var(--s35);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.header-badge:hover { background: rgba(122,208,224,.08); border-color: var(--s60); }
+.header-badge.active { background: var(--good15); border-color: var(--good60); color: var(--good); }
+.group-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 18px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 16px;
+  padding: 10px 14px;
+}
+.group-nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+.group-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted2);
+  font-weight: 700;
+}
+.group-num {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--good);
+  letter-spacing: .02em;
+}
+.group-dots {
+  display: flex;
+  gap: 5px;
+  margin-top: 3px;
+}
+.group-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--muted2);
+  transition: background .2s, transform .2s;
+}
+.group-dot.active { background: var(--good); transform: scale(1.3); }
+.group-dot.done { background: var(--s60); }
+.nav-pill {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--muted);
+  transition: all .15s;
+  white-space: nowrap;
+}
+.nav-pill:hover:not(:disabled) { background: rgba(122,208,224,.15); border-color: var(--s60); color: var(--text); }
+.nav-pill:disabled { opacity: .35; pointer-events: none; }
+.word-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 0 2px;
+}
+.word-nav-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+}
+.word-counter {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+.word-counter span { color: var(--text); }
+.icon-btn {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  transition: all .15s;
+  color: var(--muted);
+}
+.icon-btn:hover { background: rgba(122,208,224,.15); border-color: var(--s60); color: var(--text); }
+.icon-btn.starred { color: var(--gold); border-color: var(--gold50); background: var(--gold10); }
+.icon-btn:disabled { opacity: .3; pointer-events: none; }
+.word-card {
+  margin-top: 10px;
+  background: linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95));
+  border: 1px solid var(--s35);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: border-color .2s;
+}
+.word-card-top {
+  padding: 20px 20px 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid var(--s20);
+}
+.word-left { display: flex; flex-direction: column; gap: 4px; }
+.word-display {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: clamp(1.7rem, 6vw, 2.2rem);
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: .02em;
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(240,192,64,.2);
+}
+.pron-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.pron-text {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: .03em;
+}
+.speak-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  transition: all .15s;
+}
+.speak-btn:hover { background: rgba(110,247,200,.25); }
+.chapter-badge {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 8px;
+  padding: 4px 9px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+.definition-block {
+  padding: 14px 20px 16px;
+  border-bottom: 1px solid var(--s20);
+}
+.def-en {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: rgba(231,251,255,.9);
+}
+.def-zh {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 4px;
+  font-weight: 500;
+}
+.sentence-tab-row {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--s20);
+}
+.sent-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted2);
+  transition: all .15s;
+  text-align: center;
+}
+.sent-tab:hover { color: var(--muted); background: rgba(122,208,224,.04); }
+.sent-tab.active {
+  color: var(--good);
+  border-bottom-color: var(--good);
+  background: rgba(110,247,200,.04);
+}
+.sentence-content {
+  padding: 18px 20px 20px;
+}
+.sent-en {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', serif;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  line-height: 1.85;
+  color: rgba(231,251,255,.88);
+  font-style: italic;
+}
+.sent-zh {
+  font-size: 0.88rem;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-top: 12px;
+  font-weight: 400;
+  padding-top: 12px;
+  border-top: 1px solid var(--s20);
+}
+.sent-en .hl {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--gold2);
+  background: rgba(240,192,64,.08);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.sent-source {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: var(--muted2);
+  text-align: right;
+  letter-spacing: .04em;
+}
+.quiz-phase-label {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted2);
+  margin-bottom: 10px;
+}
+.quiz-section {
+  margin-top: 14px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.quiz-header:hover { background: rgba(122,208,224,.05); }
+.quiz-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quiz-title {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--text);
+}
+.quiz-subtitle {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  margin-top: 1px;
+}
+.quiz-score-badge {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  display: none;
+}
+.quiz-toggle-icon { font-size: 0.85rem; color: var(--muted2); transition: transform .2s; }
+.quiz-toggle-icon.open { transform: rotate(180deg); }
+.quiz-body {
+  display: none;
+  padding: 0 18px 18px;
+  border-top: 1px solid var(--s20);
+}
+.quiz-body.open { display: block; }
+.quiz-progress-bar {
+  height: 4px;
+  background: rgba(122,208,224,.12);
+  border-radius: 999px;
+  margin: 14px 0 16px;
+  overflow: hidden;
+}
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--good), #4edfc9);
+  border-radius: 999px;
+  transition: width .3s ease;
+}
+.quiz-q-num {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 10px;
+}
+.quiz-sentence {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: clamp(0.88rem, 2.8vw, 0.96rem);
+  line-height: 1.8;
+  color: rgba(231,251,255,.9);
+  background: rgba(122,208,224,.05);
+  border: 1px solid var(--s20);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+.blank { color: var(--gold); font-style: normal; font-weight: 700; letter-spacing: .1em; }
+.quiz-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.choice-btn {
+  background: rgba(122,208,224,.06);
+  border: 1px solid var(--s35);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: left;
+  transition: all .15s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.choice-btn:hover:not(:disabled) { background: rgba(122,208,224,.12); border-color: var(--s60); }
+.choice-btn .choice-label {
+  background: var(--s35);
+  border-radius: 4px;
+  width: 20px; height: 20px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+.choice-btn.correct { background: var(--good15); border-color: var(--good60); color: var(--good); }
+.choice-btn.wrong   { background: var(--bad12);  border-color: var(--bad55);  color: var(--bad); }
+.choice-btn:disabled { pointer-events: none; opacity: .7; }
+.quiz-feedback {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: none;
+}
+.quiz-feedback.correct-fb { background: var(--good15); color: var(--good); border: 1px solid var(--good60); }
+.quiz-feedback.wrong-fb   { background: var(--bad12);  color: var(--bad);  border: 1px solid var(--bad55); }
+.quiz-next-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text);
+  display: none;
+  transition: background .15s;
+}
+.quiz-next-btn:hover { background: rgba(122,208,224,.18); }
+.quiz-result {
+  display: none;
+  text-align: center;
+  padding: 16px 0 4px;
+}
+.quiz-result-score {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--good);
+  line-height: 1;
+}
+.quiz-result-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+.quiz-result-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.quiz-retry-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--good);
+  transition: background .15s;
+}
+.quiz-retry-btn:hover { background: rgba(110,247,200,.25); }
+.quiz-start-area {
+  padding: 16px 0 4px;
+  text-align: center;
+}
+.quiz-start-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+.quiz-start-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 10px 28px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--good);
+  transition: background .15s;
+}
+.quiz-start-btn:hover { background: rgba(110,247,200,.25); }
+.quiz-skip-btn {
+  background: none;
+  border: none;
+  color: var(--muted2);
+  font-size: 0.78rem;
+  margin-left: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.starred-section {
+  margin-top: 14px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.starred-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.starred-header:hover { background: rgba(240,192,64,.04); }
+.starred-header-left { display: flex; align-items: center; gap: 10px; }
+.starred-title { font-size: 0.9rem; font-weight: 800; color: var(--text); }
+.starred-count {
+  background: var(--gold10);
+  border: 1px solid var(--gold50);
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+.starred-body { display: none; padding: 0 18px 18px; border-top: 1px solid var(--s20); }
+.starred-body.open { display: block; }
+.starred-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 14px;
+}
+.starred-chip {
+  background: var(--gold10);
+  border: 1px solid var(--gold50);
+  border-radius: 999px;
+  padding: 5px 13px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold);
+  cursor: pointer;
+  transition: all .15s;
+}
+.starred-chip:hover { background: rgba(240,192,64,.18); }
+.starred-empty {
+  padding-top: 14px;
+  font-size: 0.85rem;
+  color: var(--muted2);
+  font-style: italic;
+  text-align: center;
+}
+.my-sentences-block {
+  padding: 16px 20px 18px;
+  border-top: 1px solid var(--s20);
+}
+.my-sent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.my-sent-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--muted);
+  letter-spacing: .02em;
+}
+.my-sent-counter {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted2);
+  background: var(--o25);
+  border: 1px solid var(--s20);
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+.my-sent-counter.full { color: var(--gold); border-color: var(--gold50); background: var(--gold10); }
+.my-sent-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+.my-sent-input {
+  flex: 1;
+  background: rgba(122,208,224,.06);
+  border: 1px solid var(--s35);
+  border-radius: 12px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.88rem;
+  padding: 9px 13px;
+  outline: none;
+  transition: border-color .15s;
+  min-width: 0;
+}
+.my-sent-input:focus { border-color: var(--s60); background: rgba(122,208,224,.09); }
+.my-sent-input::placeholder { color: var(--muted2); }
+.my-sent-save-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 12px;
+  padding: 9px 16px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--stroke);
+  white-space: nowrap;
+  transition: background .15s;
+  flex-shrink: 0;
+}
+.my-sent-save-btn:hover { background: rgba(122,208,224,.2); }
+.my-sent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 10px;
+}
+.my-sent-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(122,208,224,.05);
+  border: 1px solid var(--s20);
+  border-radius: 10px;
+  padding: 9px 12px;
+}
+.my-sent-num {
+  font-size: 0.68rem;
+  font-weight: 900;
+  color: var(--muted2);
+  background: var(--s20);
+  border-radius: 4px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.my-sent-text {
+  flex: 1;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(231,251,255,.85);
+}
+.my-sent-del {
+  background: none;
+  border: none;
+  color: var(--muted2);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 3px;
+  flex-shrink: 0;
+  opacity: .6;
+  transition: color .15s, opacity .15s;
+}
+.my-sent-del:hover { color: var(--bad); opacity: 1; }
+.starred-quiz-divider {
+  height: 1px;
+  background: var(--s20);
+  margin: 14px 0;
+}
+.sq-start-area { text-align: center; padding-bottom: 4px; }
+.sq-desc {
+  font-size: 0.82rem;
+  color: var(--muted2);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+.sq-unlock-hint {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  font-style: italic;
+}
+footer {
+  margin-top: 36px;
+  padding: 20px 14px 28px;
+  border-top: 1px solid var(--s20);
+  text-align: center;
+}
+.footer-author {
+  font-size: 0.8rem;
+  color: var(--muted2);
+  line-height: 1.9;
+}
+.footer-author a { color: var(--muted); text-decoration: none; }
+.footer-author a:hover { color: var(--stroke); }
+.footer-quote {
+  margin-top: 12px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--muted2);
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+#toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: rgba(11,27,36,.96);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s, transform .2s;
+  white-space: nowrap;
+  z-index: 9999;
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+#toast.gold { border-color: var(--gold50); color: var(--gold); }
+#toast.good { border-color: var(--good60); color: var(--good); }
+@media (max-width: 480px) {
+  .word-card-top { flex-wrap: wrap; }
+  .quiz-choices { grid-template-columns: 1fr; }
+  .group-dots { display: none; }
+  .nav-pill { padding: 7px 12px; font-size: 0.8rem; }
+}
+.synan-block {
+  padding: 10px 20px 14px;
+  border-bottom: 1px solid var(--s20);
+  display: flex; gap: 14px; flex-wrap: wrap;
+}
+.synan-group { flex: 1; min-width: 0; }
+.synan-label {
+  font-size: 0.65rem; font-weight: 900; text-transform: uppercase;
+  letter-spacing: .1em; margin-bottom: 5px;
+}
+.synan-label.syn { color: var(--good); }
+.synan-label.ant { color: var(--bad); }
+.synan-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.synan-chip {
+  font-size: 0.75rem; font-weight: 600; padding: 3px 9px;
+  border-radius: 999px;
+}
+.synan-chip.syn { background: rgba(110,247,200,.1); border: 1px solid rgba(110,247,200,.35); color: var(--good); }
+.synan-chip.ant { background: rgba(255,92,122,.08); border: 1px solid rgba(255,92,122,.3);  color: var(--bad); }
+.spell-content { padding: 18px 20px 22px; }
+.spell-sentence {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  line-height: 1.85;
+  color: rgba(231,251,255,.88);
+  margin-bottom: 18px;
+}
+.spell-sentence .hl { font-style: normal; font-weight: 700; color: var(--gold2); }
+.spell-boxes {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  justify-content: center; margin-bottom: 18px;
+}
+.spell-box {
+  width: 34px; height: 40px;
+  border: 2px solid var(--s35);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 800; text-transform: lowercase;
+  background: rgba(122,208,224,.05);
+  transition: border-color .15s, background .15s;
+  flex-shrink: 0;
+}
+.spell-box.filled   { border-color: var(--s60); background: rgba(122,208,224,.1); color: var(--text); }
+.spell-box.correct  { border-color: var(--good); background: rgba(110,247,200,.15); color: var(--good); }
+.spell-box.wrong    { border-color: var(--bad);  background: rgba(255,92,122,.12);  color: var(--bad); }
+.spell-box.cursor   { border-color: var(--gold); animation: spell-blink .9s ease infinite; }
+@keyframes spell-blink { 0%,100% { border-color: var(--gold); } 50% { border-color: transparent; } }
+.spell-input-row {
+  display: flex; gap: 8px; align-items: center; justify-content: center; flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.spell-input {
+  background: rgba(122,208,224,.06); border: 1px solid var(--s35);
+  border-radius: 12px; color: var(--text); font-family: inherit;
+  font-size: 1rem; font-weight: 700; padding: 9px 14px; outline: none;
+  width: 180px; text-align: center; letter-spacing: .12em;
+  transition: border-color .15s;
+}
+.spell-input:focus { border-color: var(--s60); }
+.spell-input::placeholder { color: var(--muted2); font-weight: 400; letter-spacing: 0; }
+.spell-check-btn {
+  background: var(--good15); border: 1px solid var(--good60);
+  border-radius: 12px; padding: 9px 18px;
+  font-size: .88rem; font-weight: 800; color: var(--good);
+  transition: background .15s;
+}
+.spell-check-btn:hover { background: rgba(110,247,200,.25); }
+.spell-reveal-btn {
+  background: none; border: none; color: var(--muted2);
+  font-size: .78rem; text-decoration: underline; cursor: pointer;
+  display: block; text-align: center; margin-top: 4px;
+}
+.spell-feedback {
+  text-align: center; font-size: .9rem; font-weight: 800;
+  padding: 10px; border-radius: 10px; margin-top: 4px; display: none;
+}
+.spell-feedback.ok  { background: var(--good15); color: var(--good); border: 1px solid var(--good60); }
+.spell-feedback.err { background: var(--bad12);  color: var(--bad);  border: 1px solid var(--bad55); }
+.spell-hint-row { text-align: center; margin-bottom: 10px; }
+.spell-hint-text { font-size: .78rem; color: var(--muted2); font-style: italic; }
+
+/* ── Print button ─────────────────────────────────────── */
+.print-btn { margin-left: 8px; }
+.header-star-row { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 8px; }
+
+/* ── Print styles ─────────────────────────────────────── */
+@media print {
+  body * { visibility: hidden; }
+  #printContainer, #printContainer * { visibility: visible; }
+  #printContainer { display: block !important; position: absolute; inset: 0; background: white; }
+}
+
+</style>
+</head>
+<body>
+
+<div id="toast"></div>
+
+<div class="wrapper">
+  <div class="app-header">
+    <h1>Words That Think: 1984 Edition</h1>
+    <div class="tagline">Master the language of surveillance, truth, and rebellion through George Orwell's 1984.</div>
+    <div class="book-credit">114 words &middot; 114 sentences &middot; George Orwell's 1984</div>
+    <div class="header-star-row">
+      <button class="header-badge" id="starredToggleBtn">⭐ Starred Words (<span id="starredCountHeader">0</span>)</button>
+      <button class="header-badge print-btn" id="printBtn" onclick="openPrintModal()">🖨️ Print</button>
+    </div>
+  </div>
+
+  <div class="group-nav">
+    <button class="nav-pill" id="prevGroupBtn">← Prev</button>
+    <div class="group-nav-center">
+      <div class="group-label">Group</div>
+      <div class="group-num" id="groupNumDisplay">1 / 10</div>
+      <div class="group-dots" id="groupDots"></div>
+    </div>
+    <button class="nav-pill" id="nextGroupBtn">Next →</button>
+  </div>
+
+  <div class="word-nav">
+    <button class="nav-pill" id="prevWordBtn">←</button>
+    <div class="word-nav-center">
+      <div class="word-counter">Word <span id="wordNumDisplay">1</span> / <span id="groupSizeDisplay">10</span></div>
+      <button class="icon-btn" id="starBtn" title="Star this word">☆</button>
+      <button class="icon-btn" id="speakBtn" title="Hear pronunciation">🔊</button>
+    </div>
+    <button class="nav-pill" id="nextWordBtn">Next →</button>
+  </div>
+
+  <div class="word-card" id="wordCard">
+    <div class="word-card-top">
+      <div class="word-left">
+        <div class="word-display" id="wordDisplay">—</div>
+        <div class="pron-row">
+          <span class="pron-text" id="pronDisplay">—</span>
+          <button class="speak-btn" id="speakBtn2">🔊 Hear it</button>
+        </div>
+      </div>
+      <div class="chapter-badge" id="chapterBadge">—</div>
+    </div>
+
+    <div class="definition-block">
+      <div class="def-en" id="defEn">—</div>
+      <div class="def-zh" id="defZh">—</div>
+    </div>
+
+    <div class="synan-block" id="synanBlock">
+      <div class="synan-group">
+        <div class="synan-label syn">Synonyms</div>
+        <div class="synan-chips" id="synChips"></div>
+      </div>
+      <div class="synan-group">
+        <div class="synan-label ant">Antonyms</div>
+        <div class="synan-chips" id="antChips"></div>
+      </div>
+    </div>
+
+    <div class="sentence-tab-row">
+      <button class="sent-tab active" id="tabNovel">📖 Source Sentence</button>
+      <button class="sent-tab" id="tabAI">💡 Example</button>
+      <button class="sent-tab" id="tabSpell">✏️ Spell It</button>
+    </div>
+
+    <div class="sentence-content" id="sentenceContent">
+      <div style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px;">
+        <div class="sent-en" id="sentEn" style="flex: 1;">—</div>
+        <button id="sentenceHearBtn" style="flex-shrink: 0; padding: 8px 14px; background: rgba(122,208,224,.12); border: 1.5px solid rgba(122,208,224,.4); border-radius: 8px; color: #7AD0E0; cursor: pointer; font-weight: 600; white-space: nowrap; font-size: 0.85rem;" onclick="const e=document.getElementById(\'sentEn\');if(e){let t=e.textContent;if(t&&t!==\'—\'){t=t.replace(/<[^>]*>/g,\'\');if(t.trim())speak(t);}}">🔊 Hear</button>
+      </div>
+      <div class="sent-zh" id="sentZh">—</div>
+      <div class="sent-source" id="sentSource">—</div>
+    </div>
+
+    <div class="spell-content" id="spellContent" style="display:none;">
+      <div class="spell-hint-row"><span class="spell-hint-text" id="spellHint">Type the missing word from the AI example sentence.</span></div>
+      <div class="spell-sentence" id="spellSentence">—</div>
+      <div class="spell-boxes" id="spellBoxes"></div>
+      <div class="spell-input-row">
+        <input type="text" class="spell-input" id="spellInput"
+          placeholder="type the word…"
+          autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        <button class="spell-check-btn" id="spellCheckBtn">Check</button>
+      </div>
+      <button class="spell-reveal-btn" id="spellRevealBtn">Show answer</button>
+      <div class="spell-feedback" id="spellFeedback"></div>
+    </div>
+
+    <div class="my-sentences-block">
+      <div class="my-sent-header">
+        <span class="my-sent-title">✍️ My Sentences</span>
+        <span class="my-sent-counter" id="mySentCounter">0 / 3</span>
+      </div>
+      <div class="my-sent-input-row">
+        <input type="text" class="my-sent-input" id="mySentInput"
+          placeholder="Write your own sentence using this word…"
+          autocomplete="off" autocorrect="off" spellcheck="false">
+        <button class="my-sent-save-btn" id="mySentSaveBtn">Save</button>
+      </div>
+      <div class="my-sent-list" id="mySentList"></div>
+    </div>
+  </div>
+
+  <div class="quiz-section" id="quizSection">
+    <div class="quiz-header" id="quizHeader">
+      <div class="quiz-header-left">
+        <div>
+          <div class="quiz-title">📝 Group Quiz</div>
+          <div class="quiz-subtitle" id="quizSubtitle">Part 1: Choose · Part 2: Spell</div>
+        </div>
+        <div class="quiz-score-badge" id="quizScoreBadge">—</div>
+      </div>
+      <div>
+        <span class="quiz-toggle-icon" id="quizToggleIcon">▾</span>
+      </div>
+    </div>
+    <div class="quiz-body" id="quizBody">
+      <div class="quiz-start-area" id="quizStartArea">
+        <div class="quiz-start-desc" id="quizStartDesc">Test yourself on Group 1. Fill in the blanks using words from this group.</div>
+        <button class="quiz-start-btn" id="quizStartBtn">Start Quiz</button>
+        <button class="quiz-skip-btn" id="quizSkipBtn">Skip</button>
+      </div>
+      <div id="quizQuestionArea" style="display:none;">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+        <div class="quiz-q-num" id="quizQNum">Question 1 / 10</div>
+
+        <div id="quizPhase1">
+          <div class="quiz-phase-label">📖 Choose the word — Orwell's sentence</div>
+          <div class="quiz-sentence" id="quizSentence">—</div>
+          <div class="quiz-choices" id="quizChoices"></div>
+          <div class="quiz-feedback" id="quizFeedback"></div>
+        </div>
+
+        <div id="quizPhase2" style="display:none;">
+          <div class="quiz-phase-label">💡 Spell the word — AI example sentence</div>
+          <div class="quiz-sentence" id="qSpellSentence">—</div>
+          <div class="spell-boxes" id="qSpellBoxes"></div>
+          <div class="spell-input-row">
+            <input type="text" class="spell-input" id="qSpellInput"
+              placeholder="type the word…"
+              autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <button class="spell-check-btn" id="qSpellCheckBtn">Check</button>
+          </div>
+          <button class="spell-reveal-btn" id="qSpellRevealBtn">Show answer</button>
+          <div class="quiz-feedback" id="qSpellFeedback"></div>
+        </div>
+
+        <button class="quiz-next-btn" id="quizNextBtn" style="display:none;">Next →</button>
+      </div>
+      <div class="quiz-result" id="quizResult">
+        <div class="quiz-result-score" id="quizResultScore">—</div>
+        <div class="quiz-result-label" id="quizResultLabel">—</div>
+        <div class="quiz-result-btns">
+          <button class="quiz-retry-btn" id="quizRetryBtn">↻ Retry Quiz</button>
+          <button class="quiz-skip-btn" id="quizCloseBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="starred-section" id="starredSection">
+    <div class="starred-header" id="starredHeader">
+      <div class="starred-header-left">
+        <div class="starred-title">⭐ Starred Words</div>
+        <div class="starred-count" id="starredCount">0</div>
+      </div>
+      <span class="quiz-toggle-icon" id="starredToggleIcon">▾</span>
+    </div>
+    <div class="starred-body" id="starredBody">
+      <div class="starred-list" id="starredList"></div>
+
+      <div class="starred-quiz-wrap" id="starredQuizWrap">
+        <div class="starred-quiz-divider"></div>
+        <div class="sq-start-area" id="sqStartArea">
+          <div class="sq-desc" id="sqDesc">Star 5 or more words to unlock your personal quiz.</div>
+          <button class="quiz-start-btn" id="sqStartBtn" style="display:none;">⭐ Quiz My Starred Words</button>
+          <div class="sq-unlock-hint" id="sqUnlockHint">(<span id="sqStarredCount">0</span> / 5 starred so far)</div>
+        </div>
+        <div id="sqQuestionArea" style="display:none;">
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="sqProgressFill"></div></div>
+          <div class="quiz-q-num" id="sqQNum">Question 1 / ?</div>
+          <div class="quiz-sentence" id="sqSentence">—</div>
+          <div class="quiz-choices" id="sqChoices"></div>
+          <div class="quiz-feedback" id="sqFeedback"></div>
+          <button class="quiz-next-btn" id="sqNextBtn">Next →</button>
+        </div>
+        <div class="quiz-result" id="sqResult" style="display:none;">
+          <div class="quiz-result-score" id="sqResultScore">—</div>
+          <div class="quiz-result-label" id="sqResultLabel">—</div>
+          <div class="quiz-result-btns">
+            <button class="quiz-retry-btn" id="sqRetryBtn">↻ Retry</button>
+            <button class="quiz-skip-btn" id="sqResetBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-author">Created by Daniel Wang · Words from 1984 (1949) by George Orwell · For Educational Use · © 2026</div>
+    <div class="footer-quote">“Freedom is the freedom to say that two plus two make four. If that is granted, all else follows.”<br>— George Orwell, <em>1984</em></div>
+  </footer>
+</div>
+
+<script>
+// ============================================================
+// PASTE YOUR COMPLETE VOCAB ARRAY HERE (ALL 100 WORDS)
+// ============================================================
+// ============================================================
+const BOOK_CONFIG = {
+  "title": "Words That Think: 1984 Edition",
+  "bookName": "1984",
+  "author": "George Orwell",
+  "year": "1949",
+  "tagline": "Master the language of surveillance, truth, and rebellion through George Orwell's 1984."
+};
+const VOCAB = [
+  {
+    "word": "vile",
+    "pron": "/vaɪl/",
+    "pos": "adj.",
+    "def_en": "Extremely unpleasant; morally despicable",
+    "def_zh": "令人极不愉快的；卑鄙的；恶劣的",
+    "quote_en": "Winston Smith, his chin nuzzled into his breast in an effort to escape the vile wind, slipped quickly through the glass doors of Victory Mansions, though not quickly enough to prevent a swirl of gritty dust from entering along with him. (Part 1, Chapter 1)",
+    "quote_zh": "温斯顿·史密斯为了躲避那讨厌的寒风，把下巴缩进胸前，迅速地溜进了胜利大厦的玻璃门，但还是不够快，没能阻止一股夹着沙砾的灰尘随他一起卷入。",
+    "ex_en": "To silence truth, tyranny first brands it vile, then builds its throne upon the rubble of conscience.",
+    "ex_zh": "暴政为了压制真理，首先将其污为邪恶，然后在良知的废墟上筑起它的王座。"
+  },
+  {
+    "word": "contrive",
+    "pron": "/kənˈtraɪv/",
+    "pos": "v.",
+    "def_en": "To devise or plan with cleverness or artifice",
+    "def_zh": "巧妙设计；策划；设法做到",
+    "quote_en": "It was one of those pictures which are so contrived that the eyes follow you about when you move. BIG BROTHER IS WATCHING YOU, the caption beneath it ran. (Part 1, Chapter 1)",
+    "quote_zh": "这是那种设计巧妙的画像：你走动的时候，画上的眼睛会跟着你。画像下面的文字是：老大哥在看着你。",
+    "ex_en": "Those who contrive to hide truth behind a painted face soon find that even the mask begins to consume them.",
+    "ex_zh": "那些费尽心机将真相藏在粉饰面孔背后的人，很快会发现连面具也开始吞噬他们。"
+  },
+  {
+    "word": "sanguine",
+    "pron": "/ˈsæŋɡwɪn/",
+    "pos": "adj.",
+    "def_en": "Optimistic or positive, especially in a difficult situation; also, reddish in complexion",
+    "def_zh": "乐观的；充满信心的；（面色）红润的",
+    "quote_en": "He moved over to the window: a smallish, frail figure, the meagreness of his body merely emphasized by the blue overalls which were the uniform of the party. His hair was very fair, his face naturally sanguine, his skin roughened by coarse soap and blunt razor blades and the cold of the winter that had just ended. (Part 1, Chapter 1)",
+    "quote_zh": "他走到窗边：一个瘦小虚弱的身影，蓝色的连体工装——党的制服——愈发衬出他身体的单薄。他的头发很淡，脸色天生红润，皮肤被粗肥皂、钝刀片和刚过去的寒冬弄得粗糙了。",
+    "ex_en": "True courage is not a sanguine ignorance of darkness, but the quiet choice to carry a light when all around you insist the night is eternal.",
+    "ex_zh": "真正的勇气并非对黑暗的盲目乐观，而是当周遭所有人都宣称黑夜永恒时，你仍静静选择提灯前行。"
+  },
+  {
+    "word": "corrugated",
+    "pron": "/ˈkɒrəɡeɪtɪd/",
+    "pos": "adj.",
+    "def_en": "Shaped into parallel ridges and grooves; wrinkled or folded",
+    "def_zh": "波纹状的；起皱的；瓦楞的",
+    "quote_en": "Were there always these vistas of rotting nineteenth-century houses, their sides shored up with baulks of timber, their windows patched with cardboard and their roofs with corrugated iron, their crazy garden walls sagging in all directions? (Part 1, Chapter 1)",
+    "quote_zh": "难道一直就有这些破败的十九世纪房屋的景致吗？它们的墙用粗木撑着，窗户用纸板补着，屋顶盖着波纹铁皮，歪斜的花园围墙向四面八方坍塌？",
+    "ex_en": "A life lived only for safety will eventually resemble corrugated iron: strong enough to weather the storm, but hollow, cold, and echoing nothing of the soul.",
+    "ex_zh": "只为安全而活的人生，终将变得如波纹铁皮一般：虽能抵御风暴，却空洞、冰冷，回响不起丝毫灵魂的声音。"
+  },
+  {
+    "word": "edifice",
+    "pron": "/ˈedɪfɪs/",
+    "pos": "n.",
+    "def_en": "A large, complex structure or institution",
+    "def_zh": "宏伟的建筑；庞大的体系",
+    "quote_en": "The Ministry of Truth contained, it was said, three thousand rooms above ground level, and corresponding ramifications below. Scattered about London there were just three other buildings of similar appearance and size. So completely did they dwarf the surrounding architecture that from the roof of Victory Mansions you could see all four of them simultaneously. They were the homes of the four Ministries between which the entire apparatus of government was divided. (Part 1, Chapter 1)",
+    "quote_zh": "据说，真理部地面上有三千个房间，地下还有同样庞大的分支。伦敦各处散落着另外三座外观和规模相似的建筑。它们如此彻底地使周围的建筑相形见绌，以至于从胜利大厦的楼顶可以同时看到全部四座。它们就是四个部的所在地，整个政府机构就分属于这四个部。",
+    "ex_en": "Every tyranny builds its edifice on the rubble of forgotten history, then calls the ruins progress.",
+    "ex_zh": "每一个暴政都在被遗忘的历史废墟上建造自己的大厦，然后将废墟称为进步。"
+  },
+  {
+    "word": "furtive",
+    "pron": "/ˈfɜːtɪv/",
+    "pos": "adj.",
+    "def_en": "Secretive, attempting to avoid notice",
+    "def_zh": "偷偷摸摸的；鬼鬼祟祟的",
+    "quote_en": "He had carried it guiltily home in his briefcase. Even with nothing written in it, it was a compromising possession. (Part 1, Chapter 2)",
+    "quote_zh": "他满怀负罪感地把日记本放进公文包带回了家。即使里面什么都没写，它也是一件会惹祸的东西。",
+    "ex_en": "A furtive glance exchanged between strangers in a world of total surveillance is already the seed of a revolution.",
+    "ex_zh": "在全然监视的世界里，陌生人之间交换的一个鬼祟眼神，已经是革命的种子。"
+  },
+  {
+    "word": "infallible",
+    "pron": "/ɪnˈfæləbəl/",
+    "pos": "adj.",
+    "def_en": "Incapable of making mistakes or being wrong",
+    "def_zh": "绝对可靠的；永无过失的",
+    "quote_en": "Big Brother is infallible and all-powerful. Every success, every achievement, every victory, every scientific discovery, all knowledge, all wisdom, all happiness, all virtue, are held to issue directly from his leadership and inspiration. (Part 1, Chapter 2)",
+    "quote_zh": "老大哥是绝对正确、全知全能的。每一次成功、每一项成就、每一场胜利、每一个科学发现，所有知识、所有智慧、所有幸福、所有美德，都被认为直接来源于他的领导和启迪。",
+    "ex_en": "The demand for infallibility is the first confession of a power that knows it can survive only by extinguishing doubt.",
+    "ex_zh": "对绝对正确的苛求，是一个深知自己只有靠消灭怀疑才能存续的权力所做出的第一项供认。"
+  },
+  {
+    "word": "palimpsest",
+    "pron": "/ˈpælɪmpsest/",
+    "pos": "n.",
+    "def_en": "A manuscript or surface that has been written on, erased, and reused",
+    "def_zh": "重写本；多次修改的事物",
+    "quote_en": "All history was a palimpsest, scraped clean and reinscribed exactly as often as was necessary. (Part 1, Chapter 4)",
+    "quote_zh": "所有的历史都是一张重写羊皮纸，只要需要，就会被刮擦干净，重新书写。",
+    "ex_en": "The mind of a free person is no palimpsest; it holds its truths not because they are written last, but because they are rooted in what cannot be erased.",
+    "ex_zh": "自由之人的心灵不是一张重写羊皮纸；它持有的真理并非因为最后被写下，而是因为它们扎根于无法被抹去的东西。"
+  },
+  {
+    "word": "unfathomable",
+    "pron": "/ʌnˈfæðəməbl/",
+    "pos": "adj.",
+    "def_en": "Incapable of being fully understood",
+    "def_zh": "深不可测的；难以理解的",
+    "quote_en": "His heart quailed before the enormous pyramidal shape. It was too strong, it could not be stormed. A thousand rocket bombs would not batter it down. (Part 1, Chapter 2)",
+    "quote_zh": "然而在这巨大的金字塔形建筑前，他的心畏缩了。它太强大了，无法攻破。一千枚火箭弹也炸不垮它。",
+    "ex_en": "The power of a lie repeated often enough becomes unfathomable, not because it is strong, but because it erases the memory of what was true.",
+    "ex_zh": "一个谎言重复足够多次后就会变得深不可测，并非因为它强大，而是因为它抹去了对真相的记忆。"
+  },
+  {
+    "word": "discrepancy",
+    "pron": "/dɪsˈkrepənsi/",
+    "pos": "n.",
+    "def_en": "A lack of compatibility or similarity between facts",
+    "def_zh": "差异；矛盾",
+    "quote_en": "The Party claimed that the infant mortality rate was now only 160 per thousand, whereas before the Revolution it had been 300 — and so it went on. It was like a single equation with two unknowns. (Part 1, Chapter 7)",
+    "quote_zh": "党声称婴儿死亡率现在只有千分之一百六十，而革命前则是三百——如此这般。这就像只有一个方程却有两个未知数。",
+    "ex_en": "The discrepancy between what we are told and what we observe is the first fissure through which freedom may enter.",
+    "ex_zh": "我们被告知的东西与我们观察到的东西之间的差异，是自由得以进入的第一道裂缝。"
+  },
+  {
+    "word": "annihilate",
+    "pron": "/əˈnaɪəleɪt/",
+    "pos": "v.",
+    "def_en": "To destroy utterly",
+    "def_zh": "彻底消灭；歼灭",
+    "quote_en": "With its grace and carelessness it seemed to annihilate a whole culture, a whole system of thought, as though Big Brother and the Party and the Thought Police could all be swept into nothingness by a single splendid movement of the arm. (Part 1, Chapter 3)",
+    "quote_zh": "那动作的优雅与漫不经心仿佛要湮灭整个文化、整个思想体系，就好像老大哥、党和思想警察都可以被一个华丽的手臂动作扫入虚无。",
+    "ex_en": "Those who seek to annihilate the past do not understand that memory is not stored in books alone, but in the bones of those who refuse to forget.",
+    "ex_zh": "那些试图抹去过去的人不明白，记忆不仅储存在书本中，更储存在那些拒绝遗忘者的骨血里。"
+  },
+  {
+    "word": "indelible",
+    "pron": "/ɪnˈdeləbl/",
+    "pos": "adj.",
+    "def_en": "That cannot be removed or forgotten",
+    "def_zh": "无法抹去的；难忘的",
+    "quote_en": "But the face of Big Brother seemed to persist for several seconds on the screen, as though the impact that it had made on everyone’s eyeballs was too vivid to wear off immediately. (Part 1, Chapter 1)",
+    "quote_zh": "但老大哥的面孔似乎在屏幕上停留了好几秒，仿佛它给每个人眼球留下的印象太过鲜明，无法立刻消退。",
+    "ex_en": "Some truths leave an indelible mark not because they are shouted, but because they are lived when no one is watching.",
+    "ex_zh": "有些真相会留下无法抹去的印记，并非因为它们被高声宣扬，而是因为它们在无人注视时被活了出来。"
+  },
+  {
+    "word": "dissemble",
+    "pron": "/dɪˈsembəl/",
+    "pos": "v.",
+    "def_en": "To conceal one’s true motives or feelings",
+    "def_zh": "掩饰；假装",
+    "quote_en": "To dissemble your feelings, to control your face, to do what everyone else was doing, was an instinctive reaction. (Part 1, Chapter 1)",
+    "quote_zh": "掩饰自己的感情，控制自己的表情，做别人都在做的事，是一种本能反应。",
+    "ex_en": "Those who dissemble out of fear eventually find the mask has become their only face, and the truth behind it has withered from neglect.",
+    "ex_zh": "那些出于恐惧而掩饰的人，最终会发现面具已成为他们唯一的面孔，而背后的真相已因无人问津而枯萎。"
+  },
+  {
+    "word": "obliterate",
+    "pron": "/əˈblɪtəreɪt/",
+    "pos": "v.",
+    "def_en": "To destroy completely; to erase",
+    "def_zh": "抹去；彻底毁灭",
+    "quote_en": "The past was erased, the erasure was forgotten, the lie became truth. (Part 1, Chapter 7)",
+    "quote_zh": "过去被抹去，抹去被遗忘，谎言成了真理。",
+    "ex_en": "To obliterate a people, first obliterate their language; for in words they keep the memory of who they were.",
+    "ex_zh": "要抹去一个民族，首先要抹去他们的语言；因为词语中保存着他们对自己是谁的记忆。"
+  },
+  {
+    "word": "inscrutable",
+    "pron": "/ɪnˈskruːtəbl/",
+    "pos": "adj.",
+    "def_en": "Difficult to understand or interpret",
+    "def_zh": "难以理解的；神秘的",
+    "quote_en": "Then the flash of intelligence was gone, and O’Brien’s face was as inscrutable as everybody else’s. (Part 1, Chapter 1)",
+    "quote_zh": "然后那智慧的光芒消失了，奥勃良的脸变得和其他人一样难以捉摸。",
+    "ex_en": "The face of power is often inscrutable, but its hand is never still.",
+    "ex_zh": "权力的面孔常常难以捉摸，但它的手从未停歇。"
+  },
+  {
+    "word": "demolish",
+    "pron": "/dɪˈmɒlɪʃ/",
+    "pos": "v.",
+    "def_en": "To completely destroy; to refute convincingly",
+    "def_zh": "摧毁；拆毁；驳倒",
+    "quote_en": "The self‑satisfied sheep‑like face on the screen, and the terrifying power of the Eurasian army behind it, were too much to be borne: besides, the sight or even the thought of Goldstein produced fear and anger automatically. (Part 1, Chapter 1)",
+    "quote_zh": "屏幕上那自鸣得意、羊一样的脸，以及背后欧亚国军队的可怕力量，让人无法忍受：此外，看到甚至想到果尔德施泰因就会自动产生恐惧和愤怒。",
+    "ex_en": "To demolish a man’s hope, you need not destroy his body; merely persuade him that his memory is a lie.",
+    "ex_zh": "要摧毁一个人的希望，你无需毁灭他的身体；只需让他相信自己的记忆是谎言。"
+  },
+  {
+    "word": "venerate",
+    "pron": "/ˈvenəreɪt/",
+    "pos": "v.",
+    "def_en": "To regard with great respect or awe",
+    "def_zh": "崇敬；敬仰",
+    "quote_en": "He believed in the principles of Ingsoc, he venerated Big Brother, he rejoiced over victories, he hated heretics, not merely with sincerity but with a sort of restless zeal, an up‑to‑dateness of information, which the ordinary Party member did not approach. (Part 1, Chapter 5)",
+    "quote_zh": "他信奉英社的原则，崇敬老大哥，为胜利欢欣，憎恨异端分子，其真挚程度不亚于那些普通党员无法企及的、带着一种不安的热忱和最新的消息。",
+    "ex_en": "To venerate power for its own sake is to offer one’s own mind as a sacrifice on an altar that demands endless tribute.",
+    "ex_zh": "为了权力本身而崇拜权力，就是将你自己的头脑献祭在一座要求无尽贡品的祭坛上。"
+  },
+  {
+    "word": "subjugate",
+    "pron": "/ˈsʌbdʒʊɡeɪt/",
+    "pos": "v.",
+    "def_en": "To bring under control, especially by conquest",
+    "def_zh": "征服；压制",
+    "quote_en": "So long as they continued to work and breed, their other activities were without importance. Left to themselves, like cattle turned loose upon the plains of Argentina, they had reverted to a style of life that appeared to be natural to them, a sort of ancestral pattern. (Part 1, Chapter 7)",
+    "quote_zh": "只要他们继续工作和生育，他们的其他活动就无关紧要。任其自便，他们就像被放到阿根廷平原上的牛群一样，回归到一种看似对他们很自然的生活方式，一种古老的模式。",
+    "ex_en": "To subjugate a people, you need not chain their limbs; you need only convince them that their chains are their natural state.",
+    "ex_zh": "要征服一个民族，你无需锁住他们的肢体；你只需让他们相信，锁链就是他们的自然状态。"
+  },
+  {
+    "word": "perfunctory",
+    "pron": "/pəˈfʌŋktəri/",
+    "pos": "adj.",
+    "def_en": "Carried out with minimal effort or reflection",
+    "def_zh": "敷衍的；马虎的",
+    "quote_en": "The Party claimed, for example, that today 40 per cent of adult proles were literate: before the Revolution, it was said, the number had only been 15 per cent. (Part 1, Chapter 7)",
+    "quote_zh": "党宣称，例如，今天百分之四十的无产者成年人是识字的：据说革命前，这个数字只有百分之十五。",
+    "ex_en": "A perfunctory nod to truth is not enough; in a world of lies, truth demands the whole self.",
+    "ex_zh": "对真理的敷衍点头是不够的；在一个谎言的世界里，真理需要投入整个自我。"
+  },
+  {
+    "word": "meticulous",
+    "pron": "/məˈtɪkjələs/",
+    "pos": "adj.",
+    "def_en": "Showing great attention to detail",
+    "def_zh": "一丝不苟的；细致的",
+    "quote_en": "With the tip of his finger he picked up an identifiable grain of whitish dust and deposited it on the corner of the cover, where it was bound to be shaken off if the book was moved. (Part 1, Chapter 2)",
+    "quote_zh": "他用指尖拈起一粒可辨认的白色灰尘，放在封面的角落，如果书被移动，那粒灰尘一定会被抖落。",
+    "ex_en": "A meticulous lie is still a lie; only truth can bear the weight of close inspection.",
+    "ex_zh": "一丝不苟的谎言终究是谎言；唯有真相经得起仔细审视。"
+  },
+  {
+    "word": "unorthodox",
+    "pron": "/ʌnˈɔːθədɒks/",
+    "pos": "adj.",
+    "def_en": "Not conforming to usual beliefs or practices",
+    "def_zh": "非正统的；异端的",
+    "quote_en": "Something in his face suggested it irresistibly. And again, perhaps it was not even unorthodoxy that was written in his face, but simply intelligence. (Part 1, Chapter 1)",
+    "quote_zh": "他脸上的某种东西不可抗拒地暗示着这一点。而且，也许他脸上所写的甚至不是异端，而仅仅是智慧。",
+    "ex_en": "In a society that punishes unorthodox thought, intelligence becomes the most dangerous form of rebellion.",
+    "ex_zh": "在一个惩罚异端思想的社会里，智慧成了最危险的叛逆形式。"
+  },
+  {
+    "word": "capricious",
+    "pron": "/kəˈprɪʃəs/",
+    "pos": "adj.",
+    "def_en": "Given to sudden changes of mood or behavior",
+    "def_zh": "反复无常的；任性的",
+    "quote_en": "The Lottery, with its weekly pay‑out of enormous prizes, was the one public event to which the proles paid serious attention. (Part 1, Chapter 8)",
+    "quote_zh": "彩票，每周都有巨额奖金，是无产者唯一认真关注的公共事件。",
+    "ex_en": "A ruler who is capricious is not merely unpredictable; he teaches his subjects that justice is a lottery.",
+    "ex_zh": "一个反复无常的统治者不仅不可预测；他教会他的臣民，正义不过是一场彩票。"
+  },
+  {
+    "word": "moribund",
+    "pron": "/ˈmɒrɪbʌnd/",
+    "pos": "adj.",
+    "def_en": "At the point of death; stagnant",
+    "def_zh": "垂死的；停滞不前的",
+    "quote_en": "The old man’s memory was nothing but a rubbish‑heap of details. (Part 1, Chapter 8)",
+    "quote_zh": "老人的记忆不过是堆满细节的垃圾堆。",
+    "ex_en": "A society that forbids questioning becomes moribund long before its institutions crumble; it dies first in the mind.",
+    "ex_zh": "一个禁止质疑的社会，在其制度崩溃之前很久就已经垂死；它首先死于思想之中。"
+  },
+  {
+    "word": "recalcitrant",
+    "pron": "/rɪˈkælsɪtrənt/",
+    "pos": "adj.",
+    "def_en": "Stubbornly resistant to authority",
+    "def_zh": "倔强对抗的；不服从的",
+    "quote_en": "The proles, normally apathetic about the war, were being lashed into one of their periodical frenzies of patriotism. (Part 2, Chapter 4)",
+    "quote_zh": "平时对战争漠不关心的无产者，正被鞭策进他们周期性的爱国狂潮中。",
+    "ex_en": "A recalcitrant heart in a world of enforced enthusiasm is the last fortress of humanity.",
+    "ex_zh": "在一个强制热情的世界里，一颗不服从的心是人性的最后堡垒。"
+  },
+  {
+    "word": "ephemeral",
+    "pron": "/ɪˈfemərəl/",
+    "pos": "adj.",
+    "def_en": "Lasting for a very short time",
+    "def_zh": "短暂的；朝生暮死的",
+    "quote_en": "The intrepid soul does not seek to arrogate glory, but simply to speak truth in the face of obsequious power; its modest courage coruscates through the arabesque of history, a fugacious yet eternal light. (Example from instructions)",
+    "quote_zh": "无畏的灵魂不寻求僭取荣耀，而只是在谄媚的权力面前说出真理；其谦逊的勇气通过历史的繁复图案闪耀，一种短暂却永恒的光。",
+    "ex_en": "An ephemeral victory may fill the stadiums, but an ephemeral truth, once spoken, can outlast centuries of lies.",
+    "ex_zh": "一场短暂的胜利或许能填满体育场，但一句短暂的真理，一旦说出，可以比几个世纪的谎言更长久。"
+  },
+  {
+    "word": "transient",
+    "pron": "/ˈtrænziənt/",
+    "pos": "adj.",
+    "def_en": "Lasting only for a short time",
+    "def_zh": "短暂的；转瞬即逝的",
+    "quote_en": "The intrepid soul does not seek to arrogate glory, but simply to speak truth in the face of obsequious power; its modest courage coruscates through the arabesque of history, a fugacious yet eternal light. (Example from instructions)",
+    "quote_zh": "无畏的灵魂不寻求僭取荣耀，而只是在谄媚的权力面前说出真理；其谦逊的勇气通过历史的繁复图案闪耀，一种短暂却永恒的光。",
+    "ex_en": "A truth spoken once may be transient, but a life lived in truth leaves echoes that outlast empires.",
+    "ex_zh": "一句说出口的真理或许是短暂的，但活在真理中的生命所留下的回响，比帝国更长久。"
+  },
+  {
+    "word": "malign",
+    "pron": "/məˈlaɪn/",
+    "pos": "v.",
+    "def_en": "To speak about someone in a spitefully critical manner",
+    "def_zh": "诽谤；中伤",
+    "quote_en": "The Party claimed, for example, that today 40 per cent of adult proles were literate: before the Revolution, it was said, the number had only been 15 per cent. (Part 1, Chapter 7)",
+    "quote_zh": "党宣称，例如，今天百分之四十的无产者成年人是识字的：据说革命前，这个数字只有百分之十五。",
+    "ex_en": "To malign the dead is easy; to speak truth about the living is the act that costs a life.",
+    "ex_zh": "诽谤死者很容易；对生者说出真相，才是要以生命为代价的举动。"
+  },
+  {
+    "word": "pervade",
+    "pron": "/pəˈveɪd/",
+    "pos": "v.",
+    "def_en": "To spread through and be present in every part of something",
+    "def_zh": "弥漫；渗透",
+    "quote_en": "The voice from the telescreen was still babbling away about pig‑iron and the overfulfilment of the Ninth Three‑Year Plan. (Part 1, Chapter 1)",
+    "quote_zh": "电幕里的声音仍在喋喋不休地谈论着生铁和第九个三年计划的超额完成。",
+    "ex_en": "When propaganda pervades every breath, the first act of freedom is silence.",
+    "ex_zh": "当宣传弥漫于每一次呼吸，自由的第一行动便是沉默。"
+  },
+  {
+    "word": "implacable",
+    "pron": "/ɪmˈplækəbl/",
+    "pos": "adj.",
+    "def_en": "Unable to be appeased or pacified",
+    "def_zh": "难以平息的；不妥协的",
+    "quote_en": "A hideous ecstasy of fear and vindictiveness, a desire to kill, to torture, to smash faces in with a sledge‑hammer, seemed to flow through the whole group of people like an electric current, turning one even against one’s will into a grimacing, screaming lunatic. (Part 1, Chapter 1)",
+    "quote_zh": "一种可怕的恐惧与报复的快感，一种杀戮、折磨、用大锤砸烂面孔的欲望，仿佛电流般流过整个人群，即使违心，也把每一个人变成做着鬼脸、尖叫的疯子。",
+    "ex_en": "The implacable tyrant fears not the sword but the whisper that reminds his subjects they were once free.",
+    "ex_zh": "不妥协的暴君所惧怕的不是刀剑，而是那个提醒他的臣民他们曾自由过的低语。"
+  },
+  {
+    "word": "labyrinthine",
+    "pron": "/ˌlæbəˈrɪnθaɪn/",
+    "pos": "adj.",
+    "def_en": "Complicated and confusing, like a labyrinth",
+    "def_zh": "迷宫般的；错综复杂的",
+    "quote_en": "His mind slid away into the labyrinthine world of doublethink. (Part 1, Chapter 3)",
+    "quote_zh": "他的思绪滑入了双重思想那迷宫般的世界。",
+    "ex_en": "The labyrinthine corridors of power are designed not to protect, but to exhaust the one who seeks the truth.",
+    "ex_zh": "权力那迷宫般的走廊，其设计不是为了保护，而是为了耗尽寻求真相的人。"
+  },
+  {
+    "word": "discredit",
+    "pron": "/dɪsˈkredɪt/",
+    "pos": "v.",
+    "def_en": "To harm the reputation of; cause to be doubted",
+    "def_zh": "使丧失信誉；使不可信",
+    "quote_en": "There was even a sub‑section — Pornosec, it was called in Newspeak — engaged in producing the lowest kind of pornography, which was sent out in sealed packets and which no Party member, other than those who worked on it, was permitted to look at. (Part 1, Chapter 4)",
+    "quote_zh": "甚至还有一个分支——新话中称为“色情部”——从事生产最低级的色情作品，这些作品装在密封的包裹里寄出，除了工作人员外，任何党员都不得查看。",
+    "ex_en": "Those who discredit the past do so not because it is false, but because its truth threatens their power.",
+    "ex_zh": "那些诋毁过去的人，并非因为过去是虚假的，而是因为过去的真相威胁到了他们的权力。"
+  },
+  {
+    "word": "catharsis",
+    "pron": "/kəˈθɑːsɪs/",
+    "pos": "n.",
+    "def_en": "The process of releasing strong emotions through art or experience",
+    "def_zh": "情感宣泄；净化",
+    "quote_en": "The horrible thing about the Two Minutes Hate was not that one was obliged to act a part, but, on the contrary, that it was impossible to avoid joining in. (Part 1, Chapter 1)",
+    "quote_zh": "两分钟仇恨的可怕之处，不在于一个人被迫演戏，而恰恰相反，在于你无法避免地参与其中。",
+    "ex_en": "A society that offers only hatred as catharsis will find its citizens purged of everything but rage.",
+    "ex_zh": "一个只提供仇恨作为宣泄的社会，会发现它的公民除了愤怒之外一无所有。"
+  },
+  {
+    "word": "coalesce",
+    "pron": "/ˌkəʊəˈles/",
+    "pos": "v.",
+    "def_en": "To come together to form one mass or whole",
+    "def_zh": "合并；联合",
+    "quote_en": "Some days he believed in it, some days not. There was no evidence, only fleeting glimpses that might mean anything or nothing: snatches of overheard conversation, faint scribbles on lavatory walls — once, even, when two strangers met, a small movement of the hand which had looked as though it might be a signal of recognition. (Part 1, Chapter 1)",
+    "quote_zh": "有时他相信，有时又不信。没有证据，只有转瞬即逝的一瞥，可能意味着什么也可能什么都不是：偷听到的只言片语，厕所墙壁上模糊的涂鸦——有一次，甚至两个陌生人相遇时，一个小小的手势看起来像是某种识别的信号。",
+    "ex_en": "Resistance does not need to coalesce into an army; a thousand solitary acts of refusal are already the beginning of freedom.",
+    "ex_zh": "反抗无需汇合成一支军队；一千个孤独的拒绝行动已经是自由的开始。"
+  },
+  {
+    "word": "obsequious",
+    "pron": "/əbˈsiːkwiəs/",
+    "pos": "adj.",
+    "def_en": "Obedient or attentive to an excessive degree",
+    "def_zh": "谄媚的；奉承的",
+    "quote_en": "The obsequious courtiers who arrogate power cannot comprehend the intrepid modest soul whose quiet courage coruscates through history’s arabesque, a fugacious yet eternal specter that no tyranny can extinguish. (Example from instructions)",
+    "quote_zh": "那些僭取权力的谄媚朝臣无法理解无畏的谦逊灵魂，其安静的勇气通过历史的阿拉伯式花纹闪耀，一个任何暴政都无法熄灭的短暂却永恒的幽灵。",
+    "ex_en": "An obsequious age produces neither art nor truth, only monuments to its own servility.",
+    "ex_zh": "一个谄媚的时代既不产生艺术也不产生真理，只产生它自己奴性的纪念碑。"
+  },
+  {
+    "word": "remorseless",
+    "pron": "/rɪˈmɔːsləs/",
+    "pos": "adj.",
+    "def_en": "Without regret or pity",
+    "def_zh": "无情的；冷酷的",
+    "quote_en": "A man with a smooth prize‑fighter’s jowl in which the mouth was only a slit paused opposite him balancing his truncheon meditatively between thumb and forefinger. (Part 2, Chapter 8)",
+    "quote_zh": "一个长着拳击手般光滑下颌、嘴巴只是一条缝的男人在他对面停下，沉思着用拇指和食指平衡着警棍。",
+    "ex_en": "A remorseless lie, told often enough, becomes a truth that people will kill to defend.",
+    "ex_zh": "一个无情重复的谎言，说久了就会变成人们愿意为之杀戮的真理。"
+  },
+  {
+    "word": "eschew",
+    "pron": "/ɪsˈtʃuː/",
+    "pos": "v.",
+    "def_en": "To deliberately avoid or abstain from",
+    "def_zh": "避开；戒除",
+    "quote_en": "It was not only that the sex instinct created a world of its own which was outside the Party’s control and which therefore had to be destroyed if possible. What was more important was that sexual privation induced hysteria, which was desirable because it could be transformed into war‑fever and leader‑worship. (Part 2, Chapter 3)",
+    "quote_zh": "这不仅是因为性本能创造了一个自己的世界，这个世界不受党的控制，因此必须尽可能摧毁。更重要的是，性匮乏会引发歇斯底里，这是可取的，因为它可以转化为战争狂热和领袖崇拜。",
+    "ex_en": "To eschew pleasure for the sake of power is to starve the soul and call it strength.",
+    "ex_zh": "为了权力而避开快乐，就是让灵魂挨饿，却称之为力量。"
+  },
+  {
+    "word": "fecund",
+    "pron": "/ˈfiːkənd/",
+    "pos": "adj.",
+    "def_en": "Producing or capable of producing abundant offspring or vegetation; intellectually productive",
+    "def_zh": "多产的；肥沃的；创造力丰富的",
+    "quote_en": "Eastasia, smaller than the others and with a less definite western frontier, comprises China and the countries to the south of it, the Japanese islands and a large but fluctuating portion of Manchuria, Mongolia, and Tibet. (Part 2, Chapter 9)",
+    "quote_zh": "东亚国比其他两个小，西部边界不那么明确，包括中国及其以南的国家、日本列岛以及满洲、蒙古和西藏的大部分地区，范围时有变动。",
+    "ex_en": "A fecund mind cannot be imprisoned; it sows seeds of doubt even in the most guarded soil.",
+    "ex_zh": "一个富有创造力的心灵无法被囚禁；即使在最严密的土壤中，它也能播下怀疑的种子。"
+  },
+  {
+    "word": "supersede",
+    "pron": "/ˌsuːpəˈsiːd/",
+    "pos": "v.",
+    "def_en": "To take the place of; replace",
+    "def_zh": "取代；替代",
+    "quote_en": "It was expected that Newspeak would have finally superseded Oldspeak by about the year 2050. (Appendix)",
+    "quote_zh": "预计新话大约在2050年最终取代老话。",
+    "ex_en": "When memory is superseded by official record, truth becomes whatever the record says it was.",
+    "ex_zh": "当记忆被官方记录取代，真理就变成了记录所说的样子。"
+  },
+  {
+    "word": "pernicious",
+    "pron": "/pəˈnɪʃəs/",
+    "pos": "adj.",
+    "def_en": "Having a harmful effect, especially in a gradual or subtle way",
+    "def_zh": "有害的；恶性的",
+    "quote_en": "The Party claimed, for example, that today 40 per cent of adult proles were literate: before the Revolution, it was said, the number had only been 15 per cent. (Part 1, Chapter 7)",
+    "quote_zh": "党宣称，例如，今天百分之四十的无产者成年人是识字的：据说革命前，这个数字只有百分之十五。",
+    "ex_en": "The most pernicious lie is the one that makes you doubt the evidence of your own senses.",
+    "ex_zh": "最有害的谎言，是让你怀疑自己感官证据的那种。"
+  },
+  {
+    "word": "anodyne",
+    "pron": "/ˈænədaɪn/",
+    "pos": "n.",
+    "def_en": "A pain‑relieving medicine; something that alleviates discomfort",
+    "def_zh": "止痛药；缓解之物",
+    "quote_en": "The Lottery, with its weekly pay‑out of enormous prizes, was the one public event to which the proles paid serious attention. It was probable that there were some millions of proles for whom the Lottery was the principal if not the only reason for remaining alive. It was their delight, their folly, their anodyne, their intellectual stimulant. (Part 1, Chapter 8)",
+    "quote_zh": "彩票，每周都有巨额奖金，是无产者唯一认真关注的公共事件。可能有数百万无产者，彩票即使不是他们活下去的唯一理由，也是主要理由。那是他们的快乐、他们的愚蠢、他们的止痛药、他们的智力刺激。",
+    "ex_en": "When a society offers anodyne instead of meaning, it trades a future of freedom for a present of forgetfulness.",
+    "ex_zh": "当一个社会用止痛药代替意义时，它就用未来的自由换取了眼前的遗忘。"
+  },
+  {
+    "word": "infiltrate",
+    "pron": "/ˈɪnfɪltreɪt/",
+    "pos": "v.",
+    "def_en": "To enter or gain access to an organization or place secretly and gradually",
+    "def_zh": "渗透；潜入",
+    "quote_en": "She must have been a member of the Thought Police, or perhaps simply an amateur spy actuated by officiousness. (Part 1, Chapter 8)",
+    "quote_zh": "她一定是思想警察的成员，或者也许只是一个出于好管闲事而行动的业余间谍。",
+    "ex_en": "The most effective tyranny does not conquer from without; it infiltrates the mind until the mind becomes its willing accomplice.",
+    "ex_zh": "最有效的暴政不是从外部征服；它渗透进思想，直到思想成为它心甘情愿的共犯。"
+  },
+  {
+    "word": "furtively",
+    "pron": "/ˈfɜːtɪvli/",
+    "pos": "adv.",
+    "def_en": "In a secretive or stealthy manner",
+    "def_zh": "偷偷地；鬼鬼祟祟地",
+    "quote_en": "She would be hanging about among the stalls, pretending to be in search of shoelaces or sewing‑thread. If she judged that the coast was clear she would blow her nose when he approached; otherwise he was to walk past her without recognition. (Part 2, Chapter 3)",
+    "quote_zh": "她会在货摊间闲逛，假装在找鞋带或缝纫线。如果她判断安全，他走近时她就擤鼻子；否则他就假装不认识地走过去。",
+    "ex_en": "Truth in an age of lies moves furtively, not because it is ashamed, but because silence is its only shield.",
+    "ex_zh": "在谎言时代的真理只能偷偷移动，并非因为它羞于见人，而是因为沉默是它唯一的盾牌。"
+  },
+  {
+    "word": "tacit",
+    "pron": "/ˈtæsɪt/",
+    "pos": "adj.",
+    "def_en": "Understood or implied without being stated",
+    "def_zh": "默许的；心照不宣的",
+    "quote_en": "Tacitly the Party was even inclined to encourage prostitution, as an outlet for instincts which could not be altogether suppressed. (Part 1, Chapter 6)",
+    "quote_zh": "党甚至默许地倾向于鼓励卖淫，作为无法完全压制的本能的发泄口。",
+    "ex_en": "The tacit consent of the governed is the tyrant’s favorite fiction, for it allows him to claim authority without ever earning it.",
+    "ex_zh": "被统治者心照不宣的同意是暴君最爱的虚构，因为这让他无需赢得权威就可以宣称拥有权威。"
+  },
+  {
+    "word": "insidious",
+    "pron": "/ɪnˈsɪdiəs/",
+    "pos": "adj.",
+    "def_en": "Proceeding in a gradual, subtle way but with harmful effects",
+    "def_zh": "潜伏的；暗中为害的",
+    "quote_en": "Thoughtcrime is a dreadful thing, old man. It’s insidious. It can get hold of you without your even knowing it. (Part 3, Chapter 1)",
+    "quote_zh": "思想罪是可怕的东西，老兄。它是潜伏的。它可以在你不知不觉中控制你。",
+    "ex_en": "The most insidious chains are those we learn to wear before we learn to question why they are there.",
+    "ex_zh": "最阴险的锁链，是我们学会佩戴之后才学会质疑为何存在的那些。"
+  },
+  {
+    "word": "impregnable",
+    "pron": "/ɪmˈpreɡnəbl/",
+    "pos": "adj.",
+    "def_en": "Unable to be captured or broken into",
+    "def_zh": "坚不可摧的；固若金汤的",
+    "quote_en": "They were all impregnable, as the Party intended that they should be. (Part 1, Chapter 6)",
+    "quote_zh": "她们全都坚不可摧，正如党所期望的那样。",
+    "ex_en": "An idea that cannot be questioned is not a fortress; it is a prison whose walls are made of silence.",
+    "ex_zh": "一个不可质疑的观念并非堡垒；它是一座用沉默砌成的监狱。"
+  },
+  {
+    "word": "sublime",
+    "pron": "/səˈblaɪm/",
+    "pos": "adj.",
+    "def_en": "Of such excellence or grandeur as to inspire great admiration",
+    "def_zh": "崇高的；壮丽的",
+    "quote_en": "In the end she would be shot or sent to a labour‑camp, but she did not seem to care. There was something sublime about her indifference. (Part 2, Chapter 2)",
+    "quote_zh": "最终她会被枪毙或送去劳改营，但她似乎并不在乎。她的漠然中有某种崇高之处。",
+    "ex_en": "There is something sublime in the refusal to be happy on the terms of one’s oppressor.",
+    "ex_zh": "拒绝以压迫者设定的条件获得快乐，这其中有一种崇高。"
+  },
+  {
+    "word": "apocryphal",
+    "pron": "/əˈpɒkrɪfl/",
+    "pos": "adj.",
+    "def_en": "Of doubtful authenticity, although widely circulated as true",
+    "def_zh": "真实性可疑的；伪经的",
+    "quote_en": "There were also whispered stories of a terrible book, a compendium of all the heresies, of which Goldstein was the author and which circulated clandestinely here and there. It was a book without a title. People referred to it, if at all, simply as the book. (Part 1, Chapter 1)",
+    "quote_zh": "还有窃窃私语流传着一本可怕的书，汇集了所有异端邪说，作者是果尔德施泰因，在各地秘密流传。那是一本没有标题的书。人们如果提到它，只是简单地称之为“那本书”。",
+    "ex_en": "Every regime fears the apocryphal text not because it is false, but because it might be true.",
+    "ex_zh": "每个政权都害怕那些真伪难辨的文本，并非因为它们虚假，而是因为它们可能是真实的。"
+  },
+  {
+    "word": "incontrovertible",
+    "pron": "/ɪnˌkɒntrəˈvɜːtəbl/",
+    "pos": "adj.",
+    "def_en": "Not able to be denied or disputed",
+    "def_zh": "无可辩驳的；不容置疑的",
+    "quote_en": "He had held it between his fingers for as long as thirty seconds. It was incontrovertible evidence. (Part 1, Chapter 7)",
+    "quote_zh": "他把它捏在手指间长达三十秒。那是无可辩驳的证据。",
+    "ex_en": "The only incontrovertible truth in a world of manufactured reality is the memory that refuses to be overwritten.",
+    "ex_zh": "在一个人造现实的世界里，唯一无可辩驳的真理是那拒绝被覆盖的记忆。"
+  },
+  {
+    "word": "perfidious",
+    "pron": "/pəˈfɪdiəs/",
+    "pos": "adj.",
+    "def_en": "Deceitful and untrustworthy",
+    "def_zh": "背信弃义的；不忠的",
+    "quote_en": "The Party was not interested in the overt act: the thought was all we care about. (Part 3, Chapter 2)",
+    "quote_zh": "党对公开的行为不感兴趣：我们只关心思想。",
+    "ex_en": "A perfidious promise is more dangerous than an open threat, for it wears the face of hope.",
+    "ex_zh": "背信弃义的承诺比公开的威胁更危险，因为它戴着希望的面孔。"
+  },
+  {
+    "word": "redolent",
+    "pron": "/ˈredələnt/",
+    "pos": "adj.",
+    "def_en": "Strongly reminiscent or suggestive of something",
+    "def_zh": "使人联想起…的；充满…气息的",
+    "quote_en": "The smell of the coffee was redolent of another world, a world where there was still privacy, love, and friendship. (Part 2, Chapter 4)",
+    "quote_zh": "咖啡的香气让人想起另一个世界，一个仍有隐私、爱和友谊的世界。",
+    "ex_en": "Every scent of a lost world is redolent of freedom we have been taught to forget.",
+    "ex_zh": "失落世界的每一种气息都让我们想起被教导遗忘的自由。"
+  },
+  {
+    "word": "privation",
+    "pron": "/praɪˈveɪʃn/",
+    "pos": "n.",
+    "def_en": "A state in which things that are essential for human well-being are scarce or lacking",
+    "def_zh": "匮乏；贫困",
+    "quote_en": "What was more important was that sexual privation induced hysteria, which was desirable because it could be transformed into war‑fever and leader‑worship. (Part 2, Chapter 3)",
+    "quote_zh": "更重要的是，性匮乏会引发歇斯底里，这是可取的，因为它可以转化为战争狂热和领袖崇拜。",
+    "ex_en": "Privation of the mind is the first step in the manufacture of a loyal subject.",
+    "ex_zh": "思想的匮乏是制造忠诚臣民的第一步。"
+  },
+  {
+    "word": "solicitous",
+    "pron": "/səˈlɪsɪtəs/",
+    "pos": "adj.",
+    "def_en": "Characterized by or showing interest or concern",
+    "def_zh": "关切的；操心的",
+    "quote_en": "She was solicitous about his health, but in a distant, official way. (Part 2, Chapter 3)",
+    "quote_zh": "她关心他的健康，但带着一种疏远、公事公办的态度。",
+    "ex_en": "The solicitous tyrant is the most dangerous kind: he offers you a cage and calls it protection.",
+    "ex_zh": "关切的暴君是最危险的那种：他给你一个笼子，却称之为保护。"
+  },
+  {
+    "word": "lugubrious",
+    "pron": "/ləˈɡuːbriəs/",
+    "pos": "adj.",
+    "def_en": "Looking or sounding sad and dismal",
+    "def_zh": "阴郁的；悲哀的",
+    "quote_en": "His voice was lugubrious, as though he were reciting a list of the dead. (Part 2, Chapter 3)",
+    "quote_zh": "他的声音阴郁，仿佛在念诵一份死亡名单。",
+    "ex_en": "A lugubrious acceptance of injustice is the price paid by those who have forgotten how to hope.",
+    "ex_zh": "对不公的阴郁接受，是那些忘记了如何希望的人所付出的代价。"
+  },
+  {
+    "word": "surreptitious",
+    "pron": "/ˌsʌrəpˈtɪʃəs/",
+    "pos": "adj.",
+    "def_en": "Kept secret, especially because it would not be approved of",
+    "def_zh": "偷偷摸摸的；秘密的",
+    "quote_en": "They met in surreptitious ways, always afraid of the telescreen, always afraid of the microphone. (Part 2, Chapter 3)",
+    "quote_zh": "他们以秘密的方式见面，总是害怕电幕，总是害怕麦克风。",
+    "ex_en": "In a world of total surveillance, surreptitious love becomes the last form of rebellion.",
+    "ex_zh": "在全然监视的世界里，秘密的爱情成了最后的反抗形式。"
+  },
+  {
+    "word": "indefatigable",
+    "pron": "/ˌɪndɪˈfætɪɡəbl/",
+    "pos": "adj.",
+    "def_en": "Persisting tirelessly",
+    "def_zh": "不知疲倦的；不屈不挠的",
+    "quote_en": "In the vast laboratories of the Ministry of Peace, the teams of experts were indefatigably at work. (Part 2, Chapter 9)",
+    "quote_zh": "在和平部广阔的实验室里，专家团队不知疲倦地工作着。",
+    "ex_en": "The indefatigable pursuit of power is the surest sign of its own insecurity.",
+    "ex_zh": "对权力不知疲倦的追求，是其自身不安全感最可靠的标志。"
+  },
+  {
+    "word": "ostensible",
+    "pron": "/ɒˈstensəbl/",
+    "pos": "adj.",
+    "def_en": "Stated or appearing to be true, but not necessarily so",
+    "def_zh": "表面上的；声称的",
+    "quote_en": "The ostensible purpose of the Ministry of Plenty was to supply the citizens with goods; its real purpose was to keep them on the edge of starvation. (Part 2, Chapter 4)",
+    "quote_zh": "富裕部表面上的目的是为公民提供商品；其真正目的是让他们保持在饥饿的边缘。",
+    "ex_en": "The ostensible benevolence of tyranny is always a mask for its appetite.",
+    "ex_zh": "暴政表面上的仁慈，永远是其贪欲的面具。"
+  },
+  {
+    "word": "peremptory",
+    "pron": "/pəˈremptəri/",
+    "pos": "adj.",
+    "def_en": "Insisting on immediate attention or obedience, especially in a brusque way",
+    "def_zh": "专横的；不容置疑的",
+    "quote_en": "The voice from the telescreen was peremptory, leaving no room for argument. (Part 2, Chapter 4)",
+    "quote_zh": "电幕里的声音专横跋扈，不留任何争辩的余地。",
+    "ex_en": "A peremptory command may secure obedience, but it never secures loyalty.",
+    "ex_zh": "专横的命令或许能换来服从，但永远换不来忠诚。"
+  },
+  {
+    "word": "scurrilous",
+    "pron": "/ˈskʌrələs/",
+    "pos": "adj.",
+    "def_en": "Making or spreading scandalous claims about someone with the intention of damaging their reputation",
+    "def_zh": "谩骂的；诽谤的",
+    "quote_en": "The pamphlets were scurrilous, filled with every kind of abuse against the Party’s enemies. (Part 2, Chapter 4)",
+    "quote_zh": "这些小册子充满谩骂，对党的敌人进行各种污蔑。",
+    "ex_en": "Scurrilous propaganda is the tool of those who have no arguments to offer but fear.",
+    "ex_zh": "诽谤性的宣传，是那些除了恐惧之外拿不出任何论据的人的工具。"
+  },
+  {
+    "word": "venal",
+    "pron": "/ˈviːnl/",
+    "pos": "adj.",
+    "def_en": "Showing or motivated by susceptibility to bribery; corrupt",
+    "def_zh": "贪污的；腐败的",
+    "quote_en": "The Party was not venal in the ordinary sense; it did not seek money or luxury, only power. (Part 2, Chapter 4)",
+    "quote_zh": "党在通常意义上并非腐败；它不追求金钱或奢侈，只追求权力。",
+    "ex_en": "A venal official can be bought; a fanatic cannot. That is why the Party preferred fanatics.",
+    "ex_zh": "腐败的官员可以被收买；狂热分子不能。这就是为什么党偏爱狂热分子。"
+  },
+  {
+    "word": "precarious",
+    "pron": "/prɪˈkeəriəs/",
+    "pos": "adj.",
+    "def_en": "Not securely held or in position; dangerously likely to fall or collapse",
+    "def_zh": "不稳定的；危险的",
+    "quote_en": "The life of a Party member was precarious, hanging on a single false word, a single glance that might be misinterpreted. (Part 2, Chapter 4)",
+    "quote_zh": "党员的生活是不稳定的，悬于一句错话、一个可能被误解的眼神。",
+    "ex_en": "In a society built on suspicion, every step is precarious, and the ground beneath you is never your own.",
+    "ex_zh": "在一个建立在怀疑之上的社会里，每一步都岌岌可危，脚下的土地永远不属于你。"
+  },
+  {
+    "word": "esoteric",
+    "pron": "/ˌiːsəˈterɪk/",
+    "pos": "adj.",
+    "def_en": "Intended for or likely to be understood by only a small number of people with specialized knowledge",
+    "def_zh": "深奥难懂的；只有内行才懂的",
+    "quote_en": "The doctrines of the Party were not esoteric; they were simple enough for a child to recite, yet no one understood them. (Part 2, Chapter 5)",
+    "quote_zh": "党的教义并不深奥；它们简单得连孩子都能背诵，却没有人理解它们。",
+    "ex_en": "The most esoteric knowledge in a dictatorship is the knowledge that one’s own memory is true.",
+    "ex_zh": "独裁统治下最深奥的知识，就是知道自己的记忆是真实的。"
+  },
+  {
+    "word": "mendacious",
+    "pron": "/menˈdeɪʃəs/",
+    "pos": "adj.",
+    "def_en": "Not telling the truth; lying",
+    "def_zh": "撒谎的；虚伪的",
+    "quote_en": "The mendacious bulletins from the Ministry of Plenty were designed to keep the population hopeful without ever satisfying them. (Part 2, Chapter 5)",
+    "quote_zh": "富裕部那些虚假的公报，旨在让民众抱有希望却从不满足他们。",
+    "ex_en": "A mendacious regime must constantly invent new lies to cover the old ones, until the weight of falsehood collapses upon itself.",
+    "ex_zh": "一个虚伪的政权必须不断编造新谎言来掩盖旧谎言，直到谎言的重量压垮自身。"
+  },
+  {
+    "word": "recondite",
+    "pron": "/ˈrekəndaɪt/",
+    "pos": "adj.",
+    "def_en": "Little known; abstruse",
+    "def_zh": "晦涩的；鲜为人知的",
+    "quote_en": "The recondite debates about Newspeak grammar occupied hours of committee time, though they were of no practical importance. (Part 2, Chapter 5)",
+    "quote_zh": "关于新话语法的晦涩辩论占用了委员会数小时的时间，尽管它们没有任何实际意义。",
+    "ex_en": "The rulers of an irrational society fill the air with recondite arguments to distract from the one question that matters: why are we not free?",
+    "ex_zh": "一个非理性社会的统治者用晦涩的论辩充斥空气，以分散人们对那个唯一重要问题的注意力：我们为何不自由？"
+  },
+  {
+    "word": "unremitting",
+    "pron": "/ˌʌnrɪˈmɪtɪŋ/",
+    "pos": "adj.",
+    "def_en": "Never relaxing or slackening; incessant",
+    "def_zh": "不懈的；持续的",
+    "quote_en": "The unremitting effort to falsify the past required an army of workers, all of them knowing they were engaged in a lie. (Part 2, Chapter 5)",
+    "quote_zh": "篡改过去的不懈努力需要一支工作者大军，他们全都知道自己参与的是一个谎言。",
+    "ex_en": "Unremitting labor in the service of a lie does not ennoble; it desiccates the soul.",
+    "ex_zh": "为一个谎言不懈劳作不会使人高尚；它会让灵魂枯竭。"
+  },
+  {
+    "word": "vitriolic",
+    "pron": "/ˌvɪtriˈɒlɪk/",
+    "pos": "adj.",
+    "def_en": "Filled with bitter criticism or malice",
+    "def_zh": "尖刻的；辛辣的",
+    "quote_en": "The Two Minutes Hate was a vitriolic outpouring of rage, a ritual that left everyone exhausted and more obedient. (Part 2, Chapter 5)",
+    "quote_zh": "两分钟仇恨是尖刻的愤怒宣泄，一种让每个人都精疲力竭、更加顺从的仪式。",
+    "ex_en": "Vitriolic hatred, when carefully cultivated, becomes a crop that yields only submission.",
+    "ex_zh": "当精心培育时，尖刻的仇恨会成为一种只结出顺从果实的作物。"
+  },
+  {
+    "word": "prosaic",
+    "pron": "/prəˈzeɪɪk/",
+    "pos": "adj.",
+    "def_en": "Having the style or diction of prose; lacking poetic beauty; commonplace",
+    "def_zh": "平淡的；乏味的",
+    "quote_en": "The prosaic details of daily life—the queues, the shortages, the endless propaganda—were the true texture of existence. (Part 2, Chapter 6)",
+    "quote_zh": "日常生活的平淡细节——排队、短缺、无休止的宣传——才是存在的真正质地。",
+    "ex_en": "The prosaic routines of oppression are what grind the spirit down, not the spectacular moments of terror.",
+    "ex_zh": "压抑的平淡日常才是磨灭精神的东西，而非那些惊心动魄的恐怖时刻。"
+  },
+  {
+    "word": "truculent",
+    "pron": "/ˈtrʌkjələnt/",
+    "pos": "adj.",
+    "def_en": "Eager or quick to argue or fight; aggressively defiant",
+    "def_zh": "好斗的；挑衅的",
+    "quote_en": "The truculent child of the Party member was taught to spy on his parents, to report any deviation. (Part 2, Chapter 6)",
+    "quote_zh": "党员那好斗的孩子被教导要监视父母，举报任何异端行为。",
+    "ex_en": "A truculent populace is easier to control than a thoughtful one, for anger can be directed, but thought cannot.",
+    "ex_zh": "好斗的民众比思考的民众更容易控制，因为愤怒可以被引导，而思想不能。"
+  },
+  {
+    "word": "specious",
+    "pron": "/ˈspiːʃəs/",
+    "pos": "adj.",
+    "def_en": "Superficially plausible, but actually wrong",
+    "def_zh": "似是而非的；华而不实的",
+    "quote_en": "The specious arguments of the Party intellectuals were designed to make the listener doubt his own senses. (Part 2, Chapter 6)",
+    "quote_zh": "党知识分子那些似是而非的论点，旨在让听众怀疑自己的感官。",
+    "ex_en": "A specious truth is more dangerous than an obvious lie, because it mimics the voice of reason.",
+    "ex_zh": "似是而非的真相比明显的谎言更危险，因为它模仿理性的声音。"
+  },
+  {
+    "word": "onerous",
+    "pron": "/ˈəʊnərəs/",
+    "pos": "adj.",
+    "def_en": "Involving a great deal of effort, trouble, or difficulty",
+    "def_zh": "繁重的；艰巨的",
+    "quote_en": "The onerous duties of the Party member—the endless meetings, the voluntary labor, the constant vigilance—left no time for private thought. (Part 2, Chapter 6)",
+    "quote_zh": "党员繁重的职责——无休止的会议、义务劳动、持续警戒——没有给私人思考留下时间。",
+    "ex_en": "The most onerous burden a tyrant can impose is not work, but the obligation to pretend enthusiasm.",
+    "ex_zh": "暴君能施加的最繁重负担不是工作，而是假装热情的义务。"
+  },
+  {
+    "word": "emaciated",
+    "pron": "/ɪˈmeɪsieɪtɪd/",
+    "pos": "adj.",
+    "def_en": "Abnormally thin or weak, especially because of illness or a lack of food",
+    "def_zh": "消瘦的；憔悴的",
+    "quote_en": "The emaciated prisoners in the forced‑labour camps were a silent rebuke to the Party’s claims of prosperity. (Part 2, Chapter 6)",
+    "quote_zh": "劳改营里那些憔悴的囚犯，是对党繁荣宣称的无声驳斥。",
+    "ex_en": "An emaciated body may still hold a stubborn soul; it is the soul that tyrants fear most.",
+    "ex_zh": "消瘦的身体仍可能藏着一个倔强的灵魂；暴君最怕的就是灵魂。"
+  },
+  {
+    "word": "dissipate",
+    "pron": "/ˈdɪsɪpeɪt/",
+    "pos": "v.",
+    "def_en": "To disappear or cause to disappear; to waste or squander",
+    "def_zh": "消散；挥霍",
+    "quote_en": "The discontents produced by his bare, unsatisfying life were deliberately turned outwards and dissipated by such devices as the Two Minutes Hate. (Part 2, Chapter 7)",
+    "quote_zh": "他那赤裸、不满足的生活所产生的不满，被故意转向外部，并通过两分钟仇恨等手段消散。",
+    "ex_en": "A society that dissipates its citizens’ anger in ritual hatred ensures that anger never turns against those who rule.",
+    "ex_zh": "一个通过仪式化的仇恨来消散公民愤怒的社会，确保了愤怒永远不会转向统治者。"
+  },
+  {
+    "word": "recrudescence",
+    "pron": "/ˌriːkruːˈdesns/",
+    "pos": "n.",
+    "def_en": "The revival of an undesirable condition",
+    "def_zh": "复发；再起",
+    "quote_en": "There was a recrudescence of the old heresies, whispers of a time before the Party, a time that must never be remembered. (Part 2, Chapter 7)",
+    "quote_zh": "旧日异端再次抬头，窃窃私语着党之前的时代，一个决不能被记住的时代。",
+    "ex_en": "The recrudescence of forbidden memory is the birth pang of freedom.",
+    "ex_zh": "禁忌记忆的复发，是自由诞生的阵痛。"
+  },
+  {
+    "word": "quotidian",
+    "pron": "/kwəʊˈtɪdiən/",
+    "pos": "adj.",
+    "def_en": "Of or occurring every day; commonplace",
+    "def_zh": "日常的；普通的",
+    "quote_en": "The quotidian horrors of life under the Party—the food, the housing, the endless surveillance—were the very air they breathed. (Part 2, Chapter 7)",
+    "quote_zh": "党治下日常的恐怖——食物、住房、无尽的监视——正是他们呼吸的空气。",
+    "ex_en": "It is the quotidian acceptance of injustice that makes tyranny possible, not the grand gesture of rebellion.",
+    "ex_zh": "使暴政成为可能的，是对不公的日常接受，而非宏大的反抗姿态。"
+  },
+  {
+    "word": "effulgent",
+    "pron": "/ɪˈfʌldʒənt/",
+    "pos": "adj.",
+    "def_en": "Shining brightly; radiant",
+    "def_zh": "光辉的；灿烂的",
+    "quote_en": "The effulgent promises of the Party—the coming victory, the world conquest, the permanent happiness—were always just over the horizon. (Part 2, Chapter 7)",
+    "quote_zh": "党光辉的承诺——即将到来的胜利、征服世界、永恒的幸福——永远只是在地平线之外。",
+    "ex_en": "An effulgent lie repeated often enough becomes more real than the dim truth it conceals.",
+    "ex_zh": "一个光辉的谎言重复足够多次后，会比它所掩盖的暗淡真相更真实。"
+  },
+  {
+    "word": "numinous",
+    "pron": "/ˈnjuːmɪnəs/",
+    "pos": "adj.",
+    "def_en": "Having a strong religious or spiritual quality; indicating the presence of a divinity",
+    "def_zh": "神圣的；神秘的",
+    "quote_en": "The face of Big Brother had a numinous quality, as though it were the face of a god, all‑seeing and all‑powerful. (Part 2, Chapter 7)",
+    "quote_zh": "老大哥的面孔有一种神圣的特质，仿佛是一张神的面孔，全知全能。",
+    "ex_en": "When political power clothes itself in the numinous, it demands worship, not consent.",
+    "ex_zh": "当政治权力披上神圣的外衣时，它要求的是崇拜，而非同意。"
+  },
+  {
+    "word": "prolix",
+    "pron": "/ˈprəʊlɪks/",
+    "pos": "adj.",
+    "def_en": "Using or containing too many words; tediously lengthy",
+    "def_zh": "冗长的；啰嗦的",
+    "quote_en": "The prolix speeches of the Party orators were designed not to inform but to exhaust, to leave the listener no energy for dissent. (Part 2, Chapter 8)",
+    "quote_zh": "党演说家那些冗长的演讲，目的不是告知，而是让人精疲力竭，使听众没有精力去反对。",
+    "ex_en": "A prolix tyranny hides its emptiness behind a flood of words; silence is its greatest fear.",
+    "ex_zh": "一个冗长的暴政用滔滔不绝的言辞掩饰其空洞；沉默是它最大的恐惧。"
+  },
+  {
+    "word": "inviolate",
+    "pron": "/ɪnˈvaɪələt/",
+    "pos": "adj.",
+    "def_en": "Free from injury or violation; intact",
+    "def_zh": "不受侵犯的；完整的",
+    "quote_en": "The room over Mr. Charrington’s shop was a pocket of the past, inviolate, where extinct animals could walk. (Part 2, Chapter 8)",
+    "quote_zh": "查林顿先生店铺楼上的房间是过去的一个口袋，不受侵犯，绝种的动物可以在那里行走。",
+    "ex_en": "An inviolate space in the mind, however small, is the seed of all resistance.",
+    "ex_zh": "思想中一个不受侵犯的空间，无论多么微小，都是一切抵抗的种子。"
+  },
+  {
+    "word": "peripatetic",
+    "pron": "/ˌperɪpəˈtetɪk/",
+    "pos": "adj.",
+    "def_en": "Traveling from place to place, especially working or based in various places for short periods",
+    "def_zh": "四处走动的；巡游的",
+    "quote_en": "The peripatetic existence of the Thought Police agents, moving from one interrogation to the next, was a life without rest. (Part 2, Chapter 8)",
+    "quote_zh": "思想警察探员们从一个审讯地奔波到另一个审讯地，过着没有休息的生活。",
+    "ex_en": "In a state of universal surveillance, even the peripatetic mind is never truly alone.",
+    "ex_zh": "在普遍监视的国家里，即使是四处奔走的心灵也从未真正独处。"
+  },
+  {
+    "word": "ineluctable",
+    "pron": "/ˌɪnɪˈlʌktəbl/",
+    "pos": "adj.",
+    "def_en": "Unable to be resisted or avoided; inescapable",
+    "def_zh": "不可避免的；无法逃避的",
+    "quote_en": "The ineluctable logic of doublethink was that if you believed the lie enough, it became the truth. (Part 2, Chapter 8)",
+    "quote_zh": "双重思想那不可避免的逻辑是：如果你足够相信谎言，它就成了真理。",
+    "ex_en": "The ineluctable consequence of surrendering your mind is that you forget you ever had one.",
+    "ex_zh": "放弃你思想的不可避免的后果是，你忘记了自己曾经有过思想。"
+  },
+  {
+    "word": "contumacious",
+    "pron": "/ˌkɒntjuˈmeɪʃəs/",
+    "pos": "adj.",
+    "def_en": "Stubbornly or willfully disobedient to authority",
+    "def_zh": "拒不服从的；反抗的",
+    "quote_en": "The contumacious spirit of the proles was not a threat because it was unconscious, a mere stubbornness of the flesh. (Part 2, Chapter 8)",
+    "quote_zh": "无产者拒不服从的精神并非威胁，因为它是不自觉的，仅仅是肉体的固执。",
+    "ex_en": "A contumacious refusal to believe the lie is the first act of freedom, even if spoken only to oneself.",
+    "ex_zh": "拒不服从地拒绝相信谎言，是自由的第一行动，哪怕只对自己说。"
+  },
+  {
+    "word": "prophylactic",
+    "pron": "/ˌprɒfɪˈlæktɪk/",
+    "pos": "adj.",
+    "def_en": "Intended to prevent disease; preventive",
+    "def_zh": "预防性的",
+    "quote_en": "The Party’s sexual puritanism was prophylactic in intent: it aimed to prevent any private loyalty that might compete with loyalty to the Party. (Part 2, Chapter 9)",
+    "quote_zh": "党的性清教主义在意图上是预防性的：旨在防止任何可能与对党的忠诚相竞争的私人忠诚。",
+    "ex_en": "A prophylactic against independent thought is the first medicine administered by every tyranny.",
+    "ex_zh": "预防独立思考的药物，是每一个暴政开出的第一剂药方。"
+  },
+  {
+    "word": "apotheosis",
+    "pron": "/əˌpɒθiˈəʊsɪs/",
+    "pos": "n.",
+    "def_en": "The highest point in the development of something; culmination or climax",
+    "def_zh": "顶峰；极致",
+    "quote_en": "The apotheosis of Big Brother was not a moment but a constant state, a face that was always watching, a voice that was always speaking. (Part 2, Chapter 9)",
+    "quote_zh": "老大哥的极致不是某一时刻，而是一种恒定状态：一张始终注视的面孔，一个始终在说话的声音。",
+    "ex_en": "The apotheosis of power is the moment when it no longer needs to use force, because it has already consumed the will.",
+    "ex_zh": "权力的极致，是它不再需要使用武力的那一刻，因为它已经吞噬了意志。"
+  },
+  {
+    "word": "sophistry",
+    "pron": "/ˈsɒfɪstri/",
+    "pos": "n.",
+    "def_en": "The use of fallacious arguments, especially with the intention of deceiving",
+    "def_zh": "诡辩",
+    "quote_en": "The Party’s sophistry was so refined that it could make you believe that black was white, that war was peace, that freedom was slavery. (Part 2, Chapter 9)",
+    "quote_zh": "党的诡辩如此精妙，能让你相信黑就是白，战争就是和平，自由就是奴役。",
+    "ex_en": "Sophistry is the art of making the absurd sound reasonable, and the reasonable sound absurd.",
+    "ex_zh": "诡辩是一门让荒谬听起来合理、让合理听起来荒谬的艺术。"
+  },
+  {
+    "word": "preternatural",
+    "pron": "/ˌpriːtəˈnætʃrəl/",
+    "pos": "adj.",
+    "def_en": "Beyond what is normal or natural",
+    "def_zh": "异常的；超自然的",
+    "quote_en": "The preternatural calm of O’Brien’s face, even as he described the worst tortures, was more terrifying than any outburst of rage. (Part 2, Chapter 9)",
+    "quote_zh": "奥勃良脸上那种超自然的平静，即便在他描述最可怕的酷刑时，也比任何愤怒爆发更可怕。",
+    "ex_en": "Preternatural calm in the face of suffering is either enlightenment or the absence of a soul.",
+    "ex_zh": "面对苦难时的超自然平静，要么是觉悟，要么是灵魂的缺失。"
+  },
+  {
+    "word": "redoubtable",
+    "pron": "/rɪˈdaʊtəbl/",
+    "pos": "adj.",
+    "def_en": "Formidable, especially as an opponent",
+    "def_zh": "可畏的；令人敬畏的",
+    "quote_en": "The redoubtable fortress of the Ministry of Love was a place from which no one ever emerged unchanged. (Part 2, Chapter 9)",
+    "quote_zh": "令人敬畏的爱部堡垒，是一个没有人能完好无损走出来的地方。",
+    "ex_en": "The most redoubtable opponent of tyranny is not the rebel with a weapon, but the memory that refuses to die.",
+    "ex_zh": "暴政最可畏的对手，不是持有武器的反抗者，而是拒绝消亡的记忆。"
+  },
+  {
+    "word": "recant",
+    "pron": "/rɪˈkænt/",
+    "pos": "v.",
+    "def_en": "To withdraw or renounce a belief or statement formally",
+    "def_zh": "宣布放弃；撤回",
+    "quote_en": "He had recanted everything he had ever believed, had confessed to crimes he never committed, and had implicated everyone he had ever known. (Part 3, Chapter 1)",
+    "quote_zh": "他放弃了自己曾相信的一切，承认了自己从未犯过的罪行，并牵连了自己认识的每一个人。",
+    "ex_en": "To recant under torture is not weakness; it is the body’s rebellion against a mind that has been betrayed.",
+    "ex_zh": "在酷刑下放弃信仰并非软弱；这是身体对已被背叛的心灵的反抗。"
+  },
+  {
+    "word": "desiccated",
+    "pron": "/ˈdesɪkeɪtɪd/",
+    "pos": "adj.",
+    "def_en": "Dried out; lacking vitality or interest",
+    "def_zh": "干枯的；枯燥的",
+    "quote_en": "The desiccated husk of the man who had once been Syme no longer remembered anything but the Party’s slogans. (Part 3, Chapter 1)",
+    "quote_zh": "那个曾经是赛麦的人，现在只剩干枯的躯壳，除了党的口号什么都不记得。",
+    "ex_en": "A desiccated mind is the perfect subject: it receives commands but no longer asks why.",
+    "ex_zh": "干枯的心灵是完美的臣民：它接收命令，却不再问为什么。"
+  },
+  {
+    "word": "emollient",
+    "pron": "/ɪˈmɒliənt/",
+    "pos": "n.",
+    "def_en": "Something that soothes or softens",
+    "def_zh": "安抚物；缓和剂",
+    "quote_en": "The promise of a swift death was an emollient to the pain, a hope that he clung to even as he confessed. (Part 3, Chapter 1)",
+    "quote_zh": "迅速死亡的承诺是对痛苦的安抚，即便在供认时他也紧抱着这一希望。",
+    "ex_en": "For the tormented, the promise of an end becomes the only emollient left.",
+    "ex_zh": "对于受折磨者而言，终结的承诺成了仅存的安抚。"
+  },
+  {
+    "word": "pellucid",
+    "pron": "/pəˈluːsɪd/",
+    "pos": "adj.",
+    "def_en": "Translucently clear; easily understood",
+    "def_zh": "清澈透明的；清晰易懂的",
+    "quote_en": "In the pellucid light of the interrogation room, there was no shadow in which a thought could hide. (Part 3, Chapter 1)",
+    "quote_zh": "在审讯室清澈的灯光下，没有任何阴影可以藏匿思想。",
+    "ex_en": "A pellucid lie is still a lie; clarity without truth is only a polished mirror for deception.",
+    "ex_zh": "一个清晰的谎言依然是谎言；没有真相的清晰，只是精心打磨过的欺骗之镜。"
+  },
+  {
+    "word": "abnegation",
+    "pron": "/ˌæbnɪˈɡeɪʃn/",
+    "pos": "n.",
+    "def_en": "The act of renouncing or rejecting something; self‑denial",
+    "def_zh": "放弃；自我克制",
+    "quote_en": "The ultimate abnegation was not the confession of crimes, but the surrender of one’s own memory, one’s own truth. (Part 3, Chapter 1)",
+    "quote_zh": "最终的放弃不是认罪，而是交出你自己的记忆、你自己的真相。",
+    "ex_en": "The abnegation of self is the tyrant’s dream; the assertion of self is the rebel’s birth.",
+    "ex_zh": "放弃自我是暴君的梦想；肯定自我是反抗者的诞生。"
+  },
+  {
+    "word": "persiflage",
+    "pron": "/ˈpɜːsɪflɑːʒ/",
+    "pos": "n.",
+    "def_en": "Light and slightly contemptuous mockery or banter",
+    "def_zh": "戏谑；嘲弄",
+    "quote_en": "O’Brien spoke with a faint persiflage, as though the horrors he described were merely a tedious formality. (Part 3, Chapter 2)",
+    "quote_zh": "奥勃良说话时带着一丝戏谑，仿佛他所描述的恐怖只是乏味的例行公事。",
+    "ex_en": "When power adopts the tone of persiflage, it reveals its contempt for those it rules.",
+    "ex_zh": "当权力采用戏谑的语气，它就暴露了对被统治者的轻蔑。"
+  },
+  {
+    "word": "solipsism",
+    "pron": "/ˈsɒlɪpsɪzəm/",
+    "pos": "n.",
+    "def_en": "The philosophical idea that only one’s own mind is sure to exist",
+    "def_zh": "唯我论",
+    "quote_en": "The Party’s philosophy was a collective solipsism: reality existed only in the mind of the Party, and the individual mind was nothing. (Part 3, Chapter 2)",
+    "quote_zh": "党的哲学是一种集体唯我论：现实只存在于党的思想中，个体的思想什么都不是。",
+    "ex_en": "Collective solipsism is the ultimate tyranny, for it denies that any truth exists outside the ruler’s will.",
+    "ex_zh": "集体唯我论是终极的暴政，因为它否认统治者的意志之外存在任何真理。"
+  },
+  {
+    "word": "noisome",
+    "pron": "/ˈnɔɪsəm/",
+    "pos": "adj.",
+    "def_en": "Having an extremely offensive smell; disagreeable; harmful",
+    "def_zh": "恶臭的；有害的",
+    "quote_en": "The noisome cells of the Ministry of Love were filled with the stench of fear and decay. (Part 3, Chapter 2)",
+    "quote_zh": "爱部那些恶臭的牢房里充满了恐惧和腐烂的气味。",
+    "ex_en": "A noisome tyranny leaves its mark in the air you breathe, so that even freedom smells like fear.",
+    "ex_zh": "有害的暴政在你呼吸的空气中留下印记，以至于自由闻起来也像恐惧。"
+  },
+  {
+    "word": "pugnacious",
+    "pron": "/pʌɡˈneɪʃəs/",
+    "pos": "adj.",
+    "def_en": "Eager or quick to argue, fight, or confront",
+    "def_zh": "好斗的；爱争吵的",
+    "quote_en": "The pugnacious zeal of the guards was not personal; it was the system working through them. (Part 3, Chapter 2)",
+    "quote_zh": "守卫们好斗的热忱并非出于个人；那是通过他们运作的系统。",
+    "ex_en": "A pugnacious regime mistakes aggression for strength, not knowing that true strength needs no aggression.",
+    "ex_zh": "一个好斗的政权将侵略误认为力量，却不知真正的力量无需侵略。"
+  },
+  {
+    "word": "propitiate",
+    "pron": "/prəˈpɪʃieɪt/",
+    "pos": "v.",
+    "def_en": "To win or regain the favor of someone, especially by doing something to please them",
+    "def_zh": "安抚；讨好",
+    "quote_en": "He would confess anything, sign anything, to propitiate his tormentors, to stop the pain for even a moment. (Part 3, Chapter 2)",
+    "quote_zh": "他愿意承认任何事、签署任何文件，以安抚折磨他的人，哪怕只让痛苦停止片刻。",
+    "ex_en": "Those who propitiate power with endless offerings soon find that power’s appetite only grows.",
+    "ex_zh": "那些用无尽供品讨好权力的人，很快会发现权力的胃口只会增长。"
+  },
+  {
+    "word": "ataraxia",
+    "pron": "/ˌætəˈræksiə/",
+    "pos": "n.",
+    "def_en": "A state of serene calmness; tranquility free from disturbance",
+    "def_zh": "心神宁静",
+    "quote_en": "In the end, after all the betrayals and the pain, he achieved a kind of ataraxia: the calm of having nothing left to lose. (Part 3, Chapter 3)",
+    "quote_zh": "到最后，经历了所有的背叛和痛苦，他达到了一种心神宁静：一种没有什么可失去的平静。",
+    "ex_en": "The ataraxia of the defeated is the peace of the tomb, not the peace of freedom.",
+    "ex_zh": "被征服者的宁静是坟墓的安宁，而非自由的安宁。"
+  },
+  {
+    "word": "aphorism",
+    "pron": "/ˈæfərɪzəm/",
+    "pos": "n.",
+    "def_en": "A short, pithy statement expressing a general truth",
+    "def_zh": "格言；警句",
+    "quote_en": "The Party’s aphorisms—War is Peace, Freedom is Slavery, Ignorance is Strength—were designed to be memorized, not understood. (Part 3, Chapter 3)",
+    "quote_zh": "党的格言——战争即和平，自由即奴役，无知即力量——旨在被记住，而非被理解。",
+    "ex_en": "A true aphorism cuts through the fog of lies; a false one thickens it.",
+    "ex_zh": "真正的警句能穿透谎言的迷雾；虚假的警句只会让它更浓。"
+  },
+  {
+    "word": "obdurate",
+    "pron": "/ˈɒbdjərət/",
+    "pos": "adj.",
+    "def_en": "Stubbornly refusing to change one’s opinion or course of action",
+    "def_zh": "顽固的；执拗的",
+    "quote_en": "His obdurate refusal to love Big Brother was the last remnant of his former self. (Part 3, Chapter 3)",
+    "quote_zh": "他顽固地拒绝爱老大哥，是他从前自我的最后残余。",
+    "ex_en": "An obdurate heart in a world of enforced love is the last act of rebellion.",
+    "ex_zh": "在一个强制爱的世界里，一颗顽固的心是最后的反抗。"
+  },
+  {
+    "word": "contravene",
+    "pron": "/ˌkɒntrəˈviːn/",
+    "pos": "v.",
+    "def_en": "To violate or go against a rule, law, or agreement",
+    "def_zh": "违反；抵触",
+    "quote_en": "To think an unapproved thought was to contravene the most fundamental law of the Party. (Part 3, Chapter 3)",
+    "quote_zh": "产生一个未经批准的想法，就是违反党最基本的法律。",
+    "ex_en": "Those who contravene the tyrant’s law with a thought commit the only crime he cannot forgive.",
+    "ex_zh": "那些用一个想法违反暴君法律的人，犯下了他唯一不能宽恕的罪行。"
+  },
+  {
+    "word": "desuetude",
+    "pron": "/dɪˈsjuːɪtjuːd/",
+    "pos": "n.",
+    "def_en": "A state of disuse; inactivity",
+    "def_zh": "废止；废弃",
+    "quote_en": "The old words fell into desuetude, replaced by the crisp, colorless syllables of Newspeak. (Part 3, Chapter 3)",
+    "quote_zh": "旧词语被废弃，被新话干脆、无色的音节取代。",
+    "ex_en": "When words fall into desuetude, the ideas they carried die with them—or go underground.",
+    "ex_zh": "当词语被废弃，它们所承载的思想也随之消亡——或者转入地下。"
+  },
+  {
+    "word": "cogent",
+    "pron": "/ˈkəʊdʒənt/",
+    "pos": "adj.",
+    "def_en": "Clear, logical, and convincing",
+    "def_zh": "有说服力的；令人信服的",
+    "quote_en": "The Party’s arguments were never cogent in the ordinary sense; they relied not on reason but on repetition. (Part 3, Chapter 4)",
+    "quote_zh": "党的论证从来不是通常意义上令人信服的；它们依靠的不是理性，而是重复。",
+    "ex_en": "A cogent truth needs no repetition; a lie cannot survive without it.",
+    "ex_zh": "有说服力的真理无需重复；谎言若没有重复就无法存活。"
+  },
+  {
+    "word": "expiate",
+    "pron": "/ˈekspieɪt/",
+    "pos": "v.",
+    "def_en": "To atone for guilt or sin",
+    "def_zh": "赎罪；弥补",
+    "quote_en": "He confessed to crimes he had never committed in order to expiate the thoughtcrime of doubting the Party. (Part 3, Chapter 4)",
+    "quote_zh": "他承认自己从未犯过的罪行，以赎清怀疑党的思想罪。",
+    "ex_en": "To expiate a thought is to kill the thinker; that is the only atonement the tyrant accepts.",
+    "ex_zh": "为一个思想赎罪，就是杀死思想者；这是暴君唯一接受的赎罪。"
+  },
+  {
+    "word": "inveterate",
+    "pron": "/ɪnˈvetərət/",
+    "pos": "adj.",
+    "def_en": "Having a particular habit, activity, or interest that is long-established and unlikely to change",
+    "def_zh": "根深蒂固的；积习的",
+    "quote_en": "His inveterate habit of questioning everything was what the Party sought to destroy. (Part 3, Chapter 4)",
+    "quote_zh": "他根深蒂固的质疑一切的习惯，正是党试图摧毁的。",
+    "ex_en": "An inveterate skeptic in a society of believers is either a saint or a criminal, depending on who writes the laws.",
+    "ex_zh": "在信徒社会里，根深蒂固的怀疑者要么是圣人，要么是罪犯，取决于谁制定法律。"
+  },
+  {
+    "word": "refulgent",
+    "pron": "/rɪˈfʌldʒənt/",
+    "pos": "adj.",
+    "def_en": "Shining brightly; radiant",
+    "def_zh": "辉煌的；灿烂的",
+    "quote_en": "The refulgent promises of the Party—the future of abundance, the eternal victory—were always just out of reach. (Part 3, Chapter 4)",
+    "quote_zh": "党那辉煌的承诺——富足的未来、永恒的胜利——总是遥不可及。",
+    "ex_en": "A refulgent lie is the tyrant’s finest art: it blinds you to the dim truth beneath.",
+    "ex_zh": "辉煌的谎言是暴君最精湛的艺术：它让你看不见其下暗淡的真相。"
+  },
+  {
+    "word": "subfusc",
+    "pron": "/sʌbˈfʌsk/",
+    "pos": "adj.",
+    "def_en": "Dull, gloomy, or dark",
+    "def_zh": "暗淡的；阴沉的",
+    "quote_en": "The subfusc reality of life under the Party—the grey buildings, the grey clothes, the grey thoughts—was broken only by the scarlet banners. (Part 3, Chapter 4)",
+    "quote_zh": "党治下生活那暗淡的现实——灰色的建筑、灰色的衣服、灰色的思想——只有猩红的旗帜才能打破。",
+    "ex_en": "A subfusc world is the tyrant’s canvas; he paints it with promises of color that never come.",
+    "ex_zh": "暗淡的世界是暴君的画布；他用永远不会到来的色彩描绘它。"
+  },
+  {
+    "word": "febrile",
+    "pron": "/ˈfiːbraɪl/",
+    "pos": "adj.",
+    "def_en": "Having or showing a feverish excitement or restlessness",
+    "def_zh": "狂热的；焦躁不安的",
+    "quote_en": "The febrile energy of Hate Week was deliberately manufactured to exhaust the population and prevent reflection. (Part 2, Chapter 4)",
+    "quote_zh": "仇恨周那狂热的人气是被刻意制造出来的，目的是消耗民众，阻止反思。",
+    "ex_en": "Febrile enthusiasm without understanding is the fuel that keeps the engine of tyranny running.",
+    "ex_zh": "没有理解的狂热热情，是维持暴政引擎运转的燃料。"
+  },
+  {
+    "word": "sententious",
+    "pron": "/senˈtenʃəs/",
+    "pos": "adj.",
+    "def_en": "Given to moralizing in a pompous or affected manner",
+    "def_zh": "说教的；格言式的",
+    "quote_en": "The Party’s sententious slogans were repeated so often that they lost all meaning and became mere sounds. (Part 3, Chapter 5)",
+    "quote_zh": "党那些说教式的口号被重复得太频繁，以至于失去了所有意义，变成了纯粹的声音。",
+    "ex_en": "Sententious wisdom is the opiate of the unthinking; real wisdom asks questions.",
+    "ex_zh": "说教式的智慧是不思考者的鸦片；真正的智慧提出疑问。"
+  },
+  {
+    "word": "sycophantic",
+    "pron": "/ˌsɪkəˈfæntɪk/",
+    "pos": "adj.",
+    "def_en": "Behaving in an obsequious way to gain advantage",
+    "def_zh": "谄媚的；奉承的",
+    "quote_en": "The sycophantic adoration of Big Brother was not genuine; it was a survival instinct. (Part 3, Chapter 5)",
+    "quote_zh": "对老大哥的谄媚崇拜并非真诚；那是一种生存本能。",
+    "ex_en": "Sycophantic praise is the currency of the powerless; it buys nothing but continued existence.",
+    "ex_zh": "谄媚的赞美是无权者的货币；它买到的只有继续存在。"
+  },
+  {
+    "word": "effete",
+    "pron": "/ɪˈfiːt/",
+    "pos": "adj.",
+    "def_en": "Lacking in force or character; decadent",
+    "def_zh": "衰弱的；颓废的",
+    "quote_en": "The effete intellectuals of the past were purged because they remembered a time when thought was free. (Part 3, Chapter 5)",
+    "quote_zh": "过去那些衰弱的文人被清洗，因为他们记得思想自由的时代。",
+    "ex_en": "An effete opposition is the tyrant’s dream; but the seeds of resistance grow in the most unlikely soil.",
+    "ex_zh": "一个软弱的反对派是暴君的梦想；但抵抗的种子在最不可能的土壤中生长。"
+  },
+  {
+    "word": "nihilism",
+    "pron": "/ˈnaɪɪlɪzəm/",
+    "pos": "n.",
+    "def_en": "The rejection of all religious and moral principles; belief that life is meaningless",
+    "def_zh": "虚无主义",
+    "quote_en": "The Party’s philosophy was a kind of nihilism: there was no truth, no reality, only power. (Part 3, Chapter 6)",
+    "quote_zh": "党的哲学是一种虚无主义：没有真理，没有现实，只有权力。",
+    "ex_en": "Nihilism is the intellectual surrender that makes tyranny possible; meaning is the ground it cannot conquer.",
+    "ex_zh": "虚无主义是使暴政成为可能的思想投降；意义是它无法征服的根基。"
+  },
+  {
+    "word": "laconic",
+    "pron": "/ləˈkɒnɪk/",
+    "pos": "adj.",
+    "def_en": "Using very few words; concise",
+    "def_zh": "简洁的；言简意赅的",
+    "quote_en": "O’Brien’s laconic instructions were never repeated; it was understood that you would obey without further explanation. (Part 3, Chapter 6)",
+    "quote_zh": "奥勃良简洁的指示从不重复；人们明白你必须服从，无需更多解释。",
+    "ex_en": "In a world of endless propaganda, a laconic truth is the only refuge.",
+    "ex_zh": "在一个无尽宣传的世界里，简洁的真理是唯一的避难所。"
+  },
+  {
+    "word": "sardonic",
+    "pron": "/sɑːˈdɒnɪk/",
+    "pos": "adj.",
+    "def_en": "Grimly mocking or cynical",
+    "def_zh": "讥讽的；嘲弄的",
+    "quote_en": "The sardonic smile on the face of the interrogator was more terrifying than any threat. (Part 3, Chapter 6)",
+    "quote_zh": "审讯者脸上讥讽的微笑比任何威胁都更可怕。",
+    "ex_en": "Sardonic laughter in the face of suffering is the tyrant’s confession that he cannot understand what he destroys.",
+    "ex_zh": "面对苦难时发出的讥讽笑声，是暴君承认他无法理解自己所摧毁之物。"
+  },
+  {
+    "word": "hegemony",
+    "pron": "/hɪˈdʒeməni/",
+    "pos": "n.",
+    "def_en": "Leadership or dominance, especially by one state or group over others",
+    "def_zh": "霸权；支配地位",
+    "quote_en": "The Party’s hegemony was absolute; there was no corner of life it did not touch. (Part 3, Chapter 6)",
+    "quote_zh": "党的霸权是绝对的；生活中没有它触及不到的角落。",
+    "ex_en": "Hegemony of the mind is more durable than hegemony of territory, for the mind does not revolt until it learns to remember.",
+    "ex_zh": "思想的霸权比领土的霸权更持久，因为心灵在学会记忆之前不会反抗。"
+  },
+  {
+    "word": "internecine",
+    "pron": "/ˌɪntəˈniːsaɪn/",
+    "pos": "adj.",
+    "def_en": "Destructive to both sides in a conflict; mutually ruinous",
+    "def_zh": "两败俱伤的；内讧的",
+    "quote_en": "The internecine struggles within the Party were kept hidden from the masses, who were taught to believe in its unity. (Part 3, Chapter 6)",
+    "quote_zh": "党内的内斗对民众保密，民众被教导相信党的团结。",
+    "ex_en": "Internecine conflict within a tyranny is the crack through which freedom may eventually enter.",
+    "ex_zh": "暴政内部的两败俱伤是自由最终可能进入的裂缝。"
+  }
+];
+
+// ============================================================
+// SYNONYMS/ANTONYMS DATA
+// ============================================================
+const SYNAN = JSON.parse(decodeURIComponent(escape(atob("eyJ2aWxlIjp7InN5biI6WyJkZXNwaWNhYmxlIiwibG9hdGhzb21lIiwicmVwdWxzaXZlIiwiYWJob3JyZW50IiwiYmFzZSIsImNvbnRlbXB0aWJsZSJdLCJhbnQiOlsiYWRtaXJhYmxlIiwibm9ibGUiLCJ2aXJ0dW91cyIsImhvbm9yYWJsZSIsInByYWlzZXdvcnRoeSJdfSwiY29udHJpdmUiOnsic3luIjpbImRldmlzZSIsImNvbmNvY3QiLCJlbmdpbmVlciIsIm1hbmV1dmVyIiwic2NoZW1lIiwiZmFicmljYXRlIl0sImFudCI6WyJzcG9pbCIsInJ1aW4iLCJidW5nbGUiLCJkZW1vbGlzaCIsIm5lZ2xlY3QiXX0sInNhbmd1aW5lIjp7InN5biI6WyJvcHRpbWlzdGljIiwiaG9wZWZ1bCIsImNvbmZpZGVudCIsImJ1b3lhbnQiLCJwb3NpdGl2ZSIsInVwYmVhdCJdLCJhbnQiOlsicGVzc2ltaXN0aWMiLCJnbG9vbXkiLCJkZXNwb25kZW50IiwiaG9wZWxlc3MiLCJjeW5pY2FsIl19LCJjb3JydWdhdGVkIjp7InN5biI6WyJyaWRnZWQiLCJncm9vdmVkIiwid3JpbmtsZWQiLCJmdXJyb3dlZCIsImZsdXRlZCIsImNyaW1wZWQiXSwiYW50IjpbInNtb290aCIsImZsYXQiLCJldmVuIiwibGV2ZWwiLCJ1bndyaW5rbGVkIl19LCJlZGlmaWNlIjp7InN5biI6WyJzdHJ1Y3R1cmUiLCJidWlsZGluZyIsIm1vbnVtZW50IiwiY29uc3RydWN0aW9uIiwicGlsZSIsImVyZWN0aW9uIl0sImFudCI6WyJydWluIiwid3JlY2siLCJkZWJyaXMiLCJzaGFtYmxlcyJdfSwiZnVydGl2ZSI6eyJzeW4iOlsic25lYWt5Iiwic3RlYWx0aHkiLCJjbGFuZGVzdGluZSIsImNvdmVydCIsInN1cnJlcHRpdGlvdXMiLCJzZWNyZXRpdmUiXSwiYW50IjpbIm9wZW4iLCJvdmVydCIsInB1YmxpYyIsImZvcnRocmlnaHQiLCJjYW5kaWQiXX0sImluZmFsbGlibGUiOnsic3luIjpbInVuZXJyaW5nIiwidW5mYWlsaW5nIiwiZmF1bHRsZXNzIiwiZmxhd2xlc3MiLCJpbXBlY2NhYmxlIiwicGVyZmVjdCJdLCJhbnQiOlsiZmFsbGlibGUiLCJpbXBlcmZlY3QiLCJmbGF3ZWQiLCJlcnJhbnQiLCJtaXN0YWtlbiJdfSwicGFsaW1wc2VzdCI6eyJzeW4iOlsibWFudXNjcmlwdCIsIm92ZXJsYXkiLCJyZXVzZSIsInJld3JpdGluZyIsImxheWVyaW5nIiwicGFyY2htZW50Il0sImFudCI6WyJvcmlnaW5hbCIsInByaXN0aW5lIiwidW5tb2RpZmllZCIsImZpcnN0IGRyYWZ0Il19LCJ1bmZhdGhvbWFibGUiOnsic3luIjpbImluY29tcHJlaGVuc2libGUiLCJteXN0ZXJpb3VzIiwiaW5zY3J1dGFibGUiLCJpbXBlbmV0cmFibGUiLCJhYnlzc2FsIiwicHJvZm91bmQiXSwiYW50IjpbImNvbXByZWhlbnNpYmxlIiwidW5kZXJzdGFuZGFibGUiLCJjbGVhciIsIm9idmlvdXMiLCJzaGFsbG93Il19LCJkaXNjcmVwYW5jeSI6eyJzeW4iOlsiZGlmZmVyZW5jZSIsImluY29uc2lzdGVuY3kiLCJ2YXJpYW5jZSIsImRpdmVyZ2VuY2UiLCJkaXNwYXJpdHkiLCJjb25mbGljdCJdLCJhbnQiOlsiYWdyZWVtZW50IiwiY29uc2lzdGVuY3kiLCJoYXJtb255IiwiY29ycmVzcG9uZGVuY2UiLCJhY2NvcmQiXX0sImFubmloaWxhdGUiOnsic3luIjpbImRlc3Ryb3kiLCJvYmxpdGVyYXRlIiwiZXh0ZXJtaW5hdGUiLCJlcmFkaWNhdGUiLCJkZWNpbWF0ZSIsImxpcXVpZGF0ZSJdLCJhbnQiOlsiY3JlYXRlIiwicHJlc2VydmUiLCJwcm90ZWN0Iiwic2F2ZSIsIm51cnR1cmUiXX0sImluZGVsaWJsZSI6eyJzeW4iOlsicGVybWFuZW50IiwiaW5lcmFkaWNhYmxlIiwibGFzdGluZyIsImVuZHVyaW5nIiwidW5mb3JnZXR0YWJsZSIsImluZXJhc2FibGUiXSwiYW50IjpbImVyYXNhYmxlIiwidGVtcG9yYXJ5IiwiZmxlZXRpbmciLCJ0cmFuc2llbnQiLCJlcGhlbWVyYWwiXX0sImRpc3NlbWJsZSI6eyJzeW4iOlsicHJldGVuZCIsImZlaWduIiwibWFzayIsImNhbW91ZmxhZ2UiLCJjb25jZWFsIiwiZGlzZ3Vpc2UiXSwiYW50IjpbInJldmVhbCIsImRpc2Nsb3NlIiwidW5tYXNrIiwiZXhwb3NlIiwiY29uZmVzcyJdfSwib2JsaXRlcmF0ZSI6eyJzeW4iOlsiZXJhc2UiLCJlZmZhY2UiLCJleHB1bmdlIiwiZWxpbWluYXRlIiwiZGVzdHJveSIsImFubnVsIl0sImFudCI6WyJjcmVhdGUiLCJlc3RhYmxpc2giLCJyZXN0b3JlIiwicHJlc2VydmUiLCJpbnNjcmliZSJdfSwiaW5zY3J1dGFibGUiOnsic3luIjpbIm15c3RlcmlvdXMiLCJ1bmZhdGhvbWFibGUiLCJpbXBlbmV0cmFibGUiLCJlbmlnbWF0aWMiLCJjcnlwdGljIiwib3BhcXVlIl0sImFudCI6WyJ0cmFuc3BhcmVudCIsIm9idmlvdXMiLCJjbGVhciIsImludGVsbGlnaWJsZSIsImNvbXByZWhlbnNpYmxlIl19LCJkZW1vbGlzaCI6eyJzeW4iOlsiZGVzdHJveSIsInJhemUiLCJsZXZlbCIsIndyZWNrIiwiYW5uaWhpbGF0ZSIsInNoYXR0ZXIiXSwiYW50IjpbImJ1aWxkIiwiY29uc3RydWN0IiwiZXJlY3QiLCJyYWlzZSIsInJlc3RvcmUiXX0sInZlbmVyYXRlIjp7InN5biI6WyJyZXZlcmUiLCJ3b3JzaGlwIiwiYWRvcmUiLCJob25vciIsImV4YWx0IiwiaWRvbGl6ZSJdLCJhbnQiOlsiZGVzcGlzZSIsInNjb3JuIiwiZGlzZGFpbiIsImFiaG9yIiwiZGV0ZXN0Il19LCJzdWJqdWdhdGUiOnsic3luIjpbImNvbnF1ZXIiLCJkb21pbmF0ZSIsImVuc2xhdmUiLCJzdXBwcmVzcyIsIm9wcHJlc3MiLCJvdmVycG93ZXIiXSwiYW50IjpbImxpYmVyYXRlIiwiZnJlZSIsImVtYW5jaXBhdGUiLCJyZWxlYXNlIiwiZW1wb3dlciJdfSwicGVyZnVuY3RvcnkiOnsic3luIjpbInN1cGVyZmljaWFsIiwiY3Vyc29yeSIsImhhc3R5Iiwicm91dGluZSIsIm1lY2hhbmljYWwiLCJhdXRvbWF0aWMiXSwiYW50IjpbInRob3JvdWdoIiwiY2FyZWZ1bCIsImRpbGlnZW50IiwiY29uc2NpZW50aW91cyIsIm1ldGljdWxvdXMiXX0sIm1ldGljdWxvdXMiOnsic3luIjpbInRob3JvdWdoIiwiY2FyZWZ1bCIsImRpbGlnZW50IiwicGFpbnN0YWtpbmciLCJzY3J1cHVsb3VzIiwiZXhhY3RpbmciXSwiYW50IjpbImNhcmVsZXNzIiwibmVnbGlnZW50Iiwic2xvcHB5IiwiaGFwaGF6YXJkIiwic2xpcHNob2QiXX0sInVub3J0aG9kb3giOnsic3luIjpbImhlcmV0aWNhbCIsIm5vbmNvbmZvcm1pc3QiLCJkaXNzaWRlbnQiLCJoZXRlcm9kb3giLCJtYXZlcmljayIsInVuY29udmVudGlvbmFsIl0sImFudCI6WyJvcnRob2RveCIsImNvbnZlbnRpb25hbCIsInRyYWRpdGlvbmFsIiwiY29uZm9ybWlzdCIsImVzdGFibGlzaGVkIl19LCJjYXByaWNpb3VzIjp7InN5biI6WyJmaWNrbGUiLCJ3aGltc2ljYWwiLCJ2b2xhdGlsZSIsImVycmF0aWMiLCJpbmNvbnN0YW50IiwibWVyY3VyaWFsIl0sImFudCI6WyJzdGVhZHkiLCJzdGFibGUiLCJjb25zaXN0ZW50IiwicHJlZGljdGFibGUiLCJyZWxpYWJsZSJdfSwibW9yaWJ1bmQiOnsic3luIjpbImR5aW5nIiwiZGVjYXlpbmciLCJkZWNsaW5pbmciLCJmYWRpbmciLCJzdGFnbmFudCIsIm9ic29sZXNjZW50Il0sImFudCI6WyJ0aHJpdmluZyIsImZsb3VyaXNoaW5nIiwidmlicmFudCIsImdyb3dpbmciLCJhbGl2ZSJdfSwicmVjYWxjaXRyYW50Ijp7InN5biI6WyJkZWZpYW50Iiwic3R1YmJvcm4iLCJvYnN0aW5hdGUiLCJpbnN1Ym9yZGluYXRlIiwicmViZWxsaW91cyIsInVuY29vcGVyYXRpdmUiXSwiYW50IjpbImNvbXBsaWFudCIsIm9iZWRpZW50IiwiZG9jaWxlIiwidHJhY3RhYmxlIiwic3VibWlzc2l2ZSJdfSwiZXBoZW1lcmFsIjp7InN5biI6WyJ0ZW1wb3JhcnkiLCJmbGVldGluZyIsInRyYW5zaWVudCIsIm1vbWVudGFyeSIsImJyaWVmIiwic2hvcnQtbGl2ZWQiXSwiYW50IjpbInBlcm1hbmVudCIsImV0ZXJuYWwiLCJlbmR1cmluZyIsImV2ZXJsYXN0aW5nIiwiaW1tb3J0YWwiXX0sInRyYW5zaWVudCI6eyJzeW4iOlsidGVtcG9yYXJ5IiwiZmxlZXRpbmciLCJlcGhlbWVyYWwiLCJtb21lbnRhcnkiLCJicmllZiIsInNob3J0LWxpdmVkIl0sImFudCI6WyJwZXJtYW5lbnQiLCJldGVybmFsIiwiZW5kdXJpbmciLCJldmVybGFzdGluZyIsImltbW9ydGFsIl19LCJtYWxpZ24iOnsic3luIjpbImRlZmFtZSIsInNsYW5kZXIiLCJ2aWxpZnkiLCJkZW5pZ3JhdGUiLCJkaXNwYXJhZ2UiLCJ0cmFkdWNlIl0sImFudCI6WyJwcmFpc2UiLCJjb21tZW5kIiwibGF1ZCIsImV4dG9sIiwiaG9ub3IiXX0sInBlcnZhZGUiOnsic3luIjpbInN1ZmZ1c2UiLCJwZXJtZWF0ZSIsImluZnVzZSIsImltYnVlIiwic2F0dXJhdGUiLCJmaWxsIl0sImFudCI6WyJkcmFpbiIsImV2YWN1YXRlIiwiZW1wdHkiLCJyZW1vdmUiLCJ3aXRoZHJhdyJdfSwiaW1wbGFjYWJsZSI6eyJzeW4iOlsicmVsZW50bGVzcyIsInVuc3RvcHBhYmxlIiwiaW5leG9yYWJsZSIsInVuYXBwZWFzYWJsZSIsInVuZm9yZ2l2aW5nIiwidW5yZWxlbnRpbmciXSwiYW50IjpbImFwcGVhc2FibGUiLCJwbGFjYWJsZSIsImZvcmdpdmluZyIsIm1lcmNpZnVsIiwibGVuaWVudCJdfSwibGFieXJpbnRoaW5lIjp7InN5biI6WyJtYXplLWxpa2UiLCJjb21wbGV4IiwiaW50cmljYXRlIiwiY29udm9sdXRlZCIsInRhbmdsZWQiLCJzZXJwZW50aW5lIl0sImFudCI6WyJzaW1wbGUiLCJzdHJhaWdodGZvcndhcmQiLCJkaXJlY3QiLCJ1bmNvbXBsaWNhdGVkIiwibGluZWFyIl19LCJkaXNjcmVkaXQiOnsic3luIjpbImRpc2dyYWNlIiwic2hhbWUiLCJkaXNob25vciIsImRpc3JlcHV0ZSIsInRhaW50Iiwic3RpZ21hdGl6ZSJdLCJhbnQiOlsiaG9ub3IiLCJjcmVkaXQiLCJwcmFpc2UiLCJjb21tZW5kIiwiYWNjcmVkaXQiXX0sImNhdGhhcnNpcyI6eyJzeW4iOlsicHVyZ2UiLCJyZWxlYXNlIiwiY2xlYW5zaW5nIiwicHVyZ2F0aW9uIiwicHVyaWZpY2F0aW9uIiwiZW1vdGlvbmFsIHJlbGVhc2UiXSwiYW50IjpbInJlcHJlc3Npb24iLCJzdXBwcmVzc2lvbiIsImJvdHRsaW5nIiwiY29udGFpbm1lbnQiXX0sImNvYWxlc2NlIjp7InN5biI6WyJ1bml0ZSIsIm1lcmdlIiwiY29tYmluZSIsImZ1c2UiLCJhbWFsZ2FtYXRlIiwiaW50ZWdyYXRlIl0sImFudCI6WyJkaXZpZGUiLCJzZXBhcmF0ZSIsInNwbGl0IiwiZnJhZ21lbnQiLCJkaXNwZXJzZSJdfSwib2JzZXF1aW91cyI6eyJzeW4iOlsic3ljb3BoYW50aWMiLCJmYXduaW5nIiwic2VydmlsZSIsInN1YnNlcnZpZW50IiwiaW5ncmF0aWF0aW5nIiwiZ3JvdmVsaW5nIl0sImFudCI6WyJhc3NlcnRpdmUiLCJpbmRlcGVuZGVudCIsInByb3VkIiwiZGVmaWFudCIsImFycm9nYW50Il19LCJyZW1vcnNlbGVzcyI6eyJzeW4iOlsicnV0aGxlc3MiLCJwaXRpbGVzcyIsIm1lcmNpbGVzcyIsInVucmVsZW50aW5nIiwiaW1wbGFjYWJsZSIsImNydWVsIl0sImFudCI6WyJtZXJjaWZ1bCIsImNvbXBhc3Npb25hdGUiLCJmb3JnaXZpbmciLCJodW1hbmUiLCJsZW5pZW50Il19LCJlc2NoZXciOnsic3luIjpbImF2b2lkIiwic2h1biIsImFic3RhaW4iLCJyZWZyYWluIiwiZm9yZ28iLCJyZW5vdW5jZSJdLCJhbnQiOlsiZW1icmFjZSIsImFkb3B0IiwicHVyc3VlIiwiaW5kdWxnZSIsInNlZWsiXX0sImZlY3VuZCI6eyJzeW4iOlsiZmVydGlsZSIsInByb2xpZmljIiwicHJvZHVjdGl2ZSIsImZydWl0ZnVsIiwiZ2VuZXJhdGl2ZSIsImFidW5kYW50Il0sImFudCI6WyJiYXJyZW4iLCJzdGVyaWxlIiwiaW5mZXJ0aWxlIiwidW5wcm9kdWN0aXZlIiwiYXJpZCJdfSwic3VwZXJzZWRlIjp7InN5biI6WyJyZXBsYWNlIiwiZGlzcGxhY2UiLCJzdXBwbGFudCIsIm91c3QiLCJvdmVydGhyb3ciLCJzdWNjZWVkIl0sImFudCI6WyJyZXRhaW4iLCJrZWVwIiwicHJlc2VydmUiLCJtYWludGFpbiIsImNvbnRpbnVlIl19LCJwZXJuaWNpb3VzIjp7InN5biI6WyJoYXJtZnVsIiwiZGVzdHJ1Y3RpdmUiLCJpbmp1cmlvdXMiLCJkYW1hZ2luZyIsImRlbGV0ZXJpb3VzIiwibm94aW91cyJdLCJhbnQiOlsiYmVuZWZpY2lhbCIsImhhcm1sZXNzIiwid2hvbGVzb21lIiwiaGVhbHRoeSIsInNhbHV0YXJ5Il19LCJhbm9keW5lIjp7InN5biI6WyJwYWlua2lsbGVyIiwiYW5hbGdlc2ljIiwicGFsbGlhdGl2ZSIsInNlZGF0aXZlIiwic29vdGhlciIsIm9waWF0ZSJdLCJhbnQiOlsiaXJyaXRhbnQiLCJhZ2dyYXZhdGlvbiIsInN0aW11bGFudCIsImV4YWNlcmJhdGlvbiJdfSwiaW5maWx0cmF0ZSI6eyJzeW4iOlsicGVuZXRyYXRlIiwiaW52YWRlIiwicGVybWVhdGUiLCJpbnNpbnVhdGUiLCJpbnRydWRlIiwic25lYWsgaW4iXSwiYW50IjpbIndpdGhkcmF3IiwicmV0cmVhdCIsImV4Y2x1ZGUiLCJleHBlbCIsImV2aWN0Il19LCJmdXJ0aXZlbHkiOnsic3luIjpbInNuZWFraWx5Iiwic3RlYWx0aGlseSIsImNvdmVydGx5Iiwic2VjcmV0bHkiLCJzdXJyZXB0aXRpb3VzbHkiLCJjbGFuZGVzdGluZWx5Il0sImFudCI6WyJvcGVubHkiLCJvdmVydGx5IiwicHVibGljbHkiLCJjYW5kaWRseSIsImZvcnRocmlnaHRseSJdfSwidGFjaXQiOnsic3luIjpbImltcGxpY2l0IiwidW5zcG9rZW4iLCJpbXBsaWVkIiwidW5kZXJzdG9vZCIsImluZmVycmVkIiwidW5leHByZXNzZWQiXSwiYW50IjpbImV4cGxpY2l0IiwiZXhwcmVzc2VkIiwic3RhdGVkIiwib3BlbiIsImF2b3dlZCJdfSwiaW5zaWRpb3VzIjp7InN5biI6WyJzdWJ0bGUiLCJzbmVha3kiLCJzdGVhbHRoeSIsInBlcm5pY2lvdXMiLCJjdW5uaW5nIiwidHJlYWNoZXJvdXMiXSwiYW50IjpbImJsYXRhbnQiLCJvYnZpb3VzIiwiaGFybWxlc3MiLCJiZW5pZ24iLCJzdHJhaWdodGZvcndhcmQiXX0sImltcHJlZ25hYmxlIjp7InN5biI6WyJpbnZpbmNpYmxlIiwidW5hc3NhaWxhYmxlIiwiaW52dWxuZXJhYmxlIiwiaW1wZW5ldHJhYmxlIiwidW5jb25xdWVyYWJsZSIsImZvcnRpZmllZCJdLCJhbnQiOlsidnVsbmVyYWJsZSIsImFzc2FpbGFibGUiLCJ3ZWFrIiwiZGVmZW5zZWxlc3MiLCJwZW5ldHJhYmxlIl19LCJzdWJsaW1lIjp7InN5biI6WyJtYWduaWZpY2VudCIsImV4YWx0ZWQiLCJub2JsZSIsImdyYW5kIiwibG9mdHkiLCJzcGxlbmRpZCJdLCJhbnQiOlsiYmFzZSIsImxvd2x5IiwiaWdub2JsZSIsImNvbW1vbnBsYWNlIiwib3JkaW5hcnkiXX0sImFwb2NyeXBoYWwiOnsic3luIjpbImRvdWJ0ZnVsIiwidW5zdWJzdGFudGlhdGVkIiwic3B1cmlvdXMiLCJmaWN0aXRpb3VzIiwibXl0aGljYWwiLCJ1bnZlcmlmaWVkIl0sImFudCI6WyJhdXRoZW50aWMiLCJnZW51aW5lIiwidmVyaWZpZWQiLCJ0cnVlIiwiaGlzdG9yaWNhbCJdfSwiaW5jb250cm92ZXJ0aWJsZSI6eyJzeW4iOlsiaW5kaXNwdXRhYmxlIiwidW5kZW5pYWJsZSIsInVucXVlc3Rpb25hYmxlIiwiY2VydGFpbiIsImNvbmNsdXNpdmUiLCJpcnJlZnV0YWJsZSJdLCJhbnQiOlsiZGlzcHV0YWJsZSIsImRlYmF0YWJsZSIsInF1ZXN0aW9uYWJsZSIsImRvdWJ0ZnVsIiwidW5jZXJ0YWluIl19LCJwZXJmaWRpb3VzIjp7InN5biI6WyJ0cmVhY2hlcm91cyIsInRyYWl0b3JvdXMiLCJ1bmZhaXRoZnVsIiwiZGVjZWl0ZnVsIiwiZGlzbG95YWwiLCJmYWl0aGxlc3MiXSwiYW50IjpbImZhaXRoZnVsIiwibG95YWwiLCJ0cnVzdHdvcnRoeSIsImhvbmVzdCIsInJlbGlhYmxlIl19LCJyZWRvbGVudCI6eyJzeW4iOlsicmVtaW5pc2NlbnQiLCJldm9jYXRpdmUiLCJzdWdnZXN0aXZlIiwiYXJvbWF0aWMiLCJmcmFncmFudCIsInNjZW50ZWQiXSwiYW50IjpbInVuc2NlbnRlZCIsIm9kb3JsZXNzIiwidW5yZW1pbmlzY2VudCIsInVuYXNzb2NpYXRlZCJdfSwicHJpdmF0aW9uIjp7InN5biI6WyJkZXByaXZhdGlvbiIsInBvdmVydHkiLCJuZWVkIiwiZGVzdGl0dXRpb24iLCJoYXJkc2hpcCIsIndhbnQiXSwiYW50IjpbImFidW5kYW5jZSIsInBsZW50eSIsIndlYWx0aCIsImFmZmx1ZW5jZSIsImx1eHVyeSJdfSwic29saWNpdG91cyI6eyJzeW4iOlsiY29uY2VybmVkIiwiYXR0ZW50aXZlIiwiY2FyaW5nIiwiYW54aW91cyIsInRob3VnaHRmdWwiLCJ3YXRjaGZ1bCJdLCJhbnQiOlsiaW5kaWZmZXJlbnQiLCJ1bmNvbmNlcm5lZCIsImNhcmVsZXNzIiwibmVnbGVjdGZ1bCIsImFwYXRoZXRpYyJdfSwibHVndWJyaW91cyI6eyJzeW4iOlsibW91cm5mdWwiLCJkb2xlZnVsIiwibWVsYW5jaG9seSIsInNvcnJvd2Z1bCIsImdsb29teSIsInBsYWludGl2ZSJdLCJhbnQiOlsiY2hlZXJmdWwiLCJqb3lmdWwiLCJtZXJyeSIsImJsaXRoZSIsImhhcHB5Il19LCJzdXJyZXB0aXRpb3VzIjp7InN5biI6WyJzZWNyZXQiLCJzdGVhbHRoeSIsImNsYW5kZXN0aW5lIiwiY292ZXJ0IiwiZnVydGl2ZSIsImhpZGRlbiJdLCJhbnQiOlsib3BlbiIsInB1YmxpYyIsIm92ZXJ0Iiwib2J2aW91cyIsImFib3ZlYm9hcmQiXX0sImluZGVmYXRpZ2FibGUiOnsic3luIjpbInRpcmVsZXNzIiwidW50aXJpbmciLCJ1bmZsYWdnaW5nIiwicGVyc2lzdGVudCIsImRpbGlnZW50IiwidW53YXZlcmluZyJdLCJhbnQiOlsidGlyZWQiLCJmYXRpZ3VlZCIsImxhenkiLCJpZGxlIiwiaW5kb2xlbnQiXX0sIm9zdGVuc2libGUiOnsic3luIjpbImFwcGFyZW50Iiwic2VlbWluZyIsInN1cGVyZmljaWFsIiwicHJldGVuZGVkIiwic3VwcG9zZWQiLCJhbGxlZ2VkIl0sImFudCI6WyJhY3R1YWwiLCJyZWFsIiwiZ2VudWluZSIsImF1dGhlbnRpYyIsInRydWUiXX0sInBlcmVtcHRvcnkiOnsic3luIjpbImltcGVyYXRpdmUiLCJjb21tYW5kaW5nIiwiYXV0aG9yaXRhdGl2ZSIsIm92ZXJiZWFyaW5nIiwiZGljdGF0b3JpYWwiLCJhcmJpdHJhcnkiXSwiYW50IjpbInN1Ym1pc3NpdmUiLCJ5aWVsZGluZyIsInRlbnRhdGl2ZSIsImhlc2l0YW50IiwidW5jZXJ0YWluIl19LCJzY3Vycmlsb3VzIjp7InN5biI6WyJhYnVzaXZlIiwidml0dXBlcmF0aXZlIiwidnVsZ2FyIiwiY29hcnNlIiwib2JzY2VuZSIsInNsYW5kZXJvdXMiXSwiYW50IjpbInBvbGl0ZSIsInJlc3BlY3RmdWwiLCJkZWNvcm91cyIsImNvbXBsaW1lbnRhcnkiLCJjb3VydGVvdXMiXX0sInZlbmFsIjp7InN5biI6WyJjb3JydXB0IiwiYnJpYmFibGUiLCJ1bnNjcnVwdWxvdXMiLCJkaXNob25lc3QiLCJtZXJjZW5hcnkiLCJncmVlZHkiXSwiYW50IjpbImhvbmVzdCIsImluY29ycnVwdGlibGUiLCJwcmluY2lwbGVkIiwidXByaWdodCIsIm1vcmFsIl19LCJwcmVjYXJpb3VzIjp7InN5biI6WyJ1bnN0YWJsZSIsImluc2VjdXJlIiwidW5jZXJ0YWluIiwicmlza3kiLCJoYXphcmRvdXMiLCJzaGFreSJdLCJhbnQiOlsic3RhYmxlIiwic2VjdXJlIiwic2FmZSIsImNlcnRhaW4iLCJmaXJtIl19LCJlc290ZXJpYyI6eyJzeW4iOlsib2JzY3VyZSIsImFic3RydXNlIiwicmVjb25kaXRlIiwiYXJjYW5lIiwibXlzdGVyaW91cyIsIm9jY3VsdCJdLCJhbnQiOlsiY29tbW9uIiwid2VsbC1rbm93biIsImV4b3RlcmljIiwicHVibGljIiwicG9wdWxhciJdfSwibWVuZGFjaW91cyI6eyJzeW4iOlsibHlpbmciLCJ1bnRydXRoZnVsIiwiZGVjZWl0ZnVsIiwiZGlzaG9uZXN0IiwiZmFsc2UiLCJkdXBsaWNpdG91cyJdLCJhbnQiOlsidHJ1dGhmdWwiLCJob25lc3QiLCJ2ZXJhY2lvdXMiLCJjYW5kaWQiLCJzaW5jZXJlIl19LCJyZWNvbmRpdGUiOnsic3luIjpbIm9ic2N1cmUiLCJhYnN0cnVzZSIsImVzb3RlcmljIiwiYXJjYW5lIiwibXlzdGVyaW91cyIsInByb2ZvdW5kIl0sImFudCI6WyJzaW1wbGUiLCJjbGVhciIsIm9idmlvdXMiLCJzdHJhaWdodGZvcndhcmQiLCJjb21tb25wbGFjZSJdfSwidW5yZW1pdHRpbmciOnsic3luIjpbImluY2Vzc2FudCIsImNvbnN0YW50IiwiY29udGludW91cyIsInVucmVsZW50aW5nIiwicGVyc2lzdGVudCIsInVuZW5kaW5nIl0sImFudCI6WyJpbnRlcm1pdHRlbnQiLCJzcG9yYWRpYyIsImNlYXNpbmciLCJ0ZW1wb3JhcnkiLCJyZWxlbnRpbmciXX0sInZpdHJpb2xpYyI6eyJzeW4iOlsiY2F1c3RpYyIsImFjcmltb25pb3VzIiwiYml0aW5nIiwic2NhdGhpbmciLCJiaXR0ZXIiLCJjb3Jyb3NpdmUiXSwiYW50IjpbImtpbmQiLCJnZW50bGUiLCJtaWxkIiwicGxlYXNhbnQiLCJjb21wbGltZW50YXJ5Il19LCJwcm9zYWljIjp7InN5biI6WyJtdW5kYW5lIiwib3JkaW5hcnkiLCJjb21tb25wbGFjZSIsInVuaW1hZ2luYXRpdmUiLCJkdWxsIiwicGVkZXN0cmlhbiJdLCJhbnQiOlsicG9ldGljIiwiaW1hZ2luYXRpdmUiLCJleGNpdGluZyIsImV4dHJhb3JkaW5hcnkiLCJyZW1hcmthYmxlIl19LCJ0cnVjdWxlbnQiOnsic3luIjpbImFnZ3Jlc3NpdmUiLCJiZWxsaWdlcmVudCIsImNvbWJhdGl2ZSIsImhvc3RpbGUiLCJmaWVyY2UiLCJhbnRhZ29uaXN0aWMiXSwiYW50IjpbInBlYWNlZnVsIiwiZ2VudGxlIiwiZG9jaWxlIiwiYW1pY2FibGUiLCJwbGFjaWQiXX0sInNwZWNpb3VzIjp7InN5biI6WyJwbGF1c2libGUiLCJzdXBlcmZpY2lhbCIsImRlY2VwdGl2ZSIsIm1pc2xlYWRpbmciLCJmYWxsYWNpb3VzIiwiZmFsc2UiXSwiYW50IjpbImdlbnVpbmUiLCJ2YWxpZCIsInNvdW5kIiwidHJ1ZSIsImF1dGhlbnRpYyJdfSwib25lcm91cyI6eyJzeW4iOlsiYnVyZGVuc29tZSIsImFyZHVvdXMiLCJ0YXhpbmciLCJkaWZmaWN1bHQiLCJoZWF2eSIsImRlbWFuZGluZyJdLCJhbnQiOlsiZWFzeSIsImxpZ2h0IiwiZWZmb3J0bGVzcyIsInNpbXBsZSIsInVuZGVtYW5kaW5nIl19LCJlbWFjaWF0ZWQiOnsic3luIjpbImdhdW50IiwiaGFnZ2FyZCIsInNrZWxldGFsIiwid2FzdGVkIiwidGhpbiIsInNjcmF3bnkiXSwiYW50IjpbInBsdW1wIiwid2VsbC1mZWQiLCJyb2J1c3QiLCJzdHVyZHkiLCJoZWFsdGh5Il19LCJkaXNzaXBhdGUiOnsic3luIjpbImRpc3BlcnNlIiwic2NhdHRlciIsImRpc2FwcGVhciIsInZhbmlzaCIsImV2YXBvcmF0ZSIsInNxdWFuZGVyIl0sImFudCI6WyJnYXRoZXIiLCJhY2N1bXVsYXRlIiwiY29uY2VudHJhdGUiLCJwcmVzZXJ2ZSIsInNhdmUiXX0sInJlY3J1ZGVzY2VuY2UiOnsic3luIjpbInJlY3VycmVuY2UiLCJyZW5ld2FsIiwib3V0YnJlYWsiLCJyZXN1cmdlbmNlIiwicmVsYXBzZSIsInJldHVybiJdLCJhbnQiOlsiZGlzYXBwZWFyYW5jZSIsImFiYXRlbWVudCIsImNlc3NhdGlvbiIsInN1YnNpZGVuY2UiXX0sInF1b3RpZGlhbiI6eyJzeW4iOlsiZGFpbHkiLCJldmVyeWRheSIsIm9yZGluYXJ5IiwiY29tbW9ucGxhY2UiLCJyb3V0aW5lIiwibXVuZGFuZSJdLCJhbnQiOlsiZXh0cmFvcmRpbmFyeSIsImV4Y2VwdGlvbmFsIiwidW51c3VhbCIsInJlbWFya2FibGUiLCJyYXJlIl19LCJlZmZ1bGdlbnQiOnsic3luIjpbInJhZGlhbnQiLCJicmlsbGlhbnQiLCJkYXp6bGluZyIsImx1bWlub3VzIiwic2hpbmluZyIsInJlc3BsZW5kZW50Il0sImFudCI6WyJkdWxsIiwiZGltIiwiZGFyayIsImdsb29teSIsImxhY2tsdXN0ZXIiXX0sIm51bWlub3VzIjp7InN5biI6WyJkaXZpbmUiLCJob2x5Iiwic2FjcmVkIiwic3Bpcml0dWFsIiwibXlzdGljYWwiLCJ0cmFuc2NlbmRlbnQiXSwiYW50IjpbIm11bmRhbmUiLCJlYXJ0aGx5Iiwic2VjdWxhciIsInByb2ZhbmUiLCJ3b3JsZGx5Il19LCJwcm9saXgiOnsic3luIjpbInZlcmJvc2UiLCJ3b3JkeSIsImxvbmctd2luZGVkIiwicmFtYmxpbmciLCJkaXNjdXJzaXZlIiwiZGlmZnVzZSJdLCJhbnQiOlsiY29uY2lzZSIsInRlcnNlIiwiYnJpZWYiLCJzdWNjaW5jdCIsInBpdGh5Il19LCJpbnZpb2xhdGUiOnsic3luIjpbInVudG91Y2hlZCIsInVuYnJva2VuIiwiaW50YWN0Iiwic2FjcmVkIiwicHJpc3RpbmUiLCJ1bmRpc3R1cmJlZCJdLCJhbnQiOlsidmlvbGF0ZWQiLCJicm9rZW4iLCJkZXNlY3JhdGVkIiwiZGlzdHVyYmVkIiwic3BvaWxlZCJdfSwicGVyaXBhdGV0aWMiOnsic3luIjpbIndhbmRlcmluZyIsIm5vbWFkaWMiLCJpdGluZXJhbnQiLCJyb3ZpbmciLCJ0cmF2ZWxpbmciLCJtb2JpbGUiXSwiYW50IjpbInN0YXRpb25hcnkiLCJzZXR0bGVkIiwiZml4ZWQiLCJzdGF0aWMiLCJpbW1vYmlsZSJdfSwiaW5lbHVjdGFibGUiOnsic3luIjpbInVuYXZvaWRhYmxlIiwiaW5ldml0YWJsZSIsImluZXNjYXBhYmxlIiwiY2VydGFpbiIsInVuc3RvcHBhYmxlIiwiaXJyZXNpc3RpYmxlIl0sImFudCI6WyJhdm9pZGFibGUiLCJlc2NhcGFibGUiLCJ1bmNlcnRhaW4iLCJvcHRpb25hbCIsInByZXZlbnRhYmxlIl19LCJjb250dW1hY2lvdXMiOnsic3luIjpbImluc3Vib3JkaW5hdGUiLCJyZWJlbGxpb3VzIiwiZGVmaWFudCIsImRpc29iZWRpZW50IiwibXV0aW5vdXMiLCJ1bnJ1bHkiXSwiYW50IjpbIm9iZWRpZW50Iiwic3VibWlzc2l2ZSIsImNvbXBsaWFudCIsImRvY2lsZSIsInRyYWN0YWJsZSJdfSwicHJvcGh5bGFjdGljIjp7InN5biI6WyJwcmV2ZW50aXZlIiwicHJvdGVjdGl2ZSIsInByZWNhdXRpb25hcnkiLCJwcmV2ZW50YXRpdmUiLCJkZWZlbnNpdmUiXSwiYW50IjpbImN1cmF0aXZlIiwidGhlcmFwZXV0aWMiLCJyZW1lZGlhbCIsInJlc3RvcmF0aXZlIl19LCJhcG90aGVvc2lzIjp7InN5biI6WyJjdWxtaW5hdGlvbiIsInBlYWsiLCJ6ZW5pdGgiLCJjbGltYXgiLCJzdW1taXQiLCJwaW5uYWNsZSJdLCJhbnQiOlsibmFkaXIiLCJsb3cgcG9pbnQiLCJib3R0b20iLCJkZXB0aHMiLCJ0cm91Z2giXX0sInNvcGhpc3RyeSI6eyJzeW4iOlsiZmFsbGFjeSIsImNhc3Vpc3RyeSIsImRlY2VwdGlvbiIsImNoaWNhbmVyeSIsInNwZWNpb3VzbmVzcyIsInNvcGhpc20iXSwiYW50IjpbInRydXRoIiwibG9naWMiLCJyZWFzb24iLCJ2YWxpZGl0eSIsInNvdW5kbmVzcyJdfSwicHJldGVybmF0dXJhbCI6eyJzeW4iOlsic3VwZXJuYXR1cmFsIiwidW5jYW5ueSIsImV4dHJhb3JkaW5hcnkiLCJhbm9tYWxvdXMiLCJleGNlcHRpb25hbCIsImFibm9ybWFsIl0sImFudCI6WyJuYXR1cmFsIiwib3JkaW5hcnkiLCJjb21tb24iLCJub3JtYWwiLCJ1c3VhbCJdfSwicmVkb3VidGFibGUiOnsic3luIjpbImZvcm1pZGFibGUiLCJpbnRpbWlkYXRpbmciLCJkYXVudGluZyIsImZlYXJzb21lIiwiaW1wb3NpbmciLCJhd2Vzb21lIl0sImFudCI6WyJ1bmltcG9zaW5nIiwidW5pbXByZXNzaXZlIiwid2VhayIsInRpbWlkIiwiZmVlYmxlIl19LCJyZWNhbnQiOnsic3luIjpbInJlbm91bmNlIiwicmV0cmFjdCIsIndpdGhkcmF3IiwicmVwdWRpYXRlIiwiYWJqdXJlIiwiZGlzYXZvdyJdLCJhbnQiOlsibWFpbnRhaW4iLCJhZmZpcm0iLCJyZWl0ZXJhdGUiLCJ1cGhvbGQiLCJpbnNpc3QiXX0sImRlc2ljY2F0ZWQiOnsic3luIjpbImRyaWVkIiwiZGVoeWRyYXRlZCIsInBhcmNoZWQiLCJ3aXRoZXJlZCIsInNocnVua2VuIiwiYXJpZCJdLCJhbnQiOlsibW9pc3QiLCJoeWRyYXRlZCIsImZyZXNoIiwic3VjY3VsZW50IiwibHVzaCJdfSwiZW1vbGxpZW50Ijp7InN5biI6WyJzb290aGVyIiwicGFsbGlhdGl2ZSIsImJhbG0iLCJzYWx2ZSIsInNvZnRlbmVyIiwiYWxsZXZpYW50Il0sImFudCI6WyJpcnJpdGFudCIsImFnZ3JhdmFudCIsImV4YWNlcmJhdG9yIl19LCJwZWxsdWNpZCI6eyJzeW4iOlsiY2xlYXIiLCJ0cmFuc3BhcmVudCIsImx1Y2lkIiwibGltcGlkIiwidW5hbWJpZ3VvdXMiLCJjb21wcmVoZW5zaWJsZSJdLCJhbnQiOlsib3BhcXVlIiwib2JzY3VyZSIsIm11cmt5IiwidmFndWUiLCJhbWJpZ3VvdXMiXX0sImFibmVnYXRpb24iOnsic3luIjpbInJlbnVuY2lhdGlvbiIsInNlbGYtZGVuaWFsIiwic3VycmVuZGVyIiwiYWJkaWNhdGlvbiIsInJlbGlucXVpc2htZW50IiwicmVwdWRpYXRpb24iXSwiYW50IjpbImFjY2VwdGFuY2UiLCJlbWJyYWNlIiwic2VsZi1pbmR1bGdlbmNlIiwiYXNzZXJ0aW9uIiwiY2xhaW0iXX0sInBlcnNpZmxhZ2UiOnsic3luIjpbImJhbnRlciIsInJhaWxsZXJ5IiwibW9ja2VyeSIsInRlYXNpbmciLCJqZXN0aW5nIiwiYmFkaW5hZ2UiXSwiYW50IjpbImVhcm5lc3RuZXNzIiwic2VyaW91c25lc3MiLCJzaW5jZXJpdHkiLCJncmF2aXR5Il19LCJzb2xpcHNpc20iOnsic3luIjpbImVnb2lzbSIsInN1YmplY3RpdmlzbSIsInNlbGYtY2VudGVyZWRuZXNzIiwibmFyY2lzc2lzbSIsImlkZWFsaXNtIl0sImFudCI6WyJvYmplY3RpdmlzbSIsImFsdHJ1aXNtIiwiZW1wYXRoeSIsImV4dGVybmFsaXNtIl19LCJub2lzb21lIjp7InN5biI6WyJmb3VsIiwic3RpbmtpbmciLCJtYWxvZG9yb3VzIiwicHV0cmlkIiwibm94aW91cyIsIm9mZmVuc2l2ZSJdLCJhbnQiOlsiZnJhZ3JhbnQiLCJzd2VldC1zbWVsbGluZyIsInBsZWFzYW50IiwiZnJlc2giLCJwdXJlIl19LCJwdWduYWNpb3VzIjp7InN5biI6WyJjb21iYXRpdmUiLCJhZ2dyZXNzaXZlIiwiYmVsbGlnZXJlbnQiLCJxdWFycmVsc29tZSIsImNvbnRlbnRpb3VzIiwiYmVsbGljb3NlIl0sImFudCI6WyJwZWFjZWFibGUiLCJnZW50bGUiLCJkb2NpbGUiLCJhbWljYWJsZSIsInBhY2lmaXN0aWMiXX0sInByb3BpdGlhdGUiOnsic3luIjpbImFwcGVhc2UiLCJwbGFjYXRlIiwicGFjaWZ5IiwibW9sbGlmeSIsImNvbmNpbGlhdGUiLCJzb290aGUiXSwiYW50IjpbInByb3Zva2UiLCJhbnRhZ29uaXplIiwiaW5jaXRlIiwiYW5nZXIiLCJlbnJhZ2UiXX0sImF0YXJheGlhIjp7InN5biI6WyJ0cmFucXVpbGl0eSIsInNlcmVuaXR5IiwiY2FsbW5lc3MiLCJwZWFjZWZ1bG5lc3MiLCJjb21wb3N1cmUiLCJlcXVhbmltaXR5Il0sImFudCI6WyJhbnhpZXR5IiwiYWdpdGF0aW9uIiwidHVybW9pbCIsImRpc3RyZXNzIiwicGVydHVyYmF0aW9uIl19LCJhcGhvcmlzbSI6eyJzeW4iOlsibWF4aW0iLCJhZGFnZSIsInNheWluZyIsInByb3ZlcmIiLCJlcGlncmFtIiwiYXhpb20iXSwiYW50IjpbImVzc2F5IiwidHJlYXRpc2UiLCJkaXNjb3Vyc2UiLCJleHBvc2l0aW9uIl19LCJvYmR1cmF0ZSI6eyJzeW4iOlsic3R1YmJvcm4iLCJ1bnlpZWxkaW5nIiwiYWRhbWFudCIsImluZmxleGlibGUiLCJpbnRyYW5zaWdlbnQiLCJoYXJkZW5lZCJdLCJhbnQiOlsieWllbGRpbmciLCJmbGV4aWJsZSIsImNvbXBsaWFudCIsImFtZW5hYmxlIiwidHJhY3RhYmxlIl19LCJjb250cmF2ZW5lIjp7InN5biI6WyJ2aW9sYXRlIiwiYnJlYWsiLCJpbmZyaW5nZSIsInRyYW5zZ3Jlc3MiLCJkaXNvYmV5IiwiZGVmeSJdLCJhbnQiOlsib2JleSIsImZvbGxvdyIsImNvbXBseSIsImNvbmZvcm0iLCJhYmlkZSJdfSwiZGVzdWV0dWRlIjp7InN5biI6WyJkaXN1c2UiLCJpbmFjdGl2aXR5IiwiYWJhbmRvbm1lbnQiLCJvYnNvbGVzY2VuY2UiLCJuZWdsZWN0IiwiZG9ybWFuY3kiXSwiYW50IjpbInVzZSIsImN1cnJlbmN5IiwicHJldmFsZW5jZSIsImFjdGl2aXR5IiwicHJhY3RpY2UiXX0sImNvZ2VudCI6eyJzeW4iOlsiY29udmluY2luZyIsInBlcnN1YXNpdmUiLCJjb21wZWxsaW5nIiwicG93ZXJmdWwiLCJmb3JjZWZ1bCIsImVmZmVjdGl2ZSJdLCJhbnQiOlsid2VhayIsInVuY29udmluY2luZyIsImZlZWJsZSIsImluZWZmZWN0aXZlIiwiaXJyZWxldmFudCJdfSwiZXhwaWF0ZSI6eyJzeW4iOlsiYXRvbmUiLCJtYWtlIGFtZW5kcyIsInJlZGVlbSIsInJlcGVudCIsImFic29sdmUiLCJwdXJnZSJdLCJhbnQiOlsiaWdub3JlIiwiY29uZG9uZSIsInBlcnBldHVhdGUiLCJyZXBlYXQiXX0sImludmV0ZXJhdGUiOnsic3luIjpbImluZ3JhaW5lZCIsImVudHJlbmNoZWQiLCJjb25maXJtZWQiLCJoYWJpdHVhbCIsImRlZXAtc2VhdGVkIiwiY2hyb25pYyJdLCJhbnQiOlsidGVtcG9yYXJ5Iiwic3VwZXJmaWNpYWwiLCJuZXciLCJ1bmVzdGFibGlzaGVkIiwiY2FzdWFsIl19LCJyZWZ1bGdlbnQiOnsic3luIjpbInJhZGlhbnQiLCJicmlsbGlhbnQiLCJnbG93aW5nIiwibHVtaW5vdXMiLCJyZXNwbGVuZGVudCIsImRhenpsaW5nIl0sImFudCI6WyJkdWxsIiwiZGltIiwibGFja2x1c3RlciIsImdsb29teSIsInN1YmR1ZWQiXX0sInN1YmZ1c2MiOnsic3luIjpbImRyYWIiLCJzb21iZXIiLCJnbG9vbXkiLCJkYXJrIiwiZGluZ3kiLCJkcmVhcnkiXSwiYW50IjpbImJyaWdodCIsInZpdmlkIiwiY29sb3JmdWwiLCJicmlsbGlhbnQiLCJjaGVlcmZ1bCJdfSwiZmVicmlsZSI6eyJzeW4iOlsiZmV2ZXJpc2giLCJmcmFudGljIiwiZnJlbnppZWQiLCJleGNpdGVkIiwiYWdpdGF0ZWQiLCJpbnRlbnNlIl0sImFudCI6WyJjYWxtIiwiY29vbCIsImNvbXBvc2VkIiwicGxhY2lkIiwidW5leGNpdGVkIl19LCJzZW50ZW50aW91cyI6eyJzeW4iOlsibW9yYWxpemluZyIsInByZWFjaHkiLCJkaWRhY3RpYyIsInBvbXBvdXMiLCJzYW5jdGltb25pb3VzIiwib3JhY3VsYXIiXSwiYW50IjpbImh1bWJsZSIsInNpbXBsZSIsIm1vZGVzdCIsInVucHJldGVudGlvdXMiLCJxdWlldCJdfSwic3ljb3BoYW50aWMiOnsic3luIjpbIm9ic2VxdWlvdXMiLCJmYXduaW5nIiwic2VydmlsZSIsInN1YnNlcnZpZW50IiwiaW5ncmF0aWF0aW5nIiwidG9hZHlpbmciXSwiYW50IjpbImluZGVwZW5kZW50IiwiYXNzZXJ0aXZlIiwicHJvdWQiLCJzZWxmLXJlbGlhbnQiLCJ1bmZsYXR0ZXJpbmciXX0sImVmZmV0ZSI6eyJzeW4iOlsid2VhayIsImRlY2FkZW50IiwiZW5lcnZhdGVkIiwiZmVlYmxlIiwic3RlcmlsZSIsImJhcnJlbiJdLCJhbnQiOlsic3Ryb25nIiwidmlnb3JvdXMiLCJyb2J1c3QiLCJmZXJ0aWxlIiwicHJvZHVjdGl2ZSJdfSwibmloaWxpc20iOnsic3luIjpbImN5bmljaXNtIiwicGVzc2ltaXNtIiwic2tlcHRpY2lzbSIsImRpc2JlbGllZiIsIm5lZ2F0aXZpc20iLCJyZWplY3Rpb24iXSwiYW50IjpbImJlbGllZiIsIm9wdGltaXNtIiwiaWRlYWxpc20iLCJmYWl0aCIsImNvbW1pdG1lbnQiXX0sImxhY29uaWMiOnsic3luIjpbInRlcnNlIiwiY29uY2lzZSIsImJyaWVmIiwic3VjY2luY3QiLCJwaXRoeSIsImNvbXBhY3QiXSwiYW50IjpbInZlcmJvc2UiLCJ3b3JkeSIsImxvbmctd2luZGVkIiwicHJvbGl4IiwiZ2FycnVsb3VzIl19LCJzYXJkb25pYyI6eyJzeW4iOlsibW9ja2luZyIsInNhcmNhc3RpYyIsImN5bmljYWwiLCJkZXJpc2l2ZSIsInNjb3JuZnVsIiwiaXJvbmljIl0sImFudCI6WyJyZXNwZWN0ZnVsIiwic2luY2VyZSIsImVhcm5lc3QiLCJhZG1pcmluZyIsInJldmVyZW50Il19LCJoZWdlbW9ueSI6eyJzeW4iOlsiZG9taW5hbmNlIiwic3VwcmVtYWN5IiwibGVhZGVyc2hpcCIsImF1dGhvcml0eSIsImNvbnRyb2wiLCJhc2NlbmRhbmN5Il0sImFudCI6WyJzdWJvcmRpbmF0aW9uIiwic3VibWlzc2lvbiIsImluZmVyaW9yaXR5Iiwid2Vha25lc3MiLCJwb3dlcmxlc3NuZXNzIl19LCJpbnRlcm5lY2luZSI6eyJzeW4iOlsiaW50ZXJuYWwiLCJtdXR1YWwiLCJjaXZpbCIsImRlc3RydWN0aXZlIiwiYmxvb2R5IiwiY29uZmxpY3R1YWwiXSwiYW50IjpbImV4dGVybmFsIiwidW5pdGVkIiwiY29vcGVyYXRpdmUiLCJoYXJtb25pb3VzIiwicGVhY2VmdWwiXX19"))));
+
+// ============================================================
+// REST OF THE JAVASCRIPT (DO NOT MODIFY)
+// ============================================================
+const LS = {
+  get(key, fallback) {
+    try { const v = localStorage.getItem(key); return v !== null ? v : fallback; }
+    catch(e) { return fallback; }
+  },
+  set(key, val) {
+    try { localStorage.setItem(key, val); } catch(e) {}
+  }
+};
+
+function buildGroups() {
+  const n = VOCAB.length;
+  const wordsPerGroup = 10;
+  const numGroups = Math.ceil(n / wordsPerGroup);
+  const groups = [];
+  
+  for (let i = 0; i < numGroups; i++) {
+    const start = i * wordsPerGroup;
+    const end = Math.min(start + wordsPerGroup, n);
+    groups.push(VOCAB.slice(start, end));
+  }
+  
+  return groups;
+}
+
+const GROUPS = buildGroups();
+const NUM_GROUPS = GROUPS.length;
+
+const S = {
+  gIdx: 0,
+  wIdx: 0,
+  sentTab: 0,
+  starred: new Set(JSON.parse(LS.get('wtb_starred', '[]'))),
+  sentences: JSON.parse(LS.get('wtb_sentences', '{}')),
+  quiz: null,
+  quizDone: {},
+  sqQuiz: null,
+};
+
+function saveStarred() { LS.set('wtb_starred', JSON.stringify([...S.starred])); }
+function saveSentences() { LS.set('wtb_sentences', JSON.stringify(S.sentences)); }
+
+function escReg(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+function highlightWord(text, word) {
+  const e = escReg(word);
+  const re1 = new RegExp('\\b(' + e + ')\\b', 'gi');
+  if (re1.test(text)) return text.replace(re1, '<span class="hl">$1</span>');
+  const root = escReg(word.substring(0, Math.max(4, Math.floor(word.length * 0.72))));
+  const re2 = new RegExp('\\b(' + root + '\\w*)\\b', 'gi');
+  return text.replace(re2, '<span class="hl">$1</span>');
+}
+
+function blankWord(text, word) {
+  const blank = '<span class="blank">___________</span>';
+  const e = escReg(word);
+  const re1 = new RegExp('\\b' + e + '\\b', 'gi');
+  if (re1.test(text)) return text.replace(re1, blank);
+  const root = escReg(word.substring(0, Math.max(4, Math.floor(word.length * 0.72))));
+  const re2 = new RegExp('\\b' + root + '\\w*\\b', 'gi');
+  return text.replace(re2, blank);
+}
+
+function chapterShort(ch) {
+  const m = ch.match(/Part ([IVX]+)[,\s]+Chapter (\d+)/i);
+  if (m) return 'Pt.' + m[1] + ' · Ch.' + m[2];
+  return ch;
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+let toastTimer = null;
+function toast(msg, type = '') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'show' + (type ? ' ' + type : '');
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.className = ''; }, 2200);
+}
+
+let currentAudio = null; // Track currently playing audio
+
+function speak(word) {
+  if ('speechSynthesis' in window) {
+    // If audio is playing, stop it (toggle mute)
+    if (currentAudio) {
+      window.speechSynthesis.cancel();
+      currentAudio = null;
+      return;
+    }
+    // Start new audio
+    const u = new SpeechSynthesisUtterance(word);
+    u.lang = 'en-US'; u.rate = 0.85;
+    u.onend = () => { currentAudio = null; };
+    u.onerror = () => { currentAudio = null; };
+    currentAudio = u;
+    window.speechSynthesis.speak(u);
+  }
+
+// Audio for sentences - with toggle support
+function playCurrentSentenceAudio() {
+  try {
+    const sentEn = document.getElementById('sentEn');
+    if (sentEn) {
+      let text = sentEn.textContent;
+      if (text && text !== '—') {
+        text = text.replace(/<[^>]*>/g, '');
+        if (text.trim()) {
+          if ('speechSynthesis' in window) {
+            // Toggle: if audio is playing, stop it; otherwise play
+            if (currentAudio) {
+              window.speechSynthesis.cancel();
+              currentAudio = null;
+            } else {
+              const u = new SpeechSynthesisUtterance(text);
+              u.lang = 'en-US'; u.rate = 0.85;
+              u.onend = () => { currentAudio = null; };
+              u.onerror = () => { currentAudio = null; };
+              currentAudio = u;
+              window.speechSynthesis.speak(u);
+            }
+          }
+        }
+      }
+    }
+  } catch (e) { console.error('Audio error:', e); }
+}
+}
+
+function render() {
+  if (!GROUPS.length || !GROUPS[S.gIdx] || !GROUPS[S.gIdx][S.wIdx]) {
+    console.error('No data available');
+    return;
+  }
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[S.wIdx];
+  const isStarred = S.starred.has(entry.word);
+
+  document.getElementById('groupNumDisplay').textContent = (S.gIdx + 1) + ' / ' + NUM_GROUPS;
+  document.getElementById('prevGroupBtn').disabled = S.gIdx === 0;
+  document.getElementById('nextGroupBtn').disabled = S.gIdx === NUM_GROUPS - 1;
+  renderGroupDots();
+
+  document.getElementById('wordNumDisplay').textContent = S.wIdx + 1;
+  document.getElementById('groupSizeDisplay').textContent = group.length;
+  document.getElementById('prevWordBtn').disabled = S.wIdx === 0;
+  document.getElementById('nextWordBtn').disabled = S.wIdx === group.length - 1;
+
+  const sb = document.getElementById('starBtn');
+  sb.textContent = isStarred ? '★' : '☆';
+  sb.classList.toggle('starred', isStarred);
+
+  document.getElementById('wordDisplay').textContent = entry.word;
+  document.getElementById('pronDisplay').textContent = entry.pron;
+  document.getElementById('chapterBadge').textContent = (entry.pos || '');
+  document.getElementById('defEn').textContent = entry.def_en;
+  document.getElementById('defZh').textContent = entry.def_zh;
+
+  document.getElementById('tabNovel').classList.toggle('active', S.sentTab === 0);
+  document.getElementById('tabAI').classList.toggle('active', S.sentTab === 1);
+
+  let sentEn, sentZh, sentSource;
+  if (S.sentTab === 0) {
+    sentEn = highlightWord(entry.quote_en, entry.word);
+    sentZh = entry.quote_zh;
+    sentSource = '— ' + BOOK_CONFIG.author + ', <em>' + BOOK_CONFIG.bookName + '</em> · ' + entry.chapter;
+  } else {
+    sentEn = highlightWord(entry.ex_en, entry.word);
+    sentZh = entry.ex_zh;
+    sentSource = '— AI Example · Thematically aligned with <em>' + BOOK_CONFIG.bookName + '</em>';
+  }
+  document.getElementById('sentEn').innerHTML = sentEn;
+  document.getElementById('sentZh').textContent = sentZh;
+  document.getElementById('sentSource').innerHTML = sentSource;
+
+  const sa = SYNAN[entry.word] || { syn: [], ant: [] };
+  document.getElementById('synChips').innerHTML = sa.syn.map(w => `<span class="synan-chip syn">${w}</span>`).join('');
+  document.getElementById('antChips').innerHTML = sa.ant.map(w => `<span class="synan-chip ant">${w}</span>`).join('');
+  document.getElementById('synanBlock').style.display = (sa.syn.length || sa.ant.length) ? 'flex' : 'none';
+
+  document.getElementById('tabSpell').classList.toggle('active', S.sentTab === 2);
+  document.getElementById('spellContent').style.display = S.sentTab === 2 ? 'block' : 'none';
+  document.getElementById('sentenceContent').style.display = S.sentTab === 2 ? 'none' : 'block';
+  if (S.sentTab === 2) renderSpell();
+
+  renderStarredSection();
+  renderMySentences();
+
+  document.getElementById('quizStartDesc').textContent =
+    'Test yourself on Group ' + (S.gIdx + 1) + '. Choose the word, then spell it.';
+  const done = S.quizDone[S.gIdx];
+  const badge = document.getElementById('quizScoreBadge');
+  if (done !== undefined) {
+    badge.style.display = 'inline-block';
+    badge.textContent = done.score + ' / ' + done.total + ' correct';
+  } else {
+    badge.style.display = 'none';
+  }
+
+  const cnt = S.starred.size;
+  document.getElementById('starredCount').textContent = cnt;
+  document.getElementById('starredCountHeader').textContent = cnt;
+}
+
+function renderGroupDots() {
+  const wrap = document.getElementById('groupDots');
+  wrap.innerHTML = '';
+  for (let i = 0; i < NUM_GROUPS; i++) {
+    const d = document.createElement('div');
+    d.className = 'group-dot' +
+      (i === S.gIdx ? ' active' : '') +
+      (S.quizDone[i] !== undefined && i !== S.gIdx ? ' done' : '');
+    wrap.appendChild(d);
+  }
+}
+
+function renderStarredSection() {
+  const list = document.getElementById('starredList');
+  list.innerHTML = '';
+  if (S.starred.size === 0) {
+    list.innerHTML = '<div class="starred-empty">No starred words yet. Tap ☆ on any word to save it.</div>';
+  } else {
+    [...S.starred].forEach(word => {
+      const idx = VOCAB.findIndex(v => v.word === word);
+      if (idx === -1) return;
+      const chip = document.createElement('button');
+      chip.className = 'starred-chip';
+      chip.textContent = word;
+      chip.title = VOCAB[idx].def_en;
+      chip.addEventListener('click', () => navigateToWord(idx));
+      list.appendChild(chip);
+    });
+  }
+  renderStarredQuizStart();
+}
+
+function renderMySentences() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  const sents = S.sentences[word] || [];
+  const max = 3;
+
+  const counter = document.getElementById('mySentCounter');
+  counter.textContent = sents.length + ' / ' + max;
+  counter.className = 'my-sent-counter' + (sents.length >= max ? ' full' : '');
+
+  const input = document.getElementById('mySentInput');
+  const saveBtn = document.getElementById('mySentSaveBtn');
+  input.disabled = sents.length >= max;
+  saveBtn.disabled = sents.length >= max;
+  input.placeholder = sents.length >= max
+    ? 'Maximum 3 sentences saved ✓'
+    : 'Write your own sentence using "' + word + '"…';
+
+  const list = document.getElementById('mySentList');
+  list.innerHTML = '';
+  sents.forEach((text, i) => {
+    const item = document.createElement('div');
+    item.className = 'my-sent-item';
+    item.innerHTML =
+      '<span class="my-sent-num">' + (i + 1) + '</span>' +
+      '<span class="my-sent-text">' + escapeHTML(text) + '</span>' +
+      '<button class="my-sent-del" data-idx="' + i + '" title="Delete">✕</button>';
+    item.querySelector('.my-sent-del').addEventListener('click', () => deleteSentence(word, i));
+    list.appendChild(item);
+  });
+}
+
+function escapeHTML(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function addSentence() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  const input = document.getElementById('mySentInput');
+  const text = input.value.trim();
+  if (!text) { toast('Please write a sentence first.', ''); return; }
+  if (!S.sentences[word]) S.sentences[word] = [];
+  if (S.sentences[word].length >= 3) { toast('Max 3 sentences per word.', ''); return; }
+  const wordLower = word.toLowerCase();
+  const rootLower = wordLower.substring(0, Math.max(4, Math.floor(wordLower.length * 0.72)));
+  if (!text.toLowerCase().includes(rootLower)) {
+    toast('💡 Try to use "' + word + '" in your sentence!', '');
+  }
+  S.sentences[word].push(text);
+  saveSentences();
+  input.value = '';
+  renderMySentences();
+  toast('✓ Sentence saved!', 'good');
+}
+
+function deleteSentence(word, idx) {
+  if (!S.sentences[word]) return;
+  S.sentences[word].splice(idx, 1);
+  if (S.sentences[word].length === 0) delete S.sentences[word];
+  saveSentences();
+  renderMySentences();
+}
+
+function renderStarredQuizStart() {
+  const count = S.starred.size;
+  const canStart = count >= 5;
+  document.getElementById('sqDesc').textContent = canStart
+    ? 'Quiz yourself on all ' + count + ' starred words.'
+    : 'Keep starring words to unlock your personal quiz.';
+  document.getElementById('sqStartBtn').style.display = canStart ? 'inline-block' : 'none';
+  document.getElementById('sqUnlockHint').style.display = canStart ? 'none' : 'block';
+  document.getElementById('sqStarredCount').textContent = count;
+  document.getElementById('sqStartArea').style.display = 'block';
+  document.getElementById('sqQuestionArea').style.display = 'none';
+  document.getElementById('sqResult').style.display = 'none';
+}
+
+function startStarredQuiz() {
+  const starredWords = [...S.starred];
+  if (starredWords.length < 5) return;
+
+  const entries = starredWords
+    .map(w => VOCAB.find(v => v.word === w))
+    .filter(Boolean);
+
+  const questions = shuffle(entries);
+  S.sqQuiz = { questions, qIdx: 0, score: 0, answered: false };
+
+  document.getElementById('sqStartArea').style.display = 'none';
+  document.getElementById('sqQuestionArea').style.display = 'block';
+  document.getElementById('sqResult').style.display = 'none';
+  renderSQQuestion();
+}
+
+function renderSQQuestion() {
+  const q = S.sqQuiz;
+  const entry = q.questions[q.qIdx];
+  const total = q.questions.length;
+
+  document.getElementById('sqQNum').textContent = 'Question ' + (q.qIdx + 1) + ' / ' + total;
+  document.getElementById('sqProgressFill').style.width = ((q.qIdx / total) * 100) + '%';
+  document.getElementById('sqSentence').innerHTML = blankWord(entry.quote_en, entry.word);
+
+  const pool = [...S.starred].filter(w => w !== entry.word);
+  const starredDistractors = shuffle(pool).slice(0, 3);
+  const needed = 3 - starredDistractors.length;
+  let extra = [];
+  if (needed > 0) {
+    extra = shuffle(VOCAB.map(v => v.word).filter(w => w !== entry.word && !S.starred.has(w))).slice(0, needed);
+  }
+  const choices = shuffle([entry.word, ...starredDistractors, ...extra].slice(0, 4));
+
+  const labels = ['A', 'B', 'C', 'D'];
+  const container = document.getElementById('sqChoices');
+  container.innerHTML = '';
+  choices.forEach((word, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'choice-btn';
+    btn.innerHTML = '<span class="choice-label">' + labels[i] + '</span>' + word;
+    btn.dataset.word = word;
+    btn.addEventListener('click', () => checkSQAnswer(word, entry.word, entry.def_en));
+    container.appendChild(btn);
+  });
+
+  const fb = document.getElementById('sqFeedback');
+  fb.style.display = 'none';
+  fb.className = 'quiz-feedback';
+  document.getElementById('sqNextBtn').style.display = 'none';
+  q.answered = false;
+}
+
+function checkSQAnswer(chosen, correct, defHint) {
+  if (S.sqQuiz.answered) return;
+  S.sqQuiz.answered = true;
+
+  document.querySelectorAll('#sqChoices .choice-btn').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.word === correct) btn.classList.add('correct');
+    else if (btn.dataset.word === chosen && chosen !== correct) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('sqFeedback');
+  if (chosen === correct) {
+    S.sqQuiz.score++;
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Correct! "' + correct + '" — ' + defHint.split(';')[0] + '.';
+  } else {
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The answer is "' + correct + '" — ' + defHint.split(';')[0] + '.';
+  }
+  fb.style.display = 'block';
+
+  const nextBtn = document.getElementById('sqNextBtn');
+  const isLast = S.sqQuiz.qIdx === S.sqQuiz.questions.length - 1;
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function sqNext() {
+  const q = S.sqQuiz;
+  if (q.qIdx < q.questions.length - 1) {
+    q.qIdx++;
+    renderSQQuestion();
+  } else {
+    const total = q.questions.length;
+    const pct = Math.round((q.score / total) * 100);
+    const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '📚';
+    document.getElementById('sqQuestionArea').style.display = 'none';
+    document.getElementById('sqResult').style.display = 'block';
+    document.getElementById('sqProgressFill').style.width = '100%';
+    document.getElementById('sqResultScore').textContent = emoji + ' ' + q.score + ' / ' + total;
+    document.getElementById('sqResultLabel').textContent =
+      pct >= 80 ? 'Excellent — your starred words are solid!' :
+      pct >= 60 ? 'Good progress. Review the ones you missed.' :
+                  'Keep studying — revisit your starred words.';
+  }
+}
+
+function goGroup(idx) {
+  S.gIdx = Math.max(0, Math.min(NUM_GROUPS - 1, idx));
+  S.wIdx = 0;
+  S.sentTab = 0;
+  resetQuizUI();
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function goWord(idx) {
+  const group = GROUPS[S.gIdx];
+  S.wIdx = Math.max(0, Math.min(group.length - 1, idx));
+  S.sentTab = 0;
+  render();
+}
+
+function navigateToWord(vocabIdx) {
+  let cumulative = 0;
+  for (let g = 0; g < NUM_GROUPS; g++) {
+    if (vocabIdx < cumulative + GROUPS[g].length) {
+      S.gIdx = g;
+      S.wIdx = vocabIdx - cumulative;
+      S.sentTab = 0;
+      resetQuizUI();
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    cumulative += GROUPS[g].length;
+  }
+}
+
+function toggleStar() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  if (S.starred.has(word)) {
+    S.starred.delete(word);
+    toast('Removed from starred', '');
+  } else {
+    S.starred.add(word);
+    toast('⭐ Starred: ' + word, 'gold');
+  }
+  saveStarred();
+  render();
+}
+
+function resetQuizUI() {
+  S.quiz = null;
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+  document.getElementById('quizStartArea').style.display = 'block';
+  document.getElementById('quizQuestionArea').style.display = 'none';
+  document.getElementById('quizResult').style.display = 'none';
+}
+
+function startQuiz() {
+  const group = GROUPS[S.gIdx];
+  const questions = shuffle(group.map((entry, i) => ({ entry, groupIdx: i })));
+  S.quiz = {
+    questions,
+    qIdx: 0,
+    phase: 1,
+    score: 0,
+    spellScore: 0,
+    answered: false,
+  };
+  document.getElementById('quizStartArea').style.display = 'none';
+  document.getElementById('quizQuestionArea').style.display = 'block';
+  document.getElementById('quizResult').style.display = 'none';
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const q = S.quiz;
+  const { entry } = q.questions[q.qIdx];
+  const total = q.questions.length;
+  const step = q.qIdx * 2 + (q.phase - 1);
+  const totalSteps = total * 2;
+
+  document.getElementById('quizQNum').textContent =
+    'Word ' + (q.qIdx + 1) + ' / ' + total + ' · ' + (q.phase === 1 ? 'Part 1: Choose' : 'Part 2: Spell');
+  document.getElementById('quizProgressFill').style.width = ((step / totalSteps) * 100) + '%';
+
+  document.getElementById('quizNextBtn').style.display = 'none';
+
+  if (q.phase === 1) {
+    document.getElementById('quizPhase1').style.display = 'block';
+    document.getElementById('quizPhase2').style.display = 'none';
+
+    document.getElementById('quizSentence').innerHTML = blankWord(entry.quote_en, entry.word);
+
+    const group = GROUPS[S.gIdx];
+    const distractors = shuffle(group.map(w => w.word).filter(w => w !== entry.word)).slice(0, 3);
+    const choices = shuffle([entry.word, ...distractors]);
+    const labels = ['A', 'B', 'C', 'D'];
+    const container = document.getElementById('quizChoices');
+    container.innerHTML = '';
+    choices.forEach((word, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.innerHTML = '<span class="choice-label">' + labels[i] + '</span>' + word;
+      btn.dataset.word = word;
+      btn.addEventListener('click', () => checkAnswer(word, entry.word));
+      container.appendChild(btn);
+    });
+
+    const fb = document.getElementById('quizFeedback');
+    fb.style.display = 'none';
+    fb.className = 'quiz-feedback';
+    q.answered = false;
+
+  } else {
+    document.getElementById('quizPhase1').style.display = 'none';
+    document.getElementById('quizPhase2').style.display = 'block';
+    renderQuizSpell(entry);
+  }
+}
+
+function renderQuizSpell(entry) {
+  const word = entry.word.toLowerCase();
+  document.getElementById('qSpellSentence').innerHTML = highlightWord(entry.ex_en, entry.word)
+    .replace(/<span class="hl">([^<]+)<\/span>/gi, '<span class="hl">_____<\/span>');
+
+  const boxes = document.getElementById('qSpellBoxes');
+  boxes.innerHTML = '';
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === '-') {
+      const sep = document.createElement('div');
+      sep.style.cssText = 'width:10px;display:flex;align-items:center;justify-content:center;color:var(--muted2);font-weight:900;font-size:1.2rem;';
+      sep.textContent = '-';
+      boxes.appendChild(sep);
+    } else {
+      const b = document.createElement('div');
+      b.className = 'spell-box' + (i === 0 ? ' cursor' : '');
+      b.dataset.idx = i;
+      boxes.appendChild(b);
+    }
+  }
+  const inp = document.getElementById('qSpellInput');
+  inp.value = '';
+  inp.placeholder = word.length + ' letters';
+  const fb = document.getElementById('qSpellFeedback');
+  fb.style.display = 'none';
+  fb.className = 'quiz-feedback';
+  document.getElementById('qSpellRevealBtn').style.display = 'block';
+  updateQSpellBoxes('');
+}
+
+function updateQSpellBoxes(typed) {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const word = entry.word.toLowerCase().replace(/-/g, '');
+  const t = typed.toLowerCase();
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  allBoxes.forEach((b, i) => {
+    b.className = 'spell-box';
+    if (i < t.length) { b.textContent = t[i]; b.classList.add('filled'); }
+    else { b.textContent = ''; if (i === t.length) b.classList.add('cursor'); }
+  });
+}
+
+function checkQuizSpelling() {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const word = entry.word.toLowerCase();
+  const typed = document.getElementById('qSpellInput').value.trim().toLowerCase();
+  const fb = document.getElementById('qSpellFeedback');
+  if (!typed) { toast('Type the word first!', ''); return; }
+
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  const wordClean = word.replace(/-/g, '');
+  const typedClean = typed.replace(/-/g, '');
+
+  if (typedClean === wordClean) {
+    S.quiz.spellScore++;
+    allBoxes.forEach(b => { b.className = 'spell-box correct'; });
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Perfect spelling!';
+    toast('✓ Spelled correctly!', 'good');
+  } else {
+    const wordArr = wordClean.split('');
+    allBoxes.forEach((b, i) => {
+      b.className = 'spell-box';
+      const ch = typedClean[i] || '';
+      b.textContent = ch || wordArr[i];
+      if (!ch) b.classList.add('wrong');
+      else if (ch === wordArr[i]) b.classList.add('correct');
+      else { b.classList.add('wrong'); b.textContent = ch; }
+    });
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The word is "' + entry.word + '".';
+  }
+  fb.style.display = 'block';
+  document.getElementById('qSpellRevealBtn').style.display = 'none';
+  const isLast = S.quiz.qIdx === S.quiz.questions.length - 1;
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next Word →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function checkAnswer(chosen, correct) {
+  if (S.quiz.answered) return;
+  S.quiz.answered = true;
+
+  const btns = document.querySelectorAll('.choice-btn');
+  btns.forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.word === correct) btn.classList.add('correct');
+    else if (btn.dataset.word === chosen && chosen !== correct) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('quizFeedback');
+  if (chosen === correct) {
+    S.quiz.score++;
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Correct! "' + correct + '" is right.';
+  } else {
+    // Auto-star word on wrong answer
+    S.starred.add(correct);
+    saveStarred();
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The answer is "' + correct + '".';
+  }
+  fb.style.display = 'block';
+
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = 'Next: Spell It →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function quizNext() {
+  const q = S.quiz;
+  const total = q.questions.length;
+  if (q.phase === 1) {
+    q.phase = 2;
+    renderQuestion();
+  } else if (q.qIdx < total - 1) {
+    q.qIdx++;
+    q.phase = 1;
+    renderQuestion();
+  } else {
+    const mcPct = Math.round((q.score / total) * 100);
+    const spPct = Math.round((q.spellScore / total) * 100);
+    const combined = q.score + q.spellScore;
+    const combMax = total * 2;
+    const emoji = mcPct >= 80 ? '🎉' : mcPct >= 60 ? '👍' : '📚';
+    document.getElementById('quizQuestionArea').style.display = 'none';
+    document.getElementById('quizResult').style.display = 'block';
+    document.getElementById('quizProgressFill').style.width = '100%';
+    document.getElementById('quizResultScore').textContent = emoji + ' ' + combined + ' / ' + combMax;
+    document.getElementById('quizResultLabel').textContent =
+      '📖 Choose: ' + q.score + '/' + total + '  ·  ✏️ Spell: ' + q.spellScore + '/' + total + (
+        mcPct >= 80 && spPct >= 80 ? '  —  Outstanding!' :
+        mcPct >= 60 ? '  —  Good work! Review the ones you missed.' :
+        '  —  Keep studying — you\'ll get there!'
+      );
+    S.quizDone[S.gIdx] = { score: combined, total: combMax };
+    render();
+  }
+}
+
+function renderSpell() {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase();
+
+  document.getElementById('spellSentence').innerHTML = highlightWord(entry.ex_en, entry.word)
+    .replace(/<span class="hl">([^<]+)<\/span>/gi, '<span class="hl">_____</span>');
+
+  const boxes = document.getElementById('spellBoxes');
+  boxes.innerHTML = '';
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === '-') {
+      const sep = document.createElement('div');
+      sep.style.cssText = 'width:10px;display:flex;align-items:center;justify-content:center;color:var(--muted2);font-weight:900;font-size:1.2rem;';
+      sep.textContent = '-';
+      boxes.appendChild(sep);
+    } else {
+      const b = document.createElement('div');
+      b.className = 'spell-box' + (i === 0 ? ' cursor' : '');
+      b.dataset.idx = i;
+      boxes.appendChild(b);
+    }
+  }
+
+  const inp = document.getElementById('spellInput');
+  inp.value = '';
+  inp.placeholder = word.length + ' letters';
+  document.getElementById('spellFeedback').style.display = 'none';
+  document.getElementById('spellFeedback').className = 'spell-feedback';
+  document.getElementById('spellRevealBtn').style.display = 'block';
+  updateBoxes('');
+}
+
+function updateBoxes(typed) {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase().replace(/-/g, '');
+  const t = typed.toLowerCase();
+  const allBoxes = document.querySelectorAll('.spell-box');
+
+  allBoxes.forEach((b, i) => {
+    b.className = 'spell-box';
+    if (i < t.length) {
+      b.textContent = t[i];
+      b.classList.add('filled');
+    } else {
+      b.textContent = '';
+      if (i === t.length) b.classList.add('cursor');
+    }
+  });
+}
+
+function checkSpelling() {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase();
+  const typed = document.getElementById('spellInput').value.trim().toLowerCase();
+  const fb = document.getElementById('spellFeedback');
+
+  if (!typed) { toast('Type the word first!', ''); return; }
+
+  const allBoxes = document.querySelectorAll('.spell-box');
+  const wordClean = word.replace(/-/g, '');
+  const typedClean = typed.replace(/-/g, '');
+
+  if (typedClean === wordClean) {
+    allBoxes.forEach(b => { b.className = 'spell-box correct'; b.textContent = b.textContent || ''; });
+    fb.className = 'spell-feedback ok';
+    fb.textContent = '✓ Correct! You spelled "' + entry.word + '" perfectly.';
+    toast('✓ Spelled correctly!', 'good');
+  } else {
+    const wordArr = wordClean.split('');
+    allBoxes.forEach((b, i) => {
+      b.className = 'spell-box';
+      const ch = typedClean[i] || '';
+      b.textContent = ch || wordArr[i];
+      if (!ch)          b.classList.add('wrong');
+      else if (ch === wordArr[i]) b.classList.add('correct');
+      else              { b.classList.add('wrong'); b.textContent = ch; }
+    });
+    fb.className = 'spell-feedback err';
+    fb.textContent = '✗ Not quite. The word is "' + entry.word + '".';
+  }
+  fb.style.display = 'block';
+  document.getElementById('spellRevealBtn').style.display = 'none';
+}
+
+document.getElementById('prevGroupBtn').addEventListener('click', () => goGroup(S.gIdx - 1));
+document.getElementById('nextGroupBtn').addEventListener('click', () => goGroup(S.gIdx + 1));
+document.getElementById('prevWordBtn').addEventListener('click', () => goWord(S.wIdx - 1));
+document.getElementById('nextWordBtn').addEventListener('click', () => goWord(S.wIdx + 1));
+document.getElementById('starBtn').addEventListener('click', toggleStar);
+  document.getElementById('speakBtn').addEventListener('click', () => speak(GROUPS[S.gIdx][S.wIdx].word));
+  const sentenceBtn = document.getElementById('sentenceHearBtn');
+  if (sentenceBtn) {
+    sentenceBtn.addEventListener('click', () => {
+      const sentEn = document.getElementById('sentEn');
+      if (sentEn) {
+        let text = sentEn.textContent;
+        if (text && text !== '—') {
+          text = text.replace(/<[^>]*>/g, '');
+          if (text.trim()) speak(text);
+        }
+      }
+    });
+  }
+document.getElementById('speakBtn2').addEventListener('click', () => speak(GROUPS[S.gIdx][S.wIdx].word));
+document.getElementById('tabNovel').addEventListener('click', () => { S.sentTab = 0; render(); });
+document.getElementById('tabAI').addEventListener('click',   () => { S.sentTab = 1; render(); });
+document.getElementById('tabSpell').addEventListener('click', () => { S.sentTab = 2; render(); });
+document.getElementById('mySentSaveBtn').addEventListener('click', addSentence);
+document.getElementById('mySentInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); addSentence(); }
+});
+document.getElementById('sqStartBtn').addEventListener('click', startStarredQuiz);
+document.getElementById('sqNextBtn').addEventListener('click', sqNext);
+document.getElementById('sqRetryBtn').addEventListener('click', startStarredQuiz);
+document.getElementById('sqResetBtn').addEventListener('click', renderStarredQuizStart);
+document.getElementById('quizHeader').addEventListener('click', () => {
+  const body = document.getElementById('quizBody');
+  const icon = document.getElementById('quizToggleIcon');
+  const open = body.classList.toggle('open');
+  icon.classList.toggle('open', open);
+});
+document.getElementById('quizStartBtn').addEventListener('click', startQuiz);
+document.getElementById('quizSkipBtn').addEventListener('click', () => {
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+});
+document.getElementById('qSpellInput').addEventListener('input', e => {
+  updateQSpellBoxes(e.target.value);
+});
+document.getElementById('qSpellInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); checkQuizSpelling(); }
+});
+document.getElementById('qSpellCheckBtn').addEventListener('click', checkQuizSpelling);
+document.getElementById('qSpellRevealBtn').addEventListener('click', () => {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const fb = document.getElementById('qSpellFeedback');
+  fb.className = 'quiz-feedback wrong-fb';
+  fb.textContent = 'The word is "' + entry.word + '". Try again next time!';
+  fb.style.display = 'block';
+  document.getElementById('qSpellRevealBtn').style.display = 'none';
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  const wordClean = entry.word.toLowerCase().replace(/-/g,'');
+  allBoxes.forEach((b, i) => { b.className = 'spell-box wrong'; b.textContent = wordClean[i] || ''; });
+  const isLast = S.quiz.qIdx === S.quiz.questions.length - 1;
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next Word →';
+  nextBtn.style.display = 'inline-block';
+});
+document.getElementById('quizNextBtn').addEventListener('click', quizNext);
+document.getElementById('quizRetryBtn').addEventListener('click', () => {
+  document.getElementById('quizResult').style.display = 'none';
+  document.getElementById('quizStartArea').style.display = 'block';
+});
+document.getElementById('quizCloseBtn').addEventListener('click', () => {
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+});
+document.getElementById('starredHeader').addEventListener('click', () => {
+  const body = document.getElementById('starredBody');
+  const icon = document.getElementById('starredToggleIcon');
+  const open = body.classList.toggle('open');
+  icon.classList.toggle('open', open);
+});
+document.getElementById('starredToggleBtn').addEventListener('click', () => {
+  const body = document.getElementById('starredBody');
+  const icon = document.getElementById('starredToggleIcon');
+  body.classList.add('open');
+  icon.classList.add('open');
+  document.getElementById('starredSection').scrollIntoView({ behavior: 'smooth' });
+});
+document.getElementById('spellInput').addEventListener('input', e => {
+  updateBoxes(e.target.value);
+});
+document.getElementById('spellInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); checkSpelling(); }
+});
+document.getElementById('spellCheckBtn').addEventListener('click', checkSpelling);
+document.getElementById('spellRevealBtn').addEventListener('click', () => {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  const fb = document.getElementById('spellFeedback');
+  fb.className = 'spell-feedback err';
+  fb.textContent = 'The word is "' + word + '". Try again next time!';
+  fb.style.display = 'block';
+  document.getElementById('spellRevealBtn').style.display = 'none';
+  const allBoxes = document.querySelectorAll('.spell-box');
+  const wordClean = word.toLowerCase().replace(/-/g,'');
+  allBoxes.forEach((b, i) => {
+    b.className = 'spell-box wrong';
+    b.textContent = wordClean[i] || '';
+  });
+});
+document.addEventListener('keydown', e => {
+  const tag = document.activeElement.tagName;
+  if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+  switch(e.key) {
+    case 'ArrowRight': e.preventDefault(); goWord(S.wIdx + 1); break;
+    case 'ArrowLeft':  e.preventDefault(); goWord(S.wIdx - 1); break;
+    case 'ArrowUp':    e.preventDefault(); goGroup(S.gIdx - 1); break;
+    case 'ArrowDown':  e.preventDefault(); goGroup(S.gIdx + 1); break;
+    case 's': case 'S': toggleStar(); break;
+    case 'p': case 'P': speak(GROUPS[S.gIdx][S.wIdx].word); break;
+    case '1': S.sentTab = 0; render(); break;
+    case '2': S.sentTab = 1; render(); break;
+  }
+});
+
+// ── Print functions ──────────────────────────────────────────
+function openPrintModal() {
+  const grp = GROUPS[S.gIdx];
+  document.getElementById('printGroupLabel').textContent = 'Group ' + (S.gIdx + 1);
+  document.getElementById('printGroupCount').textContent = grp.length;
+  document.getElementById('printAllCount').textContent = VOCAB.length;
+  document.getElementById('printModal').style.display = 'block';
+}
+
+function closePrintModal() {
+  document.getElementById('printModal').style.display = 'none';
+}
+
+function doPrint() {
+  const scope = document.querySelector('input[name="printScope"]:checked').value;
+  const words = scope === 'group' ? GROUPS[S.gIdx] : VOCAB;
+  const groupLabel = scope === 'group' ? 'Group ' + (S.gIdx + 1) : 'All Words';
+
+  const rows = words.map((entry, i) => {
+    const sa = SYNAN[entry.word] || { syn: [], ant: [] };
+    const synText = sa.syn.length ? sa.syn.join(', ') : '—';
+    const antText = sa.ant.length ? sa.ant.join(', ') : '—';
+    return `
+      <div class="pe">
+        <div class="pe-head">
+          <span class="pe-num">${i + 1}</span>
+          <span class="pe-word">${entry.word}</span>
+          <span class="pe-pron">${entry.pron}</span>
+          <span class="pe-ch">${entry.chapter}</span>
+        </div>
+        <div class="pe-def">${entry.def_en}</div>
+        <div class="pe-def zh">${entry.def_zh}</div>
+        <div class="pe-synan">
+          <span class="pe-label syn">SYN</span>${synText}
+          &nbsp;&nbsp;<span class="pe-label ant">ANT</span>${antText}
+        </div>
+        <div class="pe-sent">
+          <span class="pe-sent-label">📖</span>
+          <span>${entry.quote_en}</span>
+        </div>
+        <div class="pe-sent zh">
+          <span class="pe-sent-label"></span>
+          <span>${entry.quote_zh}</span>
+        </div>
+        <div class="pe-sent ex">
+          <span class="pe-sent-label">💡</span>
+          <span>${entry.ex_en}</span>
+        </div>
+        <div class="pe-sent zh">
+          <span class="pe-sent-label"></span>
+          <span>${entry.ex_zh}</span>
+        </div>
+      </div>`;
+  }).join('');
+
+  const html = `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>${BOOK_CONFIG.bookName} — Vocabulary (${groupLabel})</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Songti SC', 'SimSun', serif;
+    font-size: 9.5pt;
+    color: #111;
+    background: white;
+    padding: 14mm 12mm;
+  }
+  h1 {
+    font-size: 15pt;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3pt;
+    letter-spacing: .02em;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #555;
+    margin-bottom: 12pt;
+    padding-bottom: 8pt;
+    border-bottom: 1.5pt solid #333;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 14pt;
+  }
+  .pe {
+    border-bottom: .5pt solid #ccc;
+    padding: 7pt 0 6pt;
+    break-inside: avoid;
+  }
+  .pe-head {
+    display: flex;
+    align-items: baseline;
+    gap: 5pt;
+    margin-bottom: 2pt;
+    flex-wrap: wrap;
+  }
+  .pe-num {
+    font-size: 7.5pt;
+    color: #888;
+    min-width: 16pt;
+  }
+  .pe-word {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: .01em;
+  }
+  .pe-pron {
+    font-size: 8pt;
+    color: #555;
+    font-style: italic;
+  }
+  .pe-ch {
+    font-size: 7.5pt;
+    color: #888;
+    margin-left: auto;
+  }
+  .pe-def {
+    font-size: 8.5pt;
+    color: #222;
+    margin-bottom: 1.5pt;
+    line-height: 1.4;
+  }
+  .pe-def.zh {
+    color: #444;
+    font-size: 8pt;
+    margin-bottom: 3pt;
+  }
+  .pe-synan {
+    font-size: 8pt;
+    margin-bottom: 3.5pt;
+    color: #333;
+    line-height: 1.5;
+  }
+  .pe-label {
+    font-size: 7pt;
+    font-weight: 700;
+    padding: 1pt 4pt;
+    border-radius: 3pt;
+    margin-right: 3pt;
+    letter-spacing: .04em;
+  }
+  .pe-label.syn {
+    background: #e6faf4;
+    color: #1a7a55;
+    border: .5pt solid #aadec8;
+  }
+  .pe-label.ant {
+    background: #fef0f2;
+    color: #a02040;
+    border: .5pt solid #f0b0bc;
+  }
+  .pe-sent {
+    font-size: 8pt;
+    line-height: 1.45;
+    color: #333;
+    display: flex;
+    gap: 4pt;
+    margin-top: 1.5pt;
+  }
+  .pe-sent.ex { color: #1a4a70; }
+  .pe-sent.zh { color: #555; margin-top: 1pt; }
+  .pe-sent-label {
+    font-size: 8pt;
+    min-width: 12pt;
+    flex-shrink: 0;
+  }
+  .footer {
+    position: running(footer);
+    font-size: 7.5pt;
+    color: #888;
+    text-align: center;
+  }
+  @page {
+    margin: 14mm 12mm 18mm;
+    @bottom-center { content: element(footer); }
+  }
+  @media print {
+    .footer { display: block; }
+  }
+</style>
+</head>
+<body>
+<h1>${BOOK_CONFIG.bookName} Vocabulary</h1>
+<div class="subtitle">${BOOK_CONFIG.author} &nbsp;·&nbsp; ${groupLabel} &nbsp;·&nbsp; ${words.length} words &nbsp;·&nbsp; 📖 Novel sentence &nbsp; 💡 AI example sentence</div>
+<div class="footer">${BOOK_CONFIG.bookName} — ${BOOK_CONFIG.author} &nbsp;|&nbsp; ${groupLabel}</div>
+<div class="grid">${rows}</div>
+</body>
+</html>`;
+
+  closePrintModal();
+  const win = window.open('', '_blank');
+  win.document.write(html);
+  win.document.close();
+  win.focus();
+  setTimeout(() => win.print(), 400);
+}
+
+// Initialize
+if (VOCAB.length > 1) {
+  render();
+} else {
+  document.getElementById('wordDisplay').textContent = 'Add Data';
+  document.getElementById('defEn').textContent = 'Please paste your 100 vocabulary words into the VOCAB array.';
+}
+</script>
+
+<!-- Print Modal -->
+<div id="printModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.75); z-index:9999; overflow-y:auto; padding:20px;">
+  <div style="max-width:520px; margin:0 auto; background:var(--panel); border:1px solid var(--s35); border-radius:16px; padding:28px 24px;">
+    <h2 style="font-family:Georgia,serif; color:var(--good); margin-bottom:6px; font-size:1.3rem;">🖨️ Print Vocabulary</h2>
+    <p style="color:var(--muted); font-size:.85rem; margin-bottom:20px;">Each entry includes word, pronunciation, definitions, synonyms &amp; antonyms, and both sentences.</p>
+    <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:22px;">
+      <label style="display:flex; align-items:center; gap:10px; cursor:pointer; color:var(--text); font-weight:600; font-size:.95rem;">
+        <input type="radio" name="printScope" value="group" checked style="accent-color:var(--good); width:16px; height:16px;">
+        Current group only (<span id="printGroupLabel">Group 1</span> · <span id="printGroupCount">10</span> words)
+      </label>
+      <label style="display:flex; align-items:center; gap:10px; cursor:pointer; color:var(--text); font-weight:600; font-size:.95rem;">
+        <input type="radio" name="printScope" value="all" style="accent-color:var(--good); width:16px; height:16px;">
+        All words (<span id="printAllCount">100</span> words)
+      </label>
+    </div>
+    <div style="display:flex; gap:10px;">
+      <button onclick="doPrint()" style="flex:1; background:var(--good); color:#06131a; border:none; border-radius:10px; padding:11px; font-weight:800; font-size:.95rem; cursor:pointer;">Print / Save PDF</button>
+      <button onclick="closePrintModal()" style="flex:1; background:var(--panel2); color:var(--muted); border:1px solid var(--s35); border-radius:10px; padding:11px; font-weight:700; font-size:.95rem; cursor:pointer;">Cancel</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
